@@ -111,8 +111,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ba6-P1-YTq">
-                                <rect key="frame" x="16" y="75" width="288" height="493"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ba6-P1-YTq">
+                                <rect key="frame" x="16" y="68" width="288" height="480"/>
                                 <color key="backgroundColor" red="0.96142077449999996" green="0.87238998440000004" blue="0.87579039120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <mutableString key="text">LineUP is a online leave request management system for mobile iOS app.
 LineUP allows employee simplify the leave request process and helps to manage annual leaves, sick leaves, maternity leaves, study leaves, unpaid leaves and many more through the simplify user friendly platform.
@@ -126,25 +126,41 @@ Features: 100% free and paperless app
 - Approve or reject leave request directly in email
 - Attachable supporting document on leave submission
 - Employee profile page with all configurations requests</mutableString>
-                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius ">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8g-ZU-t7r">
-                                <rect key="frame" x="16" y="20" width="35" height="35"/>
+                                <rect key="frame" x="16" y="20" width="40" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="PXB-mx-eu8"/>
-                                    <constraint firstAttribute="height" constant="35" id="fkN-8N-tEP"/>
+                                    <constraint firstAttribute="width" constant="40" id="PXB-mx-eu8"/>
+                                    <constraint firstAttribute="height" constant="40" id="fkN-8N-tEP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="X">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="backXButton:" destination="0xp-5R-c28" eventType="touchUpInside" id="7Nr-bV-Vht"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTV-1g-Xy3">
-                                <rect key="frame" x="91" y="20" width="138" height="33"/>
+                                <rect key="frame" x="91" y="20" width="138" height="40"/>
                                 <attributedString key="attributedText">
                                     <fragment content="LineUP">
                                         <attributes>
@@ -158,14 +174,15 @@ Features: 100% free and paperless app
                         </subviews>
                         <color key="backgroundColor" red="0.9256441593170166" green="0.96500706672668457" blue="0.94118189811706543" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="ba6-P1-YTq" firstAttribute="centerX" secondItem="YTV-1g-Xy3" secondAttribute="centerX" id="5Eu-uU-aBz"/>
                             <constraint firstItem="g8g-ZU-t7r" firstAttribute="top" secondItem="AJz-5H-3FC" secondAttribute="bottom" id="BC7-yW-16J"/>
-                            <constraint firstItem="ba6-P1-YTq" firstAttribute="trailing" secondItem="1Wf-ud-cQe" secondAttribute="trailingMargin" id="OGi-gN-fMF"/>
-                            <constraint firstItem="jBw-aw-ko0" firstAttribute="top" secondItem="ba6-P1-YTq" secondAttribute="bottom" id="SnK-5e-xuv"/>
+                            <constraint firstItem="ba6-P1-YTq" firstAttribute="top" secondItem="YTV-1g-Xy3" secondAttribute="bottom" constant="8" symbolic="YES" id="P5L-ro-sHt"/>
+                            <constraint firstItem="ba6-P1-YTq" firstAttribute="leading" secondItem="g8g-ZU-t7r" secondAttribute="leading" id="bvy-I3-4Zi"/>
                             <constraint firstItem="YTV-1g-Xy3" firstAttribute="leading" secondItem="1Wf-ud-cQe" secondAttribute="leadingMargin" constant="75" id="dW5-wN-JBG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YTV-1g-Xy3" secondAttribute="trailing" constant="75" id="enG-i8-bWh"/>
-                            <constraint firstItem="ba6-P1-YTq" firstAttribute="top" secondItem="YTV-1g-Xy3" secondAttribute="bottom" constant="22" id="pDw-Ih-EOR"/>
-                            <constraint firstItem="ba6-P1-YTq" firstAttribute="leading" secondItem="1Wf-ud-cQe" secondAttribute="leadingMargin" id="qbN-lZ-4nb"/>
+                            <constraint firstItem="ba6-P1-YTq" firstAttribute="bottom" secondItem="jBw-aw-ko0" secondAttribute="top" constant="-20" id="hEp-wY-jBg"/>
                             <constraint firstItem="g8g-ZU-t7r" firstAttribute="leading" secondItem="1Wf-ud-cQe" secondAttribute="leadingMargin" id="rfv-Af-oRe"/>
+                            <constraint firstItem="ba6-P1-YTq" firstAttribute="top" secondItem="g8g-ZU-t7r" secondAttribute="bottom" constant="8" symbolic="YES" id="uD3-2b-1FJ"/>
                             <constraint firstItem="YTV-1g-Xy3" firstAttribute="top" secondItem="AJz-5H-3FC" secondAttribute="bottom" id="zqp-ar-mZQ"/>
                         </constraints>
                     </view>
