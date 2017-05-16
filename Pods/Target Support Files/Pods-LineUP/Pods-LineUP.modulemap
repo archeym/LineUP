@@ -1,0 +1,6 @@
+framework module Pods_LineUP {
+  umbrella header "Pods-LineUP-umbrella.h"
+
+  export *
+  module * { export * }
+}
