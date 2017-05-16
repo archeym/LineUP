@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1mL-nO-7Yt">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="dWa-Es-gCA">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="1mL-nO-7Yt" customClass="LoginViewController" customModule="LineUP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VEI-0j-x88"/>
+                        <viewControllerLayoutGuide type="bottom" id="KXb-lT-dsh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ts2-kQ-9x3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Encrypted User Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fk3-qL-tGk">
+                                <rect key="frame" x="13" y="394" width="294" height="35"/>
+                                <color key="backgroundColor" red="0.96142077445983887" green="0.87238998441554594" blue="0.8757903912037015" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="G5o-TN-kdD"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tnT-MP-msL">
+                                <rect key="frame" x="13" y="454" width="294" height="35"/>
+                                <color key="backgroundColor" red="0.66868317127227783" green="0.97791337966918945" blue="0.85098755359649658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="B9q-a0-Bq2"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Login">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="24" name="Avenir-BlackOblique"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="1mL-nO-7Yt" eventType="touchUpInside" id="Wp6-3h-zUs"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineup" translatesAutoresizingMaskIntoConstraints="NO" id="JZB-Ef-Xve">
+                                <rect key="frame" x="13" y="20" width="294" height="294"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="179-8y-BaK"/>
+                                    <constraint firstAttribute="height" constant="294" id="KL6-Ea-VYx"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9c2-eq-tIt">
+                                <rect key="frame" x="13" y="346" width="294" height="35"/>
+                                <color key="backgroundColor" red="0.96142077445983887" green="0.87238998441554594" blue="0.8757903912037015" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="nnl-WV-jnL"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92618657561200002" green="0.96142077445983887" blue="0.94215480302484989" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="tnT-MP-msL" secondAttribute="trailing" constant="13" id="3aU-n0-uIB"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JZB-Ef-Xve" secondAttribute="trailing" constant="13" id="6iZ-M0-A6t"/>
+                            <constraint firstItem="9c2-eq-tIt" firstAttribute="leading" secondItem="Ts2-kQ-9x3" secondAttribute="leading" constant="13" id="Lsx-gd-e9R"/>
+                            <constraint firstItem="Fk3-qL-tGk" firstAttribute="top" secondItem="9c2-eq-tIt" secondAttribute="bottom" constant="13" id="NFC-eg-oZx"/>
+                            <constraint firstItem="Fk3-qL-tGk" firstAttribute="leading" secondItem="Ts2-kQ-9x3" secondAttribute="leading" constant="13" id="TpN-j7-fhF"/>
+                            <constraint firstItem="JZB-Ef-Xve" firstAttribute="centerX" secondItem="Ts2-kQ-9x3" secondAttribute="centerX" id="hwE-3z-9OQ"/>
+                            <constraint firstItem="JZB-Ef-Xve" firstAttribute="top" secondItem="VEI-0j-x88" secondAttribute="bottom" id="m4K-l3-dAn"/>
+                            <constraint firstItem="tnT-MP-msL" firstAttribute="top" secondItem="Fk3-qL-tGk" secondAttribute="bottom" constant="25" id="mgd-d3-d8H"/>
+                            <constraint firstItem="tnT-MP-msL" firstAttribute="leading" secondItem="Ts2-kQ-9x3" secondAttribute="leading" constant="13" id="ph7-Cg-oZo"/>
+                            <constraint firstAttribute="trailing" secondItem="Fk3-qL-tGk" secondAttribute="trailing" constant="13" id="twI-hM-YOe"/>
+                            <constraint firstItem="9c2-eq-tIt" firstAttribute="top" secondItem="JZB-Ef-Xve" secondAttribute="bottom" constant="32" id="wWq-jg-pTw"/>
+                            <constraint firstAttribute="trailing" secondItem="9c2-eq-tIt" secondAttribute="trailing" constant="13" id="xD1-RF-A5G"/>
+                            <constraint firstItem="JZB-Ef-Xve" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ts2-kQ-9x3" secondAttribute="leading" constant="13" id="zLl-P2-FcP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="9c2-eq-tIt" id="8yc-V1-EUS"/>
+                        <outlet property="imageView" destination="JZB-Ef-Xve" id="ptw-4n-fvb"/>
+                        <outlet property="loginButton" destination="tnT-MP-msL" id="dCp-tD-Nbv"/>
+                        <outlet property="passwordTextField" destination="Fk3-qL-tGk" id="CHx-41-CqX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="msf-YI-PB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71.25" y="196.47887323943661"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="pMG-tN-DJr">
+            <objects>
+                <viewController storyboardIdentifier="InfoViewController" id="0xp-5R-c28" customClass="InfoViewController" customModule="LineUP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AJz-5H-3FC"/>
+                        <viewControllerLayoutGuide type="bottom" id="jBw-aw-ko0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Wf-ud-cQe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ba6-P1-YTq">
+                                <rect key="frame" x="16" y="75" width="288" height="493"/>
+                                <color key="backgroundColor" red="0.96142077449999996" green="0.87238998440000004" blue="0.87579039120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <mutableString key="text">LineUP is a online leave request management system for mobile iOS app.
+LineUP allows employee simplify the leave request process and helps to manage annual leaves, sick leaves, maternity leaves, study leaves, unpaid leaves and many more through the simplify user friendly platform.
+
+Features: 100% free and paperless app
+- After the registration, employee will be able to request, edit leaves through the mobile app
+- Company calendar allows employees to know who is on leave
+- Email Notification for leave application and approved or rejected status
+- Support full day and half day leave request
+- Ability to define Event days (days where employees cannot request leave)
+- Approve or reject leave request directly in email
+- Attachable supporting document on leave submission
+- Employee profile page with all configurations requests</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g8g-ZU-t7r">
+                                <rect key="frame" x="16" y="20" width="35" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="PXB-mx-eu8"/>
+                                    <constraint firstAttribute="height" constant="35" id="fkN-8N-tEP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="backXButton:" destination="0xp-5R-c28" eventType="touchUpInside" id="7Nr-bV-Vht"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTV-1g-Xy3">
+                                <rect key="frame" x="91" y="20" width="138" height="33"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="LineUP">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="Avenir-HeavyOblique"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9256441593170166" green="0.96500706672668457" blue="0.94118189811706543" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="g8g-ZU-t7r" firstAttribute="top" secondItem="AJz-5H-3FC" secondAttribute="bottom" id="BC7-yW-16J"/>
+                            <constraint firstItem="ba6-P1-YTq" firstAttribute="trailing" secondItem="1Wf-ud-cQe" secondAttribute="trailingMargin" id="OGi-gN-fMF"/>
+                            <constraint firstItem="jBw-aw-ko0" firstAttribute="top" secondItem="ba6-P1-YTq" secondAttribute="bottom" id="SnK-5e-xuv"/>
+                            <constraint firstItem="YTV-1g-Xy3" firstAttribute="leading" secondItem="1Wf-ud-cQe" secondAttribute="leadingMargin" constant="75" id="dW5-wN-JBG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YTV-1g-Xy3" secondAttribute="trailing" constant="75" id="enG-i8-bWh"/>
+                            <constraint firstItem="ba6-P1-YTq" firstAttribute="top" secondItem="YTV-1g-Xy3" secondAttribute="bottom" constant="22" id="pDw-Ih-EOR"/>
+                            <constraint firstItem="ba6-P1-YTq" firstAttribute="leading" secondItem="1Wf-ud-cQe" secondAttribute="leadingMargin" id="qbN-lZ-4nb"/>
+                            <constraint firstItem="g8g-ZU-t7r" firstAttribute="leading" secondItem="1Wf-ud-cQe" secondAttribute="leadingMargin" id="rfv-Af-oRe"/>
+                            <constraint firstItem="YTV-1g-Xy3" firstAttribute="top" secondItem="AJz-5H-3FC" secondAttribute="bottom" id="zqp-ar-mZQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="YTV-1g-Xy3" id="qUh-es-TO1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ASu-gF-7Rw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="768.75" y="195.42253521126761"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lineup" width="1000" height="1000"/>
+    </resources>
+</document>
