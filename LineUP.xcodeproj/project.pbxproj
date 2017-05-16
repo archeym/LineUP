@@ -17,6 +17,8 @@
 		210403FB1ECAB576002F3D46 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210403FA1ECAB576002F3D46 /* LoginViewController.swift */; };
 		210403FD1ECADA15002F3D46 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210403FC1ECADA15002F3D46 /* InfoViewController.swift */; };
 		780458B982D73950041F5CEE /* Pods_LineUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */; };
+		CE1927861ECB0FFA0091525B /* RequestLeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */; };
+		CE1927881ECB10D50091525B /* TypesOfLeavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		210403FA1ECAB576002F3D46 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		210403FC1ECADA15002F3D46 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLeaveViewController.swift; sourceTree = "<group>"; };
+		CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesOfLeavesViewController.swift; sourceTree = "<group>"; };
 		D9038DCC496ED29D2DA3FC01 /* Pods-LineUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC962995CB2245E97FF1C30 /* Pods-LineUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +77,8 @@
 				210403E51ECAB486002F3D46 /* FirstViewController.swift */,
 				210403E71ECAB486002F3D46 /* SecondViewController.swift */,
 				210403E91ECAB486002F3D46 /* Main.storyboard */,
+				CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */,
+				CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */,
 				210403F91ECAB4F7002F3D46 /* Auth */,
 				210403EC1ECAB486002F3D46 /* Assets.xcassets */,
 				210403EE1ECAB486002F3D46 /* LaunchScreen.storyboard */,
@@ -143,7 +149,7 @@
 				TargetAttributes = {
 					210403DF1ECAB486002F3D46 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = V8T6EH88N4;
+						DevelopmentTeam = ZQ547JDPVM;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -234,9 +240,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				210403FB1ECAB576002F3D46 /* LoginViewController.swift in Sources */,
+				CE1927881ECB10D50091525B /* TypesOfLeavesViewController.swift in Sources */,
 				210403E81ECAB486002F3D46 /* SecondViewController.swift in Sources */,
 				210403E41ECAB486002F3D46 /* AppDelegate.swift in Sources */,
 				210403E61ECAB486002F3D46 /* FirstViewController.swift in Sources */,
+				CE1927861ECB0FFA0091525B /* RequestLeaveViewController.swift in Sources */,
 				210403FD1ECADA15002F3D46 /* InfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,8 +371,9 @@
 			baseConfigurationReference = D9038DCC496ED29D2DA3FC01 /* Pods-LineUP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V8T6EH88N4;
+				DEVELOPMENT_TEAM = ZQ547JDPVM;
 				INFOPLIST_FILE = LineUP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Archie.LineUP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -377,8 +386,9 @@
 			baseConfigurationReference = DDC962995CB2245E97FF1C30 /* Pods-LineUP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V8T6EH88N4;
+				DEVELOPMENT_TEAM = ZQ547JDPVM;
 				INFOPLIST_FILE = LineUP/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Archie.LineUP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +415,7 @@
 				210403F61ECAB486002F3D46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
