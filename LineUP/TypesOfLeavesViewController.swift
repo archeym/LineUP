@@ -25,7 +25,7 @@ class TypesOfLeavesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        tableView.tableFooterView = UIView()
     }
 
     @IBAction func cancelButtonTapped(_ sender: Any) {

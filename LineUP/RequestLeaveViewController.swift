@@ -11,14 +11,10 @@ import UIKit
 class RequestLeaveViewController: UIViewController {
     
     @IBOutlet weak var name: UILabel!
-    
     @IBOutlet weak var noOfDays: UILabel!
-    
     @IBOutlet weak var typeOfLeave: UILabel!
-    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var numberOfDaysLabel: UILabel!
-
     @IBOutlet weak var requestButton: UIButton!
     @IBOutlet weak var uploadButton: UIButton!{
         didSet{
@@ -26,7 +22,8 @@ class RequestLeaveViewController: UIViewController {
         }
     }
     @IBOutlet weak var chooseLeaveButton: UIButton!
-    @IBOutlet weak var leaveLabel: UILabel!
+    @IBOutlet weak var chooseFromLibrary: UIButton!
+
     
     let formatter = DateFormatter()
     var testCalendar = Calendar.current
@@ -52,11 +49,21 @@ class RequestLeaveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.numberOfDaysLabel.text = "\(dates.count)"
+        name.layer.cornerRadius = 5
+        nameLabel.layer.cornerRadius = 5
+        numberOfDaysLabel.layer.cornerRadius = 5
+        noOfDays.layer.cornerRadius = 5
+        requestButton.layer.cornerRadius = 5
+        uploadButton.layer.cornerRadius = 5
+        chooseLeaveButton.layer.cornerRadius = 5
+        chooseFromLibrary.layer.cornerRadius = 5
+        typeOfLeave.layer.cornerRadius = 5
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         if selectedType != nil {
-            self.leaveLabel.text = selectedType
+            self.chooseLeaveButton.setTitle(selectedType, for: .normal)
         }
     }
     
