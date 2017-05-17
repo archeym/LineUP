@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1mL-nO-7Yt">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="KXb-lT-dsh"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ts2-kQ-9x3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Encrypted User Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fk3-qL-tGk">
-                                <rect key="frame" x="13" y="394" width="294" height="35"/>
+                                <rect key="frame" x="13" y="394" width="349" height="35"/>
                                 <color key="backgroundColor" red="0.96142077445983887" green="0.87238998441554594" blue="0.8757903912037015" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="G5o-TN-kdD"/>
@@ -33,7 +33,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tnT-MP-msL">
-                                <rect key="frame" x="13" y="454" width="294" height="35"/>
+                                <rect key="frame" x="13" y="454" width="349" height="35"/>
                                 <color key="backgroundColor" red="0.66868317127227783" green="0.97791337966918945" blue="0.85098755359649658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="B9q-a0-Bq2"/>
@@ -54,14 +54,14 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineup" translatesAutoresizingMaskIntoConstraints="NO" id="JZB-Ef-Xve">
-                                <rect key="frame" x="13" y="20" width="294" height="294"/>
+                                <rect key="frame" x="40.5" y="20" width="294" height="294"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="294" id="179-8y-BaK"/>
                                     <constraint firstAttribute="height" constant="294" id="KL6-Ea-VYx"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9c2-eq-tIt">
-                                <rect key="frame" x="13" y="346" width="294" height="35"/>
+                                <rect key="frame" x="13" y="346" width="349" height="35"/>
                                 <color key="backgroundColor" red="0.96142077445983887" green="0.87238998441554594" blue="0.8757903912037015" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="nnl-WV-jnL"/>
@@ -108,13 +108,13 @@
                         <viewControllerLayoutGuide type="bottom" id="jBw-aw-ko0"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="1Wf-ud-cQe">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ba6-P1-YTq">
-                                <rect key="frame" x="16" y="68" width="288" height="480"/>
+                                <rect key="frame" x="16" y="90" width="343" height="557"/>
                                 <color key="backgroundColor" red="0.96142077449999996" green="0.87238998440000004" blue="0.87579039120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <mutableString key="text">LineUP is a online leave request management system for mobile iOS app.
+                                <string key="text">LineUP is a online leave request management system for mobile iOS app.
 LineUP allows employee simplify the leave request process and helps to manage annual leaves, sick leaves, maternity leaves, study leaves, unpaid leaves and many more through the simplify user friendly platform.
 
 Features: 100% free and paperless app
@@ -125,7 +125,7 @@ Features: 100% free and paperless app
 - Ability to define Event days (days where employees cannot request leave)
 - Approve or reject leave request directly in email
 - Attachable supporting document on leave submission
-- Employee profile page with all configurations requests</mutableString>
+- Employee profile page with all configurations requests</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -160,7 +160,7 @@ Features: 100% free and paperless app
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTV-1g-Xy3">
-                                <rect key="frame" x="91" y="20" width="138" height="40"/>
+                                <rect key="frame" x="91" y="20" width="193" height="37"/>
                                 <attributedString key="attributedText">
                                     <fragment content="LineUP">
                                         <attributes>
@@ -174,25 +174,26 @@ Features: 100% free and paperless app
                         </subviews>
                         <color key="backgroundColor" red="0.9256441593170166" green="0.96500706672668457" blue="0.94118189811706543" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="ba6-P1-YTq" firstAttribute="centerX" secondItem="YTV-1g-Xy3" secondAttribute="centerX" id="5Eu-uU-aBz"/>
                             <constraint firstItem="g8g-ZU-t7r" firstAttribute="top" secondItem="AJz-5H-3FC" secondAttribute="bottom" id="BC7-yW-16J"/>
-                            <constraint firstItem="ba6-P1-YTq" firstAttribute="top" secondItem="YTV-1g-Xy3" secondAttribute="bottom" constant="8" symbolic="YES" id="P5L-ro-sHt"/>
+                            <constraint firstItem="ba6-P1-YTq" firstAttribute="top" secondItem="YTV-1g-Xy3" secondAttribute="bottom" constant="33" id="P5L-ro-sHt"/>
                             <constraint firstItem="ba6-P1-YTq" firstAttribute="leading" secondItem="g8g-ZU-t7r" secondAttribute="leading" id="bvy-I3-4Zi"/>
                             <constraint firstItem="YTV-1g-Xy3" firstAttribute="leading" secondItem="1Wf-ud-cQe" secondAttribute="leadingMargin" constant="75" id="dW5-wN-JBG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="YTV-1g-Xy3" secondAttribute="trailing" constant="75" id="enG-i8-bWh"/>
                             <constraint firstItem="ba6-P1-YTq" firstAttribute="bottom" secondItem="jBw-aw-ko0" secondAttribute="top" constant="-20" id="hEp-wY-jBg"/>
                             <constraint firstItem="g8g-ZU-t7r" firstAttribute="leading" secondItem="1Wf-ud-cQe" secondAttribute="leadingMargin" id="rfv-Af-oRe"/>
-                            <constraint firstItem="ba6-P1-YTq" firstAttribute="top" secondItem="g8g-ZU-t7r" secondAttribute="bottom" constant="8" symbolic="YES" id="uD3-2b-1FJ"/>
+                            <constraint firstItem="ba6-P1-YTq" firstAttribute="centerX" secondItem="YTV-1g-Xy3" secondAttribute="centerX" id="ry9-HC-reA"/>
+                            <constraint firstItem="ba6-P1-YTq" firstAttribute="top" secondItem="g8g-ZU-t7r" secondAttribute="bottom" constant="30" id="uD3-2b-1FJ"/>
                             <constraint firstItem="YTV-1g-Xy3" firstAttribute="top" secondItem="AJz-5H-3FC" secondAttribute="bottom" id="zqp-ar-mZQ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label" destination="YTV-1g-Xy3" id="qUh-es-TO1"/>
+                        <outlet property="textView" destination="ba6-P1-YTq" id="8i2-cA-JX7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ASu-gF-7Rw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="768.75" y="195.42253521126761"/>
+            <point key="canvasLocation" x="767.20000000000005" y="194.75262368815595"/>
         </scene>
     </scenes>
     <resources>

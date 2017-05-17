@@ -13,11 +13,15 @@ class InfoViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
 
+    @IBOutlet weak var textView: UITextView!
+    
     @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         label.layer.borderWidth = 0.5
         label.layer.cornerRadius = 5
+        textView.layer.borderWidth = 0.5
+        textView.layer.cornerRadius = 10
     }
 
 
