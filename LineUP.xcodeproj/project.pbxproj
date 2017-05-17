@@ -24,6 +24,7 @@
 		CE1927901ECBFDDD0091525B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19278F1ECBFDDD0091525B /* CameraViewController.swift */; };
 		CE1927971ECBFE490091525B /* VNCameraScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927951ECBFE490091525B /* VNCameraScanner.swift */; };
 		CE1927981ECBFE490091525B /* VNCameraScanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1927961ECBFE490091525B /* VNCameraScanner.xib */; };
+		CE19279A1ECC3FD30091525B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927991ECC3FD30091525B /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		CE19278F1ECBFDDD0091525B /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		CE1927951ECBFE490091525B /* VNCameraScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VNCameraScanner.swift; sourceTree = "<group>"; };
 		CE1927961ECBFE490091525B /* VNCameraScanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VNCameraScanner.xib; sourceTree = "<group>"; };
+		CE1927991ECC3FD30091525B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D9038DCC496ED29D2DA3FC01 /* Pods-LineUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC962995CB2245E97FF1C30 /* Pods-LineUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +87,7 @@
 			children = (
 				210403E31ECAB486002F3D46 /* AppDelegate.swift */,
 				210403E51ECAB486002F3D46 /* FirstViewController.swift */,
+				CE1927991ECC3FD30091525B /* User.swift */,
 				210403E71ECAB486002F3D46 /* SecondViewController.swift */,
 				211829411ECBEACB0025589F /* CalendarController.swift */,
 				211829421ECBEACB0025589F /* CustomeCell.swift */,
@@ -263,6 +266,7 @@
 				210403E41ECAB486002F3D46 /* AppDelegate.swift in Sources */,
 				210403E61ECAB486002F3D46 /* FirstViewController.swift in Sources */,
 				CE1927861ECB0FFA0091525B /* RequestLeaveViewController.swift in Sources */,
+				CE19279A1ECC3FD30091525B /* User.swift in Sources */,
 				210403FD1ECADA15002F3D46 /* InfoViewController.swift in Sources */,
 				211829441ECBEACB0025589F /* CustomeCell.swift in Sources */,
 				CE1927971ECBFE490091525B /* VNCameraScanner.swift in Sources */,

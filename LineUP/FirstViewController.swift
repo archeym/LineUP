@@ -24,12 +24,48 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var addressLabel: UILabel!
     
     
-    
-    
+    var name : String?
+    var selectedUser = [User]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let url = URL(string: "http://192.168.1.147:9292/api/v1/users")
+        var urlRequest = URLRequest(url: url!)
+        
+        urlRequest.httpMethod = "GET"
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-type")
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let dataTask = session.dataTask(with: urlRequest) { (data, response, error) in
+            
+            
+            if let validError = error {
+                print(validError.localizedDescription)
+            }
+            
+            
+            if let httpResponse = response as? HTTPURLResponse {
+                
+                if httpResponse.statusCode == 200 {
+                    
+                    do {
+                        let jsonResponse = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+                        
+                        
+                        guard let validJSON = jsonResponse as? [[String:Any]] else { return }
+                        
+                        print(validJSON)
+                        
+                        
+                    } catch let jsonError as NSError {
+                        print(jsonError)
+                    }
+                    
+                }
+            }
+            
+        }
+        dataTask.resume()
     }
 
     override func didReceiveMemoryWarning() {
