@@ -20,6 +20,14 @@ class CalendarController: UIViewController {
         toDateLabel.text = ""
     }
     
+    @IBAction func requestButtonTapped(_ sender: Any) {
+        let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "RequestLeaveViewController") as! RequestLeaveViewController
+        initController.dates = selectedDates
+        navigationController?.pushViewController(initController, animated: true)
+        //(initController, animated: true, completion: nil)
+    }
+    var selectedDates = [Date]()
+    
     let formatter = DateFormatter()
     var testCalendar = Calendar.current
     let dateFormatter : DateFormatter = {
@@ -155,7 +163,7 @@ extension CalendarController: JTAppleCalendarViewDelegate{
     
     // Set title with selected dates
     
-    let selectedDates = calendarView.selectedDates
+    selectedDates = calendarView.selectedDates
     
     if firstDate == nil {
       self.toDateLabel.text = "From \(displayDateFormatter.string(from: selectedDates.first!)) _ To \(displayDateFormatter.string(from: selectedDates.last!))"
