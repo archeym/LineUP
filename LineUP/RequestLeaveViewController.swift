@@ -16,6 +16,7 @@ class RequestLeaveViewController: UIViewController {
     @IBOutlet weak var requestButton: UIButton!
     @IBOutlet weak var uploadButton: UIButton!
     @IBOutlet weak var chooseLeaveButton: UIButton!
+    @IBOutlet weak var leaveLabel: UILabel!
     
     var selectedType : String?
     
@@ -27,7 +28,8 @@ class RequestLeaveViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if selectedType != nil {
-            chooseLeaveButton.setTitle(selectedType, for: .normal)
+//            chooseLeaveButton.setTitle(selectedType, for: .normal)
+            self.leaveLabel.text = selectedType
         }
     }
 

@@ -140,6 +140,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85D-DV-FiF">
+                                <rect key="frame" x="139" y="297" width="220" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Type of Leave" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhv-a8-0o2">
+                                <rect key="frame" x="16" y="297" width="115" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -147,6 +161,7 @@
                     <connections>
                         <outlet property="chooseLeaveButton" destination="uDq-rn-ppB" id="aR5-xD-IBu"/>
                         <outlet property="datesLabel" destination="5W6-Z6-URg" id="P2U-9W-nPT"/>
+                        <outlet property="leaveLabel" destination="85D-DV-FiF" id="1IT-om-fuE"/>
                         <outlet property="nameLabel" destination="sf1-9X-8k8" id="M9X-47-l5J"/>
                         <outlet property="numberOfDaysLabel" destination="ZyT-yn-lJ6" id="bFb-Ec-yId"/>
                         <outlet property="requestButton" destination="Ism-Ci-tTi" id="rCa-Wq-MSA"/>
