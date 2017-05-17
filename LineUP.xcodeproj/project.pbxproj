@@ -18,6 +18,7 @@
 		210403FD1ECADA15002F3D46 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210403FC1ECADA15002F3D46 /* InfoViewController.swift */; };
 		211829431ECBEACB0025589F /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829411ECBEACB0025589F /* CalendarController.swift */; };
 		211829441ECBEACB0025589F /* CustomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829421ECBEACB0025589F /* CustomeCell.swift */; };
+		211829471ECC620E0025589F /* AllRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829461ECC620E0025589F /* AllRequestsViewController.swift */; };
 		780458B982D73950041F5CEE /* Pods_LineUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */; };
 		CE1927861ECB0FFA0091525B /* RequestLeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */; };
 		CE1927881ECB10D50091525B /* TypesOfLeavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */; };
@@ -41,6 +42,7 @@
 		210403FC1ECADA15002F3D46 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		211829411ECBEACB0025589F /* CalendarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		211829421ECBEACB0025589F /* CustomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeCell.swift; sourceTree = "<group>"; };
+		211829461ECC620E0025589F /* AllRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRequestsViewController.swift; sourceTree = "<group>"; };
 		BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLeaveViewController.swift; sourceTree = "<group>"; };
 		CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesOfLeavesViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				210403EC1ECAB486002F3D46 /* Assets.xcassets */,
 				210403EE1ECAB486002F3D46 /* LaunchScreen.storyboard */,
 				210403F11ECAB486002F3D46 /* Info.plist */,
+				211829461ECC620E0025589F /* AllRequestsViewController.swift */,
 			);
 			path = LineUP;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				CE1927881ECB10D50091525B /* TypesOfLeavesViewController.swift in Sources */,
 				210403E81ECAB486002F3D46 /* SecondViewController.swift in Sources */,
 				210403E41ECAB486002F3D46 /* AppDelegate.swift in Sources */,
+				211829471ECC620E0025589F /* AllRequestsViewController.swift in Sources */,
 				210403E61ECAB486002F3D46 /* FirstViewController.swift in Sources */,
 				CE1927861ECB0FFA0091525B /* RequestLeaveViewController.swift in Sources */,
 				CE19279A1ECC3FD30091525B /* User.swift in Sources */,
