@@ -21,6 +21,9 @@
 		780458B982D73950041F5CEE /* Pods_LineUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */; };
 		CE1927861ECB0FFA0091525B /* RequestLeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */; };
 		CE1927881ECB10D50091525B /* TypesOfLeavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */; };
+		CE1927901ECBFDDD0091525B /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE19278F1ECBFDDD0091525B /* CameraViewController.swift */; };
+		CE1927971ECBFE490091525B /* VNCameraScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927951ECBFE490091525B /* VNCameraScanner.swift */; };
+		CE1927981ECBFE490091525B /* VNCameraScanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1927961ECBFE490091525B /* VNCameraScanner.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLeaveViewController.swift; sourceTree = "<group>"; };
 		CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesOfLeavesViewController.swift; sourceTree = "<group>"; };
+		CE19278F1ECBFDDD0091525B /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		CE1927951ECBFE490091525B /* VNCameraScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VNCameraScanner.swift; sourceTree = "<group>"; };
+		CE1927961ECBFE490091525B /* VNCameraScanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VNCameraScanner.xib; sourceTree = "<group>"; };
 		D9038DCC496ED29D2DA3FC01 /* Pods-LineUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC962995CB2245E97FF1C30 /* Pods-LineUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,6 +91,9 @@
 				210403E91ECAB486002F3D46 /* Main.storyboard */,
 				CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */,
 				CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */,
+				CE19278F1ECBFDDD0091525B /* CameraViewController.swift */,
+				CE1927951ECBFE490091525B /* VNCameraScanner.swift */,
+				CE1927961ECBFE490091525B /* VNCameraScanner.xib */,
 				210403F91ECAB4F7002F3D46 /* Auth */,
 				210403EC1ECAB486002F3D46 /* Assets.xcassets */,
 				210403EE1ECAB486002F3D46 /* LaunchScreen.storyboard */,
@@ -183,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1927981ECBFE490091525B /* VNCameraScanner.xib in Resources */,
 				210403F81ECAB4E7002F3D46 /* Auth.storyboard in Resources */,
 				210403F01ECAB486002F3D46 /* LaunchScreen.storyboard in Resources */,
 				210403ED1ECAB486002F3D46 /* Assets.xcassets in Resources */,
@@ -245,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1927901ECBFDDD0091525B /* CameraViewController.swift in Sources */,
 				211829431ECBEACB0025589F /* CalendarController.swift in Sources */,
 				210403FB1ECAB576002F3D46 /* LoginViewController.swift in Sources */,
 				CE1927881ECB10D50091525B /* TypesOfLeavesViewController.swift in Sources */,
@@ -254,6 +265,7 @@
 				CE1927861ECB0FFA0091525B /* RequestLeaveViewController.swift in Sources */,
 				210403FD1ECADA15002F3D46 /* InfoViewController.swift in Sources */,
 				211829441ECBEACB0025589F /* CustomeCell.swift in Sources */,
+				CE1927971ECBFE490091525B /* VNCameraScanner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
