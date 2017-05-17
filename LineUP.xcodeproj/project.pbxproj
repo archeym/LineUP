@@ -16,6 +16,8 @@
 		210403F81ECAB4E7002F3D46 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210403F71ECAB4E7002F3D46 /* Auth.storyboard */; };
 		210403FB1ECAB576002F3D46 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210403FA1ECAB576002F3D46 /* LoginViewController.swift */; };
 		210403FD1ECADA15002F3D46 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210403FC1ECADA15002F3D46 /* InfoViewController.swift */; };
+		211829431ECBEACB0025589F /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829411ECBEACB0025589F /* CalendarController.swift */; };
+		211829441ECBEACB0025589F /* CustomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829421ECBEACB0025589F /* CustomeCell.swift */; };
 		780458B982D73950041F5CEE /* Pods_LineUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +33,8 @@
 		210403F71ECAB4E7002F3D46 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		210403FA1ECAB576002F3D46 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		210403FC1ECADA15002F3D46 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		211829411ECBEACB0025589F /* CalendarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
+		211829421ECBEACB0025589F /* CustomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeCell.swift; sourceTree = "<group>"; };
 		BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9038DCC496ED29D2DA3FC01 /* Pods-LineUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC962995CB2245E97FF1C30 /* Pods-LineUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 				210403E31ECAB486002F3D46 /* AppDelegate.swift */,
 				210403E51ECAB486002F3D46 /* FirstViewController.swift */,
 				210403E71ECAB486002F3D46 /* SecondViewController.swift */,
+				211829411ECBEACB0025589F /* CalendarController.swift */,
+				211829421ECBEACB0025589F /* CustomeCell.swift */,
 				210403E91ECAB486002F3D46 /* Main.storyboard */,
 				210403F91ECAB4F7002F3D46 /* Auth */,
 				210403EC1ECAB486002F3D46 /* Assets.xcassets */,
@@ -233,11 +239,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211829431ECBEACB0025589F /* CalendarController.swift in Sources */,
 				210403FB1ECAB576002F3D46 /* LoginViewController.swift in Sources */,
 				210403E81ECAB486002F3D46 /* SecondViewController.swift in Sources */,
 				210403E41ECAB486002F3D46 /* AppDelegate.swift in Sources */,
 				210403E61ECAB486002F3D46 /* FirstViewController.swift in Sources */,
 				210403FD1ECADA15002F3D46 /* InfoViewController.swift in Sources */,
+				211829441ECBEACB0025589F /* CustomeCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +413,7 @@
 				210403F61ECAB486002F3D46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
