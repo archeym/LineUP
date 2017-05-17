@@ -14,21 +14,16 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var loginButton: UIButton!
-//    {
-//        didSet{
-//            loginButton.addTarget(self, action: #selector(handleLogin), for: .touchUpInside)
-//        }
-//    }
     
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func loginButtonTapped(_ sender: Any) {
-//        let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "TabBarController")
-//        present(initController, animated: true, completion: nil)
         handleLogin()
         print("login tapped")
         
     }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         imageView.isUserInteractionEnabled = true
@@ -91,6 +86,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                     UserDefaults.standard.setValue(validJSON["private_token"], forKey: "AUTH_Token")
                     UserDefaults.standard.synchronize()
                     
+                    
                     DispatchQueue.main.async {
                         self.goToMain()
                         self.clearTextFieldText()
@@ -105,6 +101,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
         dataTask.resume()
     }
+    
     
     func goToMain(){
         let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "TabBarController")
