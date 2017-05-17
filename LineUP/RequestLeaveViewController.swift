@@ -9,9 +9,15 @@
 import UIKit
 
 class RequestLeaveViewController: UIViewController {
+    
+    @IBOutlet weak var name: UILabel!
+    
+    @IBOutlet weak var noOfDays: UILabel!
+    
+    @IBOutlet weak var typeOfLeave: UILabel!
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var numberOfDaysLabel: UILabel!
-    @IBOutlet weak var datesLabel: UILabel!
 
     @IBOutlet weak var requestButton: UIButton!
     @IBOutlet weak var uploadButton: UIButton!{
@@ -22,18 +28,40 @@ class RequestLeaveViewController: UIViewController {
     @IBOutlet weak var chooseLeaveButton: UIButton!
     @IBOutlet weak var leaveLabel: UILabel!
     
+    let formatter = DateFormatter()
+    var testCalendar = Calendar.current
+    let dateFormatter : DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.timeZone = Calendar.current.timeZone
+        let locale = Locale(identifier: "en_US_POSIX")
+        formatter.locale = locale
+        formatter.dateFormat = "yyyy MM dd"
+        return formatter
+    }()
+    let displayDateFormatter : DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale.current
+        formatter.dateStyle = DateFormatter.Style.medium
+        formatter.timeStyle = DateFormatter.Style.none
+        return formatter
+    }()
+    var dates = [Date]()
+    
     var selectedType : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+        self.numberOfDaysLabel.text = "\(dates.count)"
     }
     
     override func viewWillAppear(_ animated: Bool) {
         if selectedType != nil {
             self.leaveLabel.text = selectedType
         }
+    }
+    
+    func handleBack(){
+        
     }
 
     @IBAction func chooseLeaveTypeButtonTapped(_ sender: Any) {

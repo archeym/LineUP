@@ -86,13 +86,8 @@
 				210403E31ECAB486002F3D46 /* AppDelegate.swift */,
 				210403E51ECAB486002F3D46 /* FirstViewController.swift */,
 				210403E71ECAB486002F3D46 /* SecondViewController.swift */,
-				211829411ECBEACB0025589F /* CalendarController.swift */,
-				211829421ECBEACB0025589F /* CustomeCell.swift */,
+				211829451ECC3D580025589F /* Calendar */,
 				210403E91ECAB486002F3D46 /* Main.storyboard */,
-				CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */,
-				CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */,
-				CE19278F1ECBFDDD0091525B /* CameraViewController.swift */,
-				CE1927951ECBFE490091525B /* VNCameraScanner.swift */,
 				CE1927961ECBFE490091525B /* VNCameraScanner.xib */,
 				210403F91ECAB4F7002F3D46 /* Auth */,
 				210403EC1ECAB486002F3D46 /* Assets.xcassets */,
@@ -110,6 +105,19 @@
 				210403FA1ECAB576002F3D46 /* LoginViewController.swift */,
 			);
 			name = Auth;
+			sourceTree = "<group>";
+		};
+		211829451ECC3D580025589F /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				211829411ECBEACB0025589F /* CalendarController.swift */,
+				CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */,
+				CE19278F1ECBFDDD0091525B /* CameraViewController.swift */,
+				CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */,
+				CE1927951ECBFE490091525B /* VNCameraScanner.swift */,
+				211829421ECBEACB0025589F /* CustomeCell.swift */,
+			);
+			name = Calendar;
 			sourceTree = "<group>";
 		};
 		9C55CAF391242A3E9A62FA48 /* Pods */ = {

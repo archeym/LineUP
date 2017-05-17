@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="dWa-Es-gCA">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="1mL-nO-7Yt" customClass="LoginViewController" customModule="LineUP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1mL-nO-7Yt" customClass="LoginViewController" customModule="LineUP" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VEI-0j-x88"/>
                         <viewControllerLayoutGuide type="bottom" id="KXb-lT-dsh"/>
@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Encrypted User Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fk3-qL-tGk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Encrypted User Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fk3-qL-tGk">
                                 <rect key="frame" x="13" y="394" width="349" height="35"/>
                                 <color key="backgroundColor" red="0.96142077445983887" green="0.87238998441554594" blue="0.8757903912037015" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
