@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8gl-nr-PAS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mahmoud" translatesAutoresizingMaskIntoConstraints="NO" id="8gl-nr-PAS">
                                 <rect key="frame" x="127" y="72" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="0nG-kP-LRY"/>
@@ -1118,6 +1118,7 @@
         <image name="capture_button" width="66" height="66"/>
         <image name="doc" width="24" height="24"/>
         <image name="focusIndicator" width="75" height="75"/>
+        <image name="mahmoud" width="160" height="160"/>
         <image name="mail" width="24" height="24"/>
         <image name="user" width="24" height="24"/>
     </resources>
