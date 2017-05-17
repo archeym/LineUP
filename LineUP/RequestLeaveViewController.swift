@@ -14,7 +14,11 @@ class RequestLeaveViewController: UIViewController {
     @IBOutlet weak var datesLabel: UILabel!
 
     @IBOutlet weak var requestButton: UIButton!
-    @IBOutlet weak var uploadButton: UIButton!
+    @IBOutlet weak var uploadButton: UIButton!{
+        didSet{
+            uploadButton.addTarget(self, action: #selector(uploadButtonTapped), for: .touchUpInside)
+        }
+    }
     @IBOutlet weak var chooseLeaveButton: UIButton!
     @IBOutlet weak var leaveLabel: UILabel!
     
@@ -28,7 +32,6 @@ class RequestLeaveViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         if selectedType != nil {
-//            chooseLeaveButton.setTitle(selectedType, for: .normal)
             self.leaveLabel.text = selectedType
         }
     }
@@ -39,6 +42,14 @@ class RequestLeaveViewController: UIViewController {
             initController.delegate = self
             present(initController, animated: true, completion: nil)
         }
+    }
+    
+    func uploadButtonTapped(){
+        if let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "CameraViewController") as? CameraViewController{
+            navigationController?.pushViewController(initController, animated: true)
+            
+        }
+
     }
    
 
