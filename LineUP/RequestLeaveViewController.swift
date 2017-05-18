@@ -21,7 +21,11 @@ class RequestLeaveViewController: UIViewController {
    
     
     
-    @IBOutlet weak var requestButton: UIButton!
+    @IBOutlet weak var requestButton: UIButton!{
+        didSet {
+            requestButton.addTarget(self, action: #selector(requestButtonTapped), for: .touchUpInside)
+        }
+    }
     @IBOutlet weak var uploadButton: UIButton!{
         didSet{
             uploadButton.addTarget(self, action: #selector(uploadButtonTapped), for: .touchUpInside)
@@ -49,8 +53,9 @@ class RequestLeaveViewController: UIViewController {
         return formatter
     }()
     var dates = [Date]()
-    
+    var currentUser : User!
     var selectedType : String?
+    var selectedTypeIndex : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -94,12 +99,56 @@ class RequestLeaveViewController: UIViewController {
         }
 
     }
-   
-
+    
+    func requestButtonTapped(){
+        
+        guard let validToken = UserDefaults.standard.string(forKey: "AUTH_Token") else { return }
+        
+        let url = URL(string: "http://192.168.1.48:9292/api/v1/leaves")
+        var urlRequest = URLRequest(url: url!)
+        let numberOfDays = dates.count
+        
+        
+        urlRequest.httpMethod = "POST"
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-type")
+        
+        let params : [String:Any] = [
+            "start_date": "\(self.dates.first)",
+            "end_date": "\(self.dates.last)",
+            "total_days" : numberOfDays,
+            "private_token" : validToken,
+            "leave_type": selectedTypeIndex
+        ]
+        
+        var data: Data?
+        do{
+            data = try JSONSerialization.data(withJSONObject: params, options: .prettyPrinted)
+        }catch let error as NSError{
+            print(error.localizedDescription)
+            
+        }
+        urlRequest.httpBody = data
+        let urlSession = URLSession(configuration: URLSessionConfiguration.default)
+        
+        let dataTask = urlSession.dataTask(with: urlRequest) { (data, response, error) in
+            if let validError = error{
+                print(validError.localizedDescription)
+            }
+            
+            if let httpResponse = response as? HTTPURLResponse{
+                
+                
+            }
+        }
+        dataTask.resume()
+    }
 }
 
 extension RequestLeaveViewController : LeaveTypeDelegate {
-    func passLeaveType(_ selectedLeave: String) {
+    
+    func passLeaveType(_ selectedLeave: String, selectedLeaveIndex: Int) {
         self.selectedType = selectedLeave
+        self.selectedTypeIndex = selectedLeaveIndex
+        
     }
 }
