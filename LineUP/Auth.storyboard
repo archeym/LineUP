@@ -60,7 +60,7 @@
                                     <constraint firstAttribute="height" constant="294" id="KL6-Ea-VYx"/>
                                 </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="a@a.com" borderStyle="roundedRect" placeholder="Email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9c2-eq-tIt">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9c2-eq-tIt">
                                 <rect key="frame" x="13" y="346" width="349" height="35"/>
                                 <color key="backgroundColor" red="0.96142077445983887" green="0.87238998441554594" blue="0.8757903912037015" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
