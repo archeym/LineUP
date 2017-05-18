@@ -29,6 +29,8 @@
 		CE1927971ECBFE490091525B /* VNCameraScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927951ECBFE490091525B /* VNCameraScanner.swift */; };
 		CE1927981ECBFE490091525B /* VNCameraScanner.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE1927961ECBFE490091525B /* VNCameraScanner.xib */; };
 		CE19279A1ECC3FD30091525B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927991ECC3FD30091525B /* User.swift */; };
+		CE22C1E51ECDCCF800866DF9 /* RequestedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22C1E31ECDCCF800866DF9 /* RequestedTableViewCell.swift */; };
+		CE22C1E61ECDCCF800866DF9 /* RequestedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE22C1E41ECDCCF800866DF9 /* RequestedTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +58,8 @@
 		CE1927951ECBFE490091525B /* VNCameraScanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VNCameraScanner.swift; sourceTree = "<group>"; };
 		CE1927961ECBFE490091525B /* VNCameraScanner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VNCameraScanner.xib; sourceTree = "<group>"; };
 		CE1927991ECC3FD30091525B /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		CE22C1E31ECDCCF800866DF9 /* RequestedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestedTableViewCell.swift; sourceTree = "<group>"; };
+		CE22C1E41ECDCCF800866DF9 /* RequestedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestedTableViewCell.xib; sourceTree = "<group>"; };
 		D9038DCC496ED29D2DA3FC01 /* Pods-LineUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC962995CB2245E97FF1C30 /* Pods-LineUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +100,8 @@
 				210403E31ECAB486002F3D46 /* AppDelegate.swift */,
 				210403E51ECAB486002F3D46 /* FirstViewController.swift */,
 				211829461ECC620E0025589F /* AllRequestsViewController.swift */,
+				CE22C1E31ECDCCF800866DF9 /* RequestedTableViewCell.swift */,
+				CE22C1E41ECDCCF800866DF9 /* RequestedTableViewCell.xib */,
 				CE1927991ECC3FD30091525B /* User.swift */,
 				210403E71ECAB486002F3D46 /* SecondViewController.swift */,
 				211829451ECC3D580025589F /* Calendar */,
@@ -225,6 +231,7 @@
 			files = (
 				CE1927981ECBFE490091525B /* VNCameraScanner.xib in Resources */,
 				210403F81ECAB4E7002F3D46 /* Auth.storyboard in Resources */,
+				CE22C1E61ECDCCF800866DF9 /* RequestedTableViewCell.xib in Resources */,
 				210403F01ECAB486002F3D46 /* LaunchScreen.storyboard in Resources */,
 				210403ED1ECAB486002F3D46 /* Assets.xcassets in Resources */,
 				210403EB1ECAB486002F3D46 /* Main.storyboard in Resources */,
@@ -291,6 +298,7 @@
 				210403FB1ECAB576002F3D46 /* LoginViewController.swift in Sources */,
 				CE1927881ECB10D50091525B /* TypesOfLeavesViewController.swift in Sources */,
 				210403E81ECAB486002F3D46 /* SecondViewController.swift in Sources */,
+				CE22C1E51ECDCCF800866DF9 /* RequestedTableViewCell.swift in Sources */,
 				211829491ECD3D6A0025589F /* ContactTableTableViewController.swift in Sources */,
 				2118294E1ECD7DA80025589F /* CompanyPolicyViewController.swift in Sources */,
 				210403E41ECAB486002F3D46 /* AppDelegate.swift in Sources */,
