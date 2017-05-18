@@ -20,6 +20,8 @@
 		211829441ECBEACB0025589F /* CustomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829421ECBEACB0025589F /* CustomeCell.swift */; };
 		211829471ECC620E0025589F /* AllRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829461ECC620E0025589F /* AllRequestsViewController.swift */; };
 		211829491ECD3D6A0025589F /* ContactTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829481ECD3D6A0025589F /* ContactTableTableViewController.swift */; };
+		2118294C1ECD7D890025589F /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118294B1ECD7D890025589F /* AboutUsViewController.swift */; };
+		2118294E1ECD7DA80025589F /* CompanyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118294D1ECD7DA80025589F /* CompanyPolicyViewController.swift */; };
 		780458B982D73950041F5CEE /* Pods_LineUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */; };
 		CE1927861ECB0FFA0091525B /* RequestLeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */; };
 		CE1927881ECB10D50091525B /* TypesOfLeavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */; };
@@ -45,6 +47,8 @@
 		211829421ECBEACB0025589F /* CustomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeCell.swift; sourceTree = "<group>"; };
 		211829461ECC620E0025589F /* AllRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRequestsViewController.swift; sourceTree = "<group>"; };
 		211829481ECD3D6A0025589F /* ContactTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableTableViewController.swift; sourceTree = "<group>"; };
+		2118294B1ECD7D890025589F /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
+		2118294D1ECD7DA80025589F /* CompanyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyPolicyViewController.swift; sourceTree = "<group>"; };
 		BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLeaveViewController.swift; sourceTree = "<group>"; };
 		CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesOfLeavesViewController.swift; sourceTree = "<group>"; };
@@ -92,10 +96,10 @@
 				210403E31ECAB486002F3D46 /* AppDelegate.swift */,
 				210403E51ECAB486002F3D46 /* FirstViewController.swift */,
 				211829461ECC620E0025589F /* AllRequestsViewController.swift */,
-				211829481ECD3D6A0025589F /* ContactTableTableViewController.swift */,
 				CE1927991ECC3FD30091525B /* User.swift */,
 				210403E71ECAB486002F3D46 /* SecondViewController.swift */,
 				211829451ECC3D580025589F /* Calendar */,
+				2118294A1ECD7CCD0025589F /* Contact */,
 				210403E91ECAB486002F3D46 /* Main.storyboard */,
 				CE1927961ECBFE490091525B /* VNCameraScanner.xib */,
 				210403F91ECAB4F7002F3D46 /* Auth */,
@@ -127,6 +131,16 @@
 				211829421ECBEACB0025589F /* CustomeCell.swift */,
 			);
 			name = Calendar;
+			sourceTree = "<group>";
+		};
+		2118294A1ECD7CCD0025589F /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				211829481ECD3D6A0025589F /* ContactTableTableViewController.swift */,
+				2118294B1ECD7D890025589F /* AboutUsViewController.swift */,
+				2118294D1ECD7DA80025589F /* CompanyPolicyViewController.swift */,
+			);
+			name = Contact;
 			sourceTree = "<group>";
 		};
 		9C55CAF391242A3E9A62FA48 /* Pods */ = {
@@ -278,10 +292,12 @@
 				CE1927881ECB10D50091525B /* TypesOfLeavesViewController.swift in Sources */,
 				210403E81ECAB486002F3D46 /* SecondViewController.swift in Sources */,
 				211829491ECD3D6A0025589F /* ContactTableTableViewController.swift in Sources */,
+				2118294E1ECD7DA80025589F /* CompanyPolicyViewController.swift in Sources */,
 				210403E41ECAB486002F3D46 /* AppDelegate.swift in Sources */,
 				211829471ECC620E0025589F /* AllRequestsViewController.swift in Sources */,
 				210403E61ECAB486002F3D46 /* FirstViewController.swift in Sources */,
 				CE1927861ECB0FFA0091525B /* RequestLeaveViewController.swift in Sources */,
+				2118294C1ECD7D890025589F /* AboutUsViewController.swift in Sources */,
 				CE19279A1ECC3FD30091525B /* User.swift in Sources */,
 				210403FD1ECADA15002F3D46 /* InfoViewController.swift in Sources */,
 				211829441ECBEACB0025589F /* CustomeCell.swift in Sources */,

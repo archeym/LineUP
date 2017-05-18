@@ -164,12 +164,20 @@ Features: 100% free and paperless app
                                 <attributedString key="attributedText">
                                     <fragment content="LineUP">
                                         <attributes>
-                                            <font key="NSFont" size="24" name="Avenir-HeavyOblique"/>
+                                            <font key="NSFont" size="24" name="AvenirNextCondensed-BoldItalic"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.9256441593170166" green="0.96500706672668457" blue="0.94118189811706543" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>

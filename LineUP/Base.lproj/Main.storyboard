@@ -697,7 +697,7 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="gmc-XH-KBh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" red="0.92666554450000005" green="0.96883404250000005" blue="0.94189441200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <sections>
                             <tableViewSection headerTitle="Contact Manager" id="dPa-Rj-El7">
                                 <cells>
@@ -817,6 +817,9 @@
                                                     <state key="normal">
                                                         <attributedString key="attributedTitle"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="companyPolicy:" destination="WwV-Vr-XXN" eventType="touchUpInside" id="aTn-oL-WYS"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Company Policy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OMb-Gg-H26">
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
@@ -837,30 +840,151 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Contact" id="pOD-7t-9zX"/>
-                    <connections>
-                        <outletCollection property="companyPolicyTapped" destination="OMb-Gg-H26" collectionClass="NSMutableArray" id="0Gr-pA-8bE"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bH8-ca-W7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632.8" y="214.54272863568218"/>
+            <point key="canvasLocation" x="1944.8" y="343.17841079460271"/>
         </scene>
-        <!--Contact-->
-        <scene sceneID="HVJ-QL-ExX">
+        <!--Company Policy View Controller-->
+        <scene sceneID="RL4-gv-3Mz">
             <objects>
-                <navigationController id="MTj-cn-OQF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Contact" image="mail" selectedImage="mail" id="CHP-P3-n4u"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zqA-jm-gl1">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
+                <viewController storyboardIdentifier="CompanyPolicyViewController" id="5Wq-TP-GRr" customClass="CompanyPolicyViewController" customModule="LineUP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K01-TC-REl"/>
+                        <viewControllerLayoutGuide type="bottom" id="98D-jy-2D9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HfG-rP-Tvk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="900"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gp9-M9-e7K">
+                                <rect key="frame" x="16" y="84" width="343" height="816"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5LC-Su-Apb">
+                                        <rect key="frame" x="0.0" y="1" width="343" height="816"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eMb-EZ-tEb">
+                                                <rect key="frame" x="0.0" y="-1" width="343" height="816"/>
+                                                <color key="backgroundColor" red="0.96142077449999996" green="0.87238998440000004" blue="0.87579039120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <mutableString key="text">The main use of our applications are time &amp; request management. Our customers use our solutions in various ways. Technologically, you can choose either a client-server setup or the SaaS-solution.
+
+The main use of our applications are time &amp; attendance and workforce management. Our customers use our solutions in various ways. Technologically, you can choose either a client-server setup or the SaaS-solution (Software-as-a-service).
+
+Our Vision
+Time has become increasingly important in our society. Because of this, organisations have to adapt to the increasing speed of several external changes. Technology makes it possible to organize things in different ways. People and organisations will need the means to organise time in the most efficient, effective and flexible ways. In a service-driven economy, this means that organisations will be looking for different ways to optimize the available time of their human capital.
+
+Our mission
+Protime provides solutions to help optimize the available time.
+So that our customers can manage the time of their human capital.
+So that our employees can spend their time in an exciting and challenging environment with respect for their private lives.
+So that our shareholders receive a return for their time and invest in a sustainable growth.
+So that our children will get the time and attention to develop themselves for a bright future Make time valuable with Protime.
+Our Values
+Protime also believes in a number of core values that we wish to embody. These are ´Customer Focus´, ´Reliability´, ´Innovation´, ´Ambition´ and ´Professionalism´. Each of these are values which were carefully selected by the Protimers themselves. Therefore they aren´t just empty concepts. Each of the core values are assessed in coaching sessions and performance reviews which customers can measure our performance against.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="eMb-EZ-tEb" secondAttribute="trailing" id="6Te-g0-8mE"/>
+                                            <constraint firstItem="eMb-EZ-tEb" firstAttribute="leading" secondItem="5LC-Su-Apb" secondAttribute="leading" id="Peh-NT-t9P"/>
+                                            <constraint firstItem="eMb-EZ-tEb" firstAttribute="top" secondItem="5LC-Su-Apb" secondAttribute="top" constant="-1" id="XL2-Xr-wf8"/>
+                                            <constraint firstAttribute="bottom" secondItem="eMb-EZ-tEb" secondAttribute="bottom" constant="1" id="tRf-la-MaZ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="5LC-Su-Apb" firstAttribute="centerX" secondItem="gp9-M9-e7K" secondAttribute="centerX" id="NoB-L1-ejv"/>
+                                    <constraint firstAttribute="trailing" secondItem="5LC-Su-Apb" secondAttribute="trailing" id="YF7-Nl-xOI"/>
+                                    <constraint firstItem="5LC-Su-Apb" firstAttribute="leading" secondItem="gp9-M9-e7K" secondAttribute="leading" id="dwm-wk-PJF"/>
+                                    <constraint firstItem="5LC-Su-Apb" firstAttribute="centerY" secondItem="gp9-M9-e7K" secondAttribute="centerY" constant="1" id="fQx-1n-BM3"/>
+                                    <constraint firstItem="5LC-Su-Apb" firstAttribute="top" secondItem="gp9-M9-e7K" secondAttribute="top" constant="1" id="fZY-EG-7M3"/>
+                                    <constraint firstAttribute="bottom" secondItem="5LC-Su-Apb" secondAttribute="bottom" constant="-1" id="vN9-4W-qTX"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thP-hm-0Gi">
+                                <rect key="frame" x="16" y="28" width="40" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="backToContact:" destination="5Wq-TP-GRr" eventType="touchUpInside" id="4uj-01-4MV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtL-3F-Sah">
+                                <rect key="frame" x="99" y="28" width="177" height="37"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="LineUP">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="AvenirNextCondensed-BoldItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth ">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92666554450000005" green="0.96883404250000005" blue="0.94189441200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="gp9-M9-e7K" firstAttribute="leading" secondItem="HfG-rP-Tvk" secondAttribute="leadingMargin" id="0eI-Ol-p2Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vtL-3F-Sah" secondAttribute="trailing" constant="83" id="JjC-KB-dNr"/>
+                            <constraint firstItem="vtL-3F-Sah" firstAttribute="centerX" secondItem="gp9-M9-e7K" secondAttribute="centerX" id="TNq-iK-rMm"/>
+                            <constraint firstItem="thP-hm-0Gi" firstAttribute="leading" secondItem="gp9-M9-e7K" secondAttribute="leading" id="XLw-GX-XDR"/>
+                            <constraint firstItem="gp9-M9-e7K" firstAttribute="top" secondItem="vtL-3F-Sah" secondAttribute="bottom" constant="19" id="YIt-Rh-6hh"/>
+                            <constraint firstItem="vtL-3F-Sah" firstAttribute="leading" secondItem="thP-hm-0Gi" secondAttribute="trailing" constant="43" id="ayk-OX-PMb"/>
+                            <constraint firstItem="vtL-3F-Sah" firstAttribute="top" secondItem="K01-TC-REl" secondAttribute="bottom" constant="8" symbolic="YES" id="bpT-t6-Jjg"/>
+                            <constraint firstItem="98D-jy-2D9" firstAttribute="top" secondItem="gp9-M9-e7K" secondAttribute="bottom" id="gq6-EF-v7a"/>
+                            <constraint firstItem="gp9-M9-e7K" firstAttribute="trailing" secondItem="HfG-rP-Tvk" secondAttribute="trailingMargin" id="krx-dL-Z57"/>
+                            <constraint firstItem="gp9-M9-e7K" firstAttribute="top" secondItem="thP-hm-0Gi" secondAttribute="bottom" constant="16" id="mS7-az-IO5"/>
+                            <constraint firstItem="thP-hm-0Gi" firstAttribute="top" secondItem="vtL-3F-Sah" secondAttribute="top" id="qz4-Lc-OTh"/>
+                            <constraint firstItem="gp9-M9-e7K" firstAttribute="top" secondItem="K01-TC-REl" secondAttribute="bottom" constant="64" id="sVs-hD-cY2"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="900"/>
                     <connections>
-                        <segue destination="WwV-Vr-XXN" kind="relationship" relationship="rootViewController" id="LAb-J2-Tld"/>
+                        <outlet property="companyTextView" destination="eMb-EZ-tEb" id="xU9-dZ-mfJ"/>
+                        <outlet property="lineUpLabel" destination="vtL-3F-Sah" id="FBb-Jc-1gV"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sW8-Ur-zfG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Mr-gJ-Gak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="879" y="215"/>
+            <point key="canvasLocation" x="3380" y="572"/>
+        </scene>
+        <!--About Us View Controller-->
+        <scene sceneID="tRQ-Cp-7Mx">
+            <objects>
+                <viewController storyboardIdentifier="AboutUsViewController" id="Djn-EN-827" customClass="AboutUsViewController" customModule="LineUP" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ZZ-9W-I1c"/>
+                        <viewControllerLayoutGuide type="bottom" id="MLD-EL-qal"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Z2k-mV-5lY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.92666554450000005" green="0.96883404250000005" blue="0.94189441200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="plW-l5-zb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3380" y="-233.43328335832086"/>
         </scene>
         <!--Requests-->
         <scene sceneID="HXx-cF-PuY">
@@ -933,7 +1057,7 @@
                         <segue destination="sb9-Sg-3aj" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="qJN-FV-cPJ" kind="relationship" relationship="viewControllers" id="iNa-Lc-05b"/>
                         <segue destination="do6-rd-hR7" kind="relationship" relationship="viewControllers" id="PY2-yg-39t"/>
-                        <segue destination="MTj-cn-OQF" kind="relationship" relationship="viewControllers" id="Q7w-yJ-LDE"/>
+                        <segue destination="7Ff-C2-qK9" kind="relationship" relationship="viewControllers" id="J7A-v5-bFq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -1249,7 +1373,7 @@
         <scene sceneID="cF9-aD-KF5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="do6-rd-hR7" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Calendar" image="cal" selectedImage="cal" id="tle-HJ-dyA"/>
+                    <tabBarItem key="tabBarItem" title="Calendar" image="caldate" selectedImage="caldate" id="tle-HJ-dyA"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="e3R-ka-0db">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1425,9 +1549,28 @@
             </objects>
             <point key="canvasLocation" x="444" y="-691.304347826087"/>
         </scene>
+        <!--Contact-->
+        <scene sceneID="czI-Yb-f5V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Ff-C2-qK9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Contact" image="mail" selectedImage="mail" id="7Wi-Gq-dJf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xpm-mF-RQV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WwV-Vr-XXN" kind="relationship" relationship="rootViewController" id="ejf-xO-fdR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nrs-dU-7wV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1005.6" y="343.17841079460271"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="cal" width="24" height="24"/>
+        <image name="caldate" width="24" height="24"/>
         <image name="capture_button" width="66" height="66"/>
         <image name="doc" width="24" height="24"/>
         <image name="focusIndicator" width="75" height="75"/>
