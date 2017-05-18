@@ -31,9 +31,9 @@ class User{
         supervisor = dict["supervisor"] as? String ?? ""
         phoneNumber = dict["phoneNumber"] as? String ?? ""
         address = dict["dict"] as? String ?? ""
-        maternityLeave = dict[""] as! Int
-        paternityLeave = dict[""] as! Int
-        emergencyLeave = dict[""] as! Int
-        studyLeave = dict[""] as! Int
+//        maternityLeave = dict[""] as! Int
+//        paternityLeave = dict[""] as! Int
+//        emergencyLeave = dict[""] as! Int
+//        studyLeave = dict[""] as! Int
     }
 }

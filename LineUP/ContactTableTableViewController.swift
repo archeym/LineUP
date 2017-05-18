@@ -9,7 +9,13 @@
 import UIKit
 
 class ContactTableTableViewController: UITableViewController {
+    @IBAction func aboutUsTapped(_ sender: Any) {
+    }
 
+    @IBOutlet var companyPolicyTapped: [UILabel]!
+   
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

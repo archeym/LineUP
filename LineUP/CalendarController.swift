@@ -167,7 +167,7 @@ extension CalendarController: JTAppleCalendarViewDelegate{
     selectedDates = calendarView.selectedDates
     
     if firstDate == nil {
-      self.toDateLabel.text = "From \(displayDateFormatter.string(from: selectedDates.first!)) _ To \(displayDateFormatter.string(from: selectedDates.last!))"
+      self.toDateLabel.text = "\(displayDateFormatter.string(from: selectedDates.first!)) - \(displayDateFormatter.string(from: selectedDates.last!))"
     } else {
       self.toDateLabel.text = "\(displayDateFormatter.string(from: selectedDates.first!))"
     }
