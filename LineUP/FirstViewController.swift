@@ -25,7 +25,7 @@ class FirstViewController: UIViewController {
     
     
     var name : String?
-    var selectedUser = [User]()
+    var currentUser : User!
     var userId : Int = 0
     
     @IBAction func logoutBarButton(_ sender: Any) {
@@ -41,8 +41,12 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupAPI()
         
         
+    }
+
+    func setupAPI(){
         guard let validToken = UserDefaults.standard.string(forKey: "AUTH_Token") else { return }
         
         let url = URL(string: "http://192.168.1.48:9292/api/v1/users/\(userId)?private_token=\(validToken)")
@@ -66,11 +70,11 @@ class FirstViewController: UIViewController {
                     do {
                         let jsonResponse = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
                         
-                        guard let validJSON = jsonResponse as? [[String:Any]] else { return }
+                        guard let validJSON = jsonResponse as? [String:Any] else { return }
                         
-                        print(validJSON)
-                        
-                        
+                        let dictionary = validJSON
+                        self.currentUser = User(dict: dictionary)
+                        self.setupProfile()
                     } catch let jsonError as NSError {
                         print(jsonError)
                     }
@@ -79,7 +83,23 @@ class FirstViewController: UIViewController {
         }
         dataTask.resume()
     }
-
+    
+    func setupProfile(){
+        self.nameLabel.text = self.currentUser.name
+        self.emailLabel.text = self.currentUser.email
+        self.annualLeaveLabel.text = String(self.currentUser.annualLeaves)
+        self.departmentLabel.text = self.currentUser.department
+        self.addressLabel.text = self.currentUser.address
+        self.supervisorLabel.text = self.currentUser.supervisor
+        self.phoneLabel.text = self.currentUser.phoneNumber
+        self.positionLabel.text = self.currentUser.position
+        self.maternityLeaveLabel.text = String(self.currentUser.maternityLeave)
+        self.paternityLeaveLabel.text = String(self.currentUser.paternityLeave)
+        self.emergencyLeaveLabel.text = String(self.currentUser.emergencyLeave)
+        self.studyLeaveLabel.text = String(self.currentUser.studyLeave)
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
