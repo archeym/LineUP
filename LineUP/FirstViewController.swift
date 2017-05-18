@@ -93,6 +93,10 @@ class FirstViewController: UIViewController {
         self.supervisorLabel.text = self.currentUser.supervisor
         self.phoneLabel.text = self.currentUser.phoneNumber
         self.positionLabel.text = self.currentUser.position
+        self.maternityLeaveLabel.text = String(self.currentUser.maternityLeave)
+        self.paternityLeaveLabel.text = String(self.currentUser.paternityLeave)
+        self.emergencyLeaveLabel.text = String(self.currentUser.emergencyLeave)
+        self.studyLeaveLabel.text = String(self.currentUser.studyLeave)
         
     }
     
