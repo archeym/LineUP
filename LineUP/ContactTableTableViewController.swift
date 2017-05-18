@@ -11,11 +11,12 @@ import UIKit
 class ContactTableTableViewController: UITableViewController {
     @IBAction func aboutUsTapped(_ sender: Any) {
     }
+    @IBAction func companyPolicy(_ sender: Any) {
+        let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "CompanyPolicyViewController")
+        present(initController, animated: true, completion: nil)
+    }
 
-    @IBOutlet var companyPolicyTapped: [UILabel]!
    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,22 +27,17 @@ class ContactTableTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return 0
+//    }
+//
+//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        // #warning Incomplete implementation, return the number of rows
+//        return 0
+//    }
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
