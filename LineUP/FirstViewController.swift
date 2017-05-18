@@ -45,7 +45,7 @@ class FirstViewController: UIViewController {
         
         guard let validToken = UserDefaults.standard.string(forKey: "AUTH_Token") else { return }
         
-        let url = URL(string: "http://192.168.1.147:9292/api/v1/users/\(userId)?private_token=\(validToken)")
+        let url = URL(string: "http://192.168.1.48:9292/api/v1/users/\(userId)?private_token=\(validToken)")
         var urlRequest = URLRequest(url: url!)
         
         urlRequest.httpMethod = "GET"

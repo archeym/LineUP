@@ -49,7 +49,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //        let username = emailTextField.text!
 //        let password = passwordTextField.text!
         
-        let url = URL(string: "http://192.168.1.147:9292/api/v1/sessions")
+        let url = URL(string: "http://192.168.1.48:9292/api/v1/sessions")
         var urlRequest = URLRequest(url: url!)
         
         urlRequest.httpMethod = "POST"
