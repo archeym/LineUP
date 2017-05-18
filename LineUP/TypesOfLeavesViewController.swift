@@ -8,7 +8,7 @@
 
 import UIKit
 protocol LeaveTypeDelegate {
-    func passLeaveType (_ selectedLeave: String)
+    func passLeaveType (_ selectedLeave: String, selectedLeaveIndex : Int)
 }
 
 class TypesOfLeavesViewController: UIViewController {
@@ -19,9 +19,10 @@ class TypesOfLeavesViewController: UIViewController {
         }
     }
     
-    var typesOfLeaves = ["Sick Leave", "Annual Leave", "Maternity Leave", "Paternity Leave", "Emergency Leave", "Study Leave"]
+    var typesOfLeaves = ["Annual", "Maternity", "Paternity", "Study", "Sick"]
     var delegate : LeaveTypeDelegate? = nil
     var selectedLeave : String?
+    var selectedLeaveIndex : Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,7 +48,8 @@ extension TypesOfLeavesViewController: UITableViewDelegate, UITableViewDataSourc
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedLeave = typesOfLeaves[indexPath.row]
-        delegate?.passLeaveType(selectedLeave!)
+        selectedLeaveIndex = indexPath.row
+        delegate?.passLeaveType(selectedLeave!, selectedLeaveIndex: selectedLeaveIndex)
         dismiss(animated: true, completion: nil)
     }
     
