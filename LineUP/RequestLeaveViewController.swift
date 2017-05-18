@@ -19,6 +19,7 @@ class RequestLeaveViewController: UIViewController {
     @IBOutlet weak var datesLabel: UILabel!
     @IBOutlet weak var datesFromCalendar: UILabel!
    
+    var user : User!
     
     
     @IBOutlet weak var requestButton: UIButton!{
@@ -59,6 +60,7 @@ class RequestLeaveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //self.name.text = user.name
         self.numberOfDaysLabel.text = "\(dates.count)"
         self.datesFromCalendar.text = "\(displayDateFormatter.string(from: dates.first!)) - \(displayDateFormatter.string(from: dates.last!))"
         name.layer.cornerRadius = 5
@@ -100,6 +102,11 @@ class RequestLeaveViewController: UIViewController {
 
     }
     
+    func goToAllRequests(){
+        navigationController?.popViewController(animated: true)
+    }
+    
+    
     func requestButtonTapped(){
         
         guard let validToken = UserDefaults.standard.string(forKey: "AUTH_Token") else { return }
@@ -140,15 +147,31 @@ class RequestLeaveViewController: UIViewController {
                 
             }
         }
+        requestSent()
         dataTask.resume()
+        
+        
+        
     }
-}
+}//end
 
 extension RequestLeaveViewController : LeaveTypeDelegate {
     
     func passLeaveType(_ selectedLeave: String, selectedLeaveIndex: Int) {
         self.selectedType = selectedLeave
         self.selectedTypeIndex = selectedLeaveIndex
-        
     }
+    
+    func requestSent(){
+        // the alert view
+        let alert = UIAlertController(title: "Reaquest Sent", message: "Go to Request List", preferredStyle: .alert)
+        self.present(alert, animated: true, completion: nil)
+        
+        // change to desired number of seconds, code with delay
+        let when = DispatchTime.now() + 1.5
+        DispatchQueue.main.asyncAfter(deadline: when){
+            alert.dismiss(animated: true, completion: nil)
+            self.goToAllRequests()
+        }
+}
 }

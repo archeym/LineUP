@@ -390,13 +390,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No. of days:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCM-n3-Bc9">
-                                <rect key="frame" x="16" y="258" width="115" height="35"/>
+                                <rect key="frame" x="16" y="258" width="95" height="35"/>
                                 <color key="backgroundColor" red="0.9266655445098877" green="0.9688340425491333" blue="0.94189441204071045" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="115" id="Edp-2z-ZzW"/>
+                                    <constraint firstAttribute="width" constant="95" id="Edp-2z-ZzW"/>
                                     <constraint firstAttribute="height" constant="35" id="GN1-9Y-p9K"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-BoldItalic" family="Avenir Next Condensed" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -410,7 +410,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="120-EY-YVY">
                                 <rect key="frame" x="16" y="469" width="343" height="35"/>
-                                <color key="backgroundColor" red="0.96318030359999995" green="0.75624859330000005" blue="0.5053288937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.86136387419824156" green="0.75272086471581534" blue="0.25699817218052834" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="cGW-Ic-dbl"/>
                                 </constraints>
@@ -426,7 +426,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ism-Ci-tTi">
                                 <rect key="frame" x="16" y="538" width="343" height="34"/>
-                                <color key="backgroundColor" red="0.92570197582244873" green="0.35478925704956055" blue="0.32828554511070251" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.91989928483963013" green="0.26934006810188293" blue="0.53444445133209229" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Request">
                                     <color key="titleColor" red="0.97387692140000004" green="0.98912915530000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -438,7 +438,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZyT-yn-lJ6">
-                                <rect key="frame" x="153" y="258" width="206" height="35"/>
+                                <rect key="frame" x="128" y="258" width="231" height="35"/>
                                 <color key="backgroundColor" red="0.9266655445098877" green="0.9688340425491333" blue="0.94189441204071045" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -450,12 +450,12 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Leave:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhv-a8-0o2">
-                                <rect key="frame" x="16" y="308" width="95" height="35"/>
+                                <rect key="frame" x="16" y="308" width="91.5" height="35"/>
                                 <color key="backgroundColor" red="0.9266655445098877" green="0.9688340425491333" blue="0.94189441204071045" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Hts-5T-Vtd"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNextCondensed-BoldItalic" family="Avenir Next Condensed" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -466,7 +466,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETe-yJ-5Wc">
                                 <rect key="frame" x="16" y="431" width="343" height="35"/>
-                                <color key="backgroundColor" red="0.96318030359999995" green="0.75624859330000005" blue="0.5053288937" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.86136387419824156" green="0.75272086471581534" blue="0.25699817218052834" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="c57-ZB-Uhn"/>
                                 </constraints>
@@ -481,7 +481,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDq-rn-ppB">
-                                <rect key="frame" x="144" y="308" width="215" height="35"/>
+                                <rect key="frame" x="128" y="308" width="231" height="35"/>
                                 <color key="backgroundColor" red="0.53498828409999999" green="0.78154802320000005" blue="0.68238604069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Choose Leave Category">
@@ -497,7 +497,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sf1-9X-8k8">
-                                <rect key="frame" x="153" y="210" width="206" height="35"/>
+                                <rect key="frame" x="128" y="210" width="231" height="35"/>
                                 <color key="backgroundColor" red="0.9266655445098877" green="0.9688340425491333" blue="0.94189441204071045" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -509,16 +509,16 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pKv-Yj-juJ">
-                                <rect key="frame" x="16" y="210" width="73" height="35"/>
+                                <rect key="frame" x="16" y="210" width="95" height="35"/>
                                 <color key="backgroundColor" red="0.9266655445098877" green="0.9688340425491333" blue="0.94189441204071045" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="ar0-qp-rwU"/>
-                                    <constraint firstAttribute="width" constant="73" id="pBF-TM-s7P"/>
+                                    <constraint firstAttribute="width" constant="95" id="pBF-TM-s7P"/>
                                 </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Name:">
                                         <attributes>
-                                            <font key="NSFont" size="17" name="AvenirNextCondensed-BoldItalic"/>
+                                            <font key="NSFont" size="18" name="AvenirNextCondensed-Medium"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -541,14 +541,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92666554450000005" green="0.96883404250000005" blue="0.94189441200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Dates">
+                                    <fragment content="Dates:">
                                         <attributes>
-                                            <font key="NSFont" size="17" name="AvenirNextCondensed-BoldItalic"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=":">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <font key="NSFont" size="18" name="AvenirNextCondensed-Medium"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -560,7 +555,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vm-sI-z41">
-                                <rect key="frame" x="144" y="358" width="215" height="35"/>
+                                <rect key="frame" x="128" y="358" width="232" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92666554450000005" green="0.96883404250000005" blue="0.94189441200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -580,7 +575,7 @@
                             <constraint firstItem="xhv-a8-0o2" firstAttribute="top" secondItem="uDq-rn-ppB" secondAttribute="top" id="39B-bl-YMY"/>
                             <constraint firstItem="Ism-Ci-tTi" firstAttribute="top" secondItem="120-EY-YVY" secondAttribute="bottom" constant="34" id="7OH-Yz-l6a"/>
                             <constraint firstItem="wCM-n3-Bc9" firstAttribute="top" secondItem="ZyT-yn-lJ6" secondAttribute="top" id="An0-94-hpj"/>
-                            <constraint firstItem="uDq-rn-ppB" firstAttribute="leading" secondItem="xhv-a8-0o2" secondAttribute="trailing" constant="33" id="C3b-xO-H4u"/>
+                            <constraint firstItem="uDq-rn-ppB" firstAttribute="leading" secondItem="xhv-a8-0o2" secondAttribute="trailing" constant="20.5" id="C3b-xO-H4u"/>
                             <constraint firstItem="120-EY-YVY" firstAttribute="top" secondItem="ETe-yJ-5Wc" secondAttribute="bottom" constant="3" id="FRT-mY-WmX"/>
                             <constraint firstItem="pKv-Yj-juJ" firstAttribute="top" secondItem="Wr3-zm-SCk" secondAttribute="bottom" constant="146" id="H43-TQ-wdq"/>
                             <constraint firstItem="xhv-a8-0o2" firstAttribute="leading" secondItem="ETe-yJ-5Wc" secondAttribute="leading" id="HVU-Ly-eMv"/>
@@ -596,10 +591,10 @@
                             <constraint firstItem="LXc-5c-m8I" firstAttribute="centerX" secondItem="ETe-yJ-5Wc" secondAttribute="centerX" id="WQC-Md-iPK"/>
                             <constraint firstItem="pKv-Yj-juJ" firstAttribute="bottom" secondItem="sf1-9X-8k8" secondAttribute="bottom" id="b2k-BJ-ZzC"/>
                             <constraint firstItem="sf1-9X-8k8" firstAttribute="trailing" secondItem="cgR-VM-Yne" secondAttribute="trailingMargin" id="bMG-U9-uCS"/>
-                            <constraint firstItem="sf1-9X-8k8" firstAttribute="leading" secondItem="pKv-Yj-juJ" secondAttribute="trailing" constant="64" id="dM7-aW-Zeb"/>
+                            <constraint firstItem="sf1-9X-8k8" firstAttribute="leading" secondItem="pKv-Yj-juJ" secondAttribute="trailing" constant="17" id="dM7-aW-Zeb"/>
                             <constraint firstItem="ETe-yJ-5Wc" firstAttribute="trailing" secondItem="120-EY-YVY" secondAttribute="trailing" id="djE-zl-Jjk"/>
                             <constraint firstItem="sf1-9X-8k8" firstAttribute="trailing" secondItem="ZyT-yn-lJ6" secondAttribute="trailing" id="erp-71-6R0"/>
-                            <constraint firstItem="ZyT-yn-lJ6" firstAttribute="leading" secondItem="wCM-n3-Bc9" secondAttribute="trailing" constant="22" id="frS-BF-l5v"/>
+                            <constraint firstItem="ZyT-yn-lJ6" firstAttribute="leading" secondItem="wCM-n3-Bc9" secondAttribute="trailing" constant="17" id="frS-BF-l5v"/>
                             <constraint firstItem="LXc-5c-m8I" firstAttribute="top" secondItem="Wr3-zm-SCk" secondAttribute="bottom" id="fv9-oT-aj0"/>
                             <constraint firstItem="LXc-5c-m8I" firstAttribute="centerX" relation="greaterThanOrEqual" secondItem="ETe-yJ-5Wc" secondAttribute="centerX" id="n1T-R4-qws"/>
                             <constraint firstItem="ETe-yJ-5Wc" firstAttribute="top" secondItem="xhv-a8-0o2" secondAttribute="bottom" constant="88" id="nVR-o2-Ett"/>
@@ -866,7 +861,7 @@
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eMb-EZ-tEb">
                                                 <rect key="frame" x="0.0" y="-1" width="343" height="816"/>
                                                 <color key="backgroundColor" red="0.96142077449999996" green="0.87238998440000004" blue="0.87579039120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <mutableString key="text">The main use of our applications are time &amp; request management. Our customers use our solutions in various ways. Technologically, you can choose either a client-server setup or the SaaS-solution.
+                                                <string key="text">The main use of our applications are time &amp; request management. Our customers use our solutions in various ways. Technologically, you can choose either a client-server setup or the SaaS-solution.
 
 The main use of our applications are time &amp; attendance and workforce management. Our customers use our solutions in various ways. Technologically, you can choose either a client-server setup or the SaaS-solution (Software-as-a-service).
 
@@ -880,7 +875,7 @@ So that our employees can spend their time in an exciting and challenging enviro
 So that our shareholders receive a return for their time and invest in a sustainable growth.
 So that our children will get the time and attention to develop themselves for a bright future Make time valuable with Protime.
 Our Values
-Protime also believes in a number of core values that we wish to embody. These are ´Customer Focus´, ´Reliability´, ´Innovation´, ´Ambition´ and ´Professionalism´. Each of these are values which were carefully selected by the Protimers themselves. Therefore they aren´t just empty concepts. Each of the core values are assessed in coaching sessions and performance reviews which customers can measure our performance against.</mutableString>
+Protime also believes in a number of core values that we wish to embody. These are ´Customer Focus´, ´Reliability´, ´Innovation´, ´Ambition´ and ´Professionalism´. Each of these are values which were carefully selected by the Protimers themselves. Therefore they aren´t just empty concepts. Each of the core values are assessed in coaching sessions and performance reviews which customers can measure our performance against.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -966,7 +961,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Mr-gJ-Gak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3380" y="572"/>
+            <point key="canvasLocation" x="2887" y="596"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="tRQ-Cp-7Mx">
@@ -984,7 +979,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plW-l5-zb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3380" y="-233.43328335832086"/>
+            <point key="canvasLocation" x="2886" y="-220"/>
         </scene>
         <!--Requests-->
         <scene sceneID="HXx-cF-PuY">
@@ -1130,35 +1125,35 @@ Protime also believes in a number of core values that we wish to embody. These a
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX3-Ph-eXd">
                                                 <rect key="frame" x="53.5" y="0.0" width="53.5" height="21"/>
-                                                <color key="backgroundColor" red="1" green="0.74680357080000004" blue="0.4632905403" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chm-Rq-kDS">
                                                 <rect key="frame" x="107" y="0.0" width="53.5" height="21"/>
-                                                <color key="backgroundColor" red="1" green="0.74680357080000004" blue="0.4632905403" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWX-Zs-eDf">
                                                 <rect key="frame" x="160.5" y="0.0" width="54" height="21"/>
-                                                <color key="backgroundColor" red="1" green="0.74680357080000004" blue="0.4632905403" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7Y-IE-xIW">
                                                 <rect key="frame" x="214.5" y="0.0" width="53.5" height="21"/>
-                                                <color key="backgroundColor" red="1" green="0.74680357080000004" blue="0.4632905403" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Meh-TW-Rxo">
                                                 <rect key="frame" x="268" y="0.0" width="53.5" height="21"/>
-                                                <color key="backgroundColor" red="1" green="0.74680357080000004" blue="0.4632905403" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
@@ -1279,7 +1274,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XAL-Qq-oht">
                                 <rect key="frame" x="247" y="362" width="112" height="36"/>
-                                <color key="backgroundColor" red="1" green="0.74680357080000004" blue="0.4632905403" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="112" id="NKZ-oU-P8R"/>
                                     <constraint firstAttribute="height" constant="36" id="cVr-dZ-rKO"/>
@@ -1320,7 +1315,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0x-sa-CtJ">
                                 <rect key="frame" x="16" y="456" width="343" height="36"/>
-                                <color key="backgroundColor" red="1" green="0.36403900169999998" blue="0.33418648270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.91989928483963013" green="0.26934006810188293" blue="0.53444445133209229" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Request">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
