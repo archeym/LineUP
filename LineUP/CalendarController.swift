@@ -62,6 +62,10 @@ class CalendarController: UIViewController {
         label.layer.cornerRadius = 5
         
   }
+    override func viewWillAppear(_ animated: Bool) {
+        calendarView.deselectAllDates()
+        toDateLabel.text = ""
+    }
   func setupCalendarView(){
         //setup calendar spacing
         calendarView.minimumLineSpacing = 0
