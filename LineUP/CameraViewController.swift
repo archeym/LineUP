@@ -7,6 +7,9 @@
 //
 
 import UIKit
+protocol PhotoDelegate {
+    func passPhoto (_ capturedPhoto: UIImageView)
+}
 
 class CameraViewController: UIViewController {
 
@@ -14,6 +17,7 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var cameraViewController: VNCameraScanner!
     @IBOutlet weak var focusIndicator: UIImageView!
     
+    var delegate : PhotoDelegate? = nil
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -102,6 +106,7 @@ class CameraViewController: UIViewController {
             captureImageView.contentMode = .scaleAspectFit
             captureImageView.isUserInteractionEnabled = true
             weakSelf?.view.addSubview(captureImageView)
+            self.delegate?.passPhoto(captureImageView)
             let dismissTap = UITapGestureRecognizer(target: weakSelf, action: #selector(self.dismissPreview))
             captureImageView.addGestureRecognizer(dismissTap)
             UIView.animate(withDuration: 0.7, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.7, options: .allowUserInteraction, animations: {() -> Void in
