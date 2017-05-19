@@ -37,7 +37,9 @@ class FirstViewController: UIViewController {
         
         
     }
-    
+    override func viewWillAppear(_ animated: Bool) {
+        setupAPI()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,7 +80,12 @@ class FirstViewController: UIViewController {
                         
                         let dictionary = validJSON
                         self.currentUser = User(dict: dictionary)
-                        self.setupProfile()
+                        DispatchQueue.main.async {
+                            
+                            self.currentUser = User(dict: dictionary)
+                            self.setupProfile()
+                        }
+                        
                     } catch let jsonError as NSError {
                         print(jsonError)
                     }
@@ -91,16 +98,16 @@ class FirstViewController: UIViewController {
     func setupProfile(){
         self.nameLabel.text = self.currentUser.name
         self.emailLabel.text = self.currentUser.email
-        self.annualLeaveLabel.text = String(self.currentUser.annualLeaves)
-        self.departmentLabel.text = self.currentUser.department
-        self.addressLabel.text = self.currentUser.address
-        self.supervisorLabel.text = self.currentUser.supervisor
+//        self.annualLeaveLabel.text = String(self.currentUser.annualLeaves)
+       self.departmentLabel.text = self.currentUser.department
+//        self.addressLabel.text = self.currentUser.address
+//        self.supervisorLabel.text = self.currentUser.supervisor
         self.phoneLabel.text = self.currentUser.phoneNumber
         self.positionLabel.text = self.currentUser.position
-        self.maternityLeaveLabel.text = String(self.currentUser.maternityLeave)
-        self.paternityLeaveLabel.text = String(self.currentUser.paternityLeave)
-        self.emergencyLeaveLabel.text = String(self.currentUser.emergencyLeave)
-        self.studyLeaveLabel.text = String(self.currentUser.studyLeave)
+//        self.maternityLeaveLabel.text = String(self.currentUser.maternityLeave)
+//        self.paternityLeaveLabel.text = String(self.currentUser.paternityLeave)
+//        self.emergencyLeaveLabel.text = String(self.currentUser.emergencyLeave)
+//        self.studyLeaveLabel.text = String(self.currentUser.studyLeave)
         //self.profileImageView.image = UIImage(self.currentUser.profilePhoto)
         
     }
