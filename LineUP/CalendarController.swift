@@ -59,6 +59,7 @@ class CalendarController: UIViewController {
     calendarView.scrollToDate(Date())
         label.layer.borderWidth = 0.5
         toDateLabel.layer.cornerRadius = 5
+        toDateLabel.layer.borderWidth = 0.5
         label.layer.cornerRadius = 5
         
   }

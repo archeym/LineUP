@@ -22,6 +22,7 @@
 		211829491ECD3D6A0025589F /* ContactTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829481ECD3D6A0025589F /* ContactTableTableViewController.swift */; };
 		2118294C1ECD7D890025589F /* AboutUsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118294B1ECD7D890025589F /* AboutUsViewController.swift */; };
 		2118294E1ECD7DA80025589F /* CompanyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2118294D1ECD7DA80025589F /* CompanyPolicyViewController.swift */; };
+		21A2D8741ECE992300FC63E8 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21A2D8731ECE992300FC63E8 /* MessageUI.framework */; };
 		780458B982D73950041F5CEE /* Pods_LineUP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */; };
 		CE1927861ECB0FFA0091525B /* RequestLeaveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */; };
 		CE1927881ECB10D50091525B /* TypesOfLeavesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */; };
@@ -52,6 +53,7 @@
 		211829481ECD3D6A0025589F /* ContactTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactTableTableViewController.swift; sourceTree = "<group>"; };
 		2118294B1ECD7D890025589F /* AboutUsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutUsViewController.swift; sourceTree = "<group>"; };
 		2118294D1ECD7DA80025589F /* CompanyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyPolicyViewController.swift; sourceTree = "<group>"; };
+		21A2D8731ECE992300FC63E8 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LineUP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE1927851ECB0FFA0091525B /* RequestLeaveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLeaveViewController.swift; sourceTree = "<group>"; };
 		CE1927871ECB10D50091525B /* TypesOfLeavesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesOfLeavesViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A2D8741ECE992300FC63E8 /* MessageUI.framework in Frameworks */,
 				780458B982D73950041F5CEE /* Pods_LineUP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +167,7 @@
 		E0EA839F2543AE69A402226E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				21A2D8731ECE992300FC63E8 /* MessageUI.framework */,
 				BBDD3BF10DA513AD85A9FE89 /* Pods_LineUP.framework */,
 			);
 			name = Frameworks;

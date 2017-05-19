@@ -21,19 +21,21 @@ class User{
     var paternityLeave : Int = 0
     var emergencyLeave : Int = 0
     var studyLeave : Int = 0
+    var profilePhoto : String = ""
     
     init (dict : [String: Any]) {
-        name = dict["name"] as? String ?? "Mahmoud"
+        name = dict["name"] as? String ?? ""
         email = dict["email"] as? String ?? ""
-        annualLeaves = dict["leaves_no"] as! Int
+        //annualLeaves = dict["leaves_no"] as! Int
         department = dict["department"] as? String ?? ""
         position = dict["position"] as? String ?? ""
-        supervisor = dict["supervisor"] as? String ?? ""
-        phoneNumber = dict["phoneNumber"] as? String ?? ""
-        address = dict["dict"] as? String ?? ""
-//        maternityLeave = dict[""] as! Int
-//        paternityLeave = dict[""] as! Int
-//        emergencyLeave = dict[""] as! Int
-//        studyLeave = dict[""] as! Int
+        supervisor = dict["manager"] as? String ?? ""
+        //phoneNumber = dict["phone"] as? String ?? ""
+        //address = dict["address"] as? String ?? ""
+        //maternityLeave = dict["maternity"] as! Int
+        //paternityLeave = dict[""] as! Int
+        //emergencyLeave = dict[""] as! Int
+        //studyLeave = dict["study"] as! Int
+        //profilePhoto = dict["avatar"] as? String ?? ""
     }
 }

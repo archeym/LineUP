@@ -197,11 +197,11 @@ extension RequestLeaveViewController : LeaveTypeDelegate {
     
     func requestSent(){
         // the alert view
-        let alert = UIAlertController(title: "Reaquest Sent", message: "Go to Request List", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Request Sent", message: "Check Request Status in Requests", preferredStyle: .alert)
         self.present(alert, animated: true, completion: nil)
         
         // change to desired number of seconds, code with delay
-        let when = DispatchTime.now() + 1.5
+        let when = DispatchTime.now() + 2
         DispatchQueue.main.asyncAfter(deadline: when){
             alert.dismiss(animated: true, completion: nil)
             self.goToAllRequests()

@@ -42,7 +42,11 @@ class FirstViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAPI()
-        
+        profileImageView.layer.masksToBounds = true
+        profileImageView.layer.cornerRadius = profileImageView.frame.height/2
+        profileImageView.clipsToBounds = true
+        profileImageView.layer.borderWidth = 1
+        profileImageView.layer.borderColor = UIColor.brown.cgColor
         
     }
 
@@ -97,6 +101,7 @@ class FirstViewController: UIViewController {
         self.paternityLeaveLabel.text = String(self.currentUser.paternityLeave)
         self.emergencyLeaveLabel.text = String(self.currentUser.emergencyLeave)
         self.studyLeaveLabel.text = String(self.currentUser.studyLeave)
+        //self.profileImageView.image = UIImage(self.currentUser.profilePhoto)
         
     }
     
