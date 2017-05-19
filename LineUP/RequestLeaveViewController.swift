@@ -194,7 +194,9 @@ extension RequestLeaveViewController : LeaveTypeDelegate {
         self.selectedType = selectedLeave
         self.selectedTypeIndex = selectedLeaveIndex
     }
-    
+    func backToAllRequests(){
+        navigationController?.popViewController(animated: true)
+    }
     func requestSent(){
         // the alert view
         let alert = UIAlertController(title: "Request Sent", message: "Check Request Status in Requests", preferredStyle: .alert)
@@ -204,7 +206,7 @@ extension RequestLeaveViewController : LeaveTypeDelegate {
         let when = DispatchTime.now() + 2
         DispatchQueue.main.asyncAfter(deadline: when){
             alert.dismiss(animated: true, completion: nil)
-            self.goToAllRequests()
+            self.backToAllRequests()
         }
     }
 }

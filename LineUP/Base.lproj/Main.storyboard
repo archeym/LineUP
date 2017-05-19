@@ -377,7 +377,7 @@
             </objects>
             <point key="canvasLocation" x="1148" y="-1475.7121439280361"/>
         </scene>
-        <!--Requests-->
+        <!--Request-->
         <scene sceneID="NUy-PU-fv9">
             <objects>
                 <viewController storyboardIdentifier="RequestLeaveViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qnM-1K-ekK" customClass="RequestLeaveViewController" customModule="LineUP" customModuleProvider="target" sceneMemberID="viewController">
@@ -604,7 +604,7 @@
                             <constraint firstItem="pKv-Yj-juJ" firstAttribute="leading" secondItem="wCM-n3-Bc9" secondAttribute="leading" id="wG6-zt-uZl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Requests" id="c6l-33-d9v"/>
+                    <navigationItem key="navigationItem" title="Request" id="c6l-33-d9v"/>
                     <connections>
                         <outlet property="chooseFromLibrary" destination="ETe-yJ-5Wc" id="X6e-My-r8k"/>
                         <outlet property="chooseLeaveButton" destination="uDq-rn-ppB" id="aR5-xD-IBu"/>
@@ -644,11 +644,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OUN-cX-aDf" id="ljf-sp-tEv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H5r-LC-Deu">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -697,10 +697,10 @@
                             <tableViewSection headerTitle="Contact Manager" id="dPa-Rj-El7">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hOf-Jx-UJd">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hOf-Jx-UJd" id="SQj-Q0-zuH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send an Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqg-8g-BcT">
@@ -714,10 +714,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="d8C-G8-JbH">
-                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d8C-G8-JbH" id="ZtN-nm-tNX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-85-0ec">
@@ -742,10 +742,10 @@
                             <tableViewSection headerTitle="Contact HR" id="s7U-Ra-KTe">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="DAC-yK-JUi">
-                                        <rect key="frame" x="0.0" y="201" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="199.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DAC-yK-JUi" id="ycw-Kz-yxs">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send an Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0up-0P-eyl">
@@ -759,10 +759,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4SQ-Nn-GM5">
-                                        <rect key="frame" x="0.0" y="245" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="243.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4SQ-Nn-GM5" id="uSV-8g-xxz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeF-ef-2ew">
@@ -787,10 +787,10 @@
                             <tableViewSection headerTitle="Company" id="83Q-Lm-KNs">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ypz-Fn-uoc">
-                                        <rect key="frame" x="0.0" y="346" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="343.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ypz-Fn-uoc" id="bMl-Pl-mQq">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8WM-Jb-DsV">
@@ -814,10 +814,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pAT-o3-jCs">
-                                        <rect key="frame" x="0.0" y="390" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="387.5" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pAT-o3-jCs" id="hPT-hs-yrG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stF-Zd-y23">
@@ -1108,18 +1108,18 @@ Protime also believes in a number of core values that we wish to embody. These a
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GkB-aH-wta" id="1ho-X4-Uor">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="53O-vD-dUw">
-                                                    <rect key="frame" x="15" y="4" width="34" height="21"/>
+                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9u2-eD-SoX">
-                                                    <rect key="frame" x="15" y="25" width="44" height="15"/>
+                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -1207,13 +1207,13 @@ Protime also believes in a number of core values that we wish to embody. These a
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNI-FW-lEE">
-                                                <rect key="frame" x="0.0" y="0.0" width="183" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="182.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-76-40A">
-                                                <rect key="frame" x="193" y="0.0" width="182" height="21"/>
+                                                <rect key="frame" x="192.5" y="0.0" width="182.5" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1227,49 +1227,49 @@ Protime also believes in a number of core values that we wish to embody. These a
                                         <rect key="frame" x="0.0" y="21" width="375" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVe-BX-7Vu">
-                                                <rect key="frame" x="0.0" y="0.0" width="54" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="21"/>
                                                 <color key="backgroundColor" red="0.67547517859999995" green="0.52935033539999998" blue="0.35923733019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX3-Ph-eXd">
-                                                <rect key="frame" x="54" y="0.0" width="53" height="21"/>
+                                                <rect key="frame" x="53.5" y="0.0" width="53.5" height="21"/>
                                                 <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chm-Rq-kDS">
-                                                <rect key="frame" x="107" y="0.0" width="54" height="21"/>
+                                                <rect key="frame" x="107" y="0.0" width="53.5" height="21"/>
                                                 <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWX-Zs-eDf">
-                                                <rect key="frame" x="161" y="0.0" width="53" height="21"/>
+                                                <rect key="frame" x="160.5" y="0.0" width="54" height="21"/>
                                                 <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7Y-IE-xIW">
-                                                <rect key="frame" x="214" y="0.0" width="54" height="21"/>
+                                                <rect key="frame" x="214.5" y="0.0" width="53.5" height="21"/>
                                                 <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Meh-TW-Rxo">
-                                                <rect key="frame" x="268" y="0.0" width="53" height="21"/>
+                                                <rect key="frame" x="268" y="0.0" width="53.5" height="21"/>
                                                 <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAr-If-vSg">
-                                                <rect key="frame" x="321" y="0.0" width="54" height="21"/>
+                                                <rect key="frame" x="321.5" y="0.0" width="53.5" height="21"/>
                                                 <color key="backgroundColor" red="0.67641186710000001" green="0.52750706670000003" blue="0.35691332819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1507,10 +1507,10 @@ Protime also believes in a number of core values that we wish to embody. These a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ksR-FW-2id" customClass="VNCameraScanner" customModule="LineUP" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="57" width="375" height="610"/>
+                                <rect key="frame" x="0.0" y="57" width="375" height="600"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aN-ia-yfC">
-                                        <rect key="frame" x="135" y="577" width="89" height="25"/>
+                                        <rect key="frame" x="135" y="573" width="89" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="89" id="VDc-8J-mak"/>
                                         </constraints>
@@ -1520,14 +1520,14 @@ Protime also believes in a number of core values that we wish to embody. These a
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swu-Ja-2ZS">
-                                        <rect key="frame" x="254" y="577" width="89" height="25"/>
+                                        <rect key="frame" x="254" y="573" width="89" height="25"/>
                                         <state key="normal" title="Crop On"/>
                                         <connections>
                                             <action selector="borderDetectToggle:" destination="YAl-TC-bNF" eventType="touchUpInside" id="EYU-A8-2fc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hl-eP-Bgq">
-                                        <rect key="frame" x="16" y="577" width="89" height="25"/>
+                                        <rect key="frame" x="16" y="573" width="89" height="25"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="25" id="lXE-2f-0KP"/>
                                             <constraint firstAttribute="width" constant="89" id="zb7-j0-mgX"/>
@@ -1538,7 +1538,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPE-Qm-ffX">
-                                        <rect key="frame" x="149" y="509" width="60" height="60"/>
+                                        <rect key="frame" x="149" y="504" width="60" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="2AK-Nz-3p2"/>
                                             <constraint firstAttribute="width" constant="60" id="EhB-Rs-01q"/>
@@ -1549,7 +1549,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="focusIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="0Fc-na-ZNp">
-                                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                                        <rect key="frame" x="8" y="24" width="60" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="FPh-mx-Bqg"/>
                                             <constraint firstAttribute="height" constant="60" id="YdP-Un-Xem"/>
@@ -1559,21 +1559,21 @@ Protime also believes in a number of core values that we wish to embody. These a
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="6hl-eP-Bgq" firstAttribute="leading" secondItem="ksR-FW-2id" secondAttribute="leading" constant="16" id="0Jv-Pm-gbB"/>
-                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="top" secondItem="PPE-Qm-ffX" secondAttribute="bottom" constant="8" symbolic="YES" id="1yx-5Y-bde"/>
+                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="top" secondItem="PPE-Qm-ffX" secondAttribute="bottom" constant="9" id="1yx-5Y-bde"/>
                                     <constraint firstItem="3aN-ia-yfC" firstAttribute="top" secondItem="Swu-Ja-2ZS" secondAttribute="top" id="3V6-Ls-tcp"/>
                                     <constraint firstAttribute="trailing" secondItem="Swu-Ja-2ZS" secondAttribute="trailing" constant="32" id="4le-Tf-2gn"/>
                                     <constraint firstItem="6hl-eP-Bgq" firstAttribute="top" secondItem="3aN-ia-yfC" secondAttribute="top" id="7MF-ZZ-pWo"/>
                                     <constraint firstItem="3aN-ia-yfC" firstAttribute="baseline" secondItem="6hl-eP-Bgq" secondAttribute="firstBaseline" id="9bF-ao-ag2"/>
                                     <constraint firstItem="3aN-ia-yfC" firstAttribute="baseline" secondItem="Swu-Ja-2ZS" secondAttribute="firstBaseline" id="Azs-Wd-RPa"/>
                                     <constraint firstItem="PPE-Qm-ffX" firstAttribute="centerX" secondItem="3aN-ia-yfC" secondAttribute="centerX" id="BXL-gE-m0u"/>
-                                    <constraint firstItem="0Fc-na-ZNp" firstAttribute="top" secondItem="ksR-FW-2id" secondAttribute="topMargin" id="IWj-rS-s2I"/>
+                                    <constraint firstItem="0Fc-na-ZNp" firstAttribute="top" secondItem="ksR-FW-2id" secondAttribute="topMargin" constant="16" id="IWj-rS-s2I"/>
                                     <constraint firstItem="6hl-eP-Bgq" firstAttribute="width" secondItem="3aN-ia-yfC" secondAttribute="width" id="J97-3z-kWr"/>
                                     <constraint firstItem="Swu-Ja-2ZS" firstAttribute="width" secondItem="3aN-ia-yfC" secondAttribute="width" id="W4Q-mz-3So"/>
                                     <constraint firstItem="Swu-Ja-2ZS" firstAttribute="leading" secondItem="3aN-ia-yfC" secondAttribute="trailing" constant="30" id="W7Z-uY-cV3"/>
                                     <constraint firstItem="3aN-ia-yfC" firstAttribute="leading" secondItem="6hl-eP-Bgq" secondAttribute="trailing" constant="30" id="cak-8E-2Bq"/>
                                     <constraint firstItem="0Fc-na-ZNp" firstAttribute="leading" secondItem="ksR-FW-2id" secondAttribute="leadingMargin" id="hUi-ob-ffX"/>
                                     <constraint firstItem="6hl-eP-Bgq" firstAttribute="baseline" secondItem="3aN-ia-yfC" secondAttribute="firstBaseline" id="jAa-Hn-Y8Y"/>
-                                    <constraint firstItem="6hl-eP-Bgq" firstAttribute="bottom" secondItem="ksR-FW-2id" secondAttribute="bottomMargin" id="nD5-u9-CgH"/>
+                                    <constraint firstItem="6hl-eP-Bgq" firstAttribute="bottom" secondItem="ksR-FW-2id" secondAttribute="bottomMargin" constant="6" id="nD5-u9-CgH"/>
                                     <constraint firstItem="3aN-ia-yfC" firstAttribute="baseline" secondItem="Swu-Ja-2ZS" secondAttribute="baseline" id="oSQ-hB-P0j"/>
                                     <constraint firstItem="6hl-eP-Bgq" firstAttribute="baseline" secondItem="3aN-ia-yfC" secondAttribute="baseline" id="tNy-46-VnL"/>
                                 </constraints>
@@ -1582,7 +1582,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                                 </connections>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNA-uI-IDl">
-                                <rect key="frame" x="16" y="28" width="343" height="21"/>
+                                <rect key="frame" x="16" y="58" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -1592,10 +1592,10 @@ Protime also believes in a number of core values that we wish to embody. These a
                         <constraints>
                             <constraint firstItem="BNA-uI-IDl" firstAttribute="centerX" secondItem="ksR-FW-2id" secondAttribute="centerX" id="BII-IR-ahI"/>
                             <constraint firstItem="BNA-uI-IDl" firstAttribute="leading" secondItem="ryq-SD-3Sa" secondAttribute="leadingMargin" id="PZy-Zl-Hei"/>
-                            <constraint firstItem="ksR-FW-2id" firstAttribute="bottom" secondItem="OTk-BM-7dI" secondAttribute="top" id="hiT-JJ-Pdh"/>
+                            <constraint firstItem="ksR-FW-2id" firstAttribute="bottom" secondItem="OTk-BM-7dI" secondAttribute="top" constant="-10" id="hiT-JJ-Pdh"/>
                             <constraint firstAttribute="trailing" secondItem="ksR-FW-2id" secondAttribute="trailing" id="j1t-5t-TmA"/>
-                            <constraint firstItem="ksR-FW-2id" firstAttribute="top" secondItem="BNA-uI-IDl" secondAttribute="bottom" constant="8" symbolic="YES" id="p3q-d9-DrV"/>
-                            <constraint firstItem="BNA-uI-IDl" firstAttribute="top" secondItem="QZl-HC-1Fw" secondAttribute="bottom" constant="8" symbolic="YES" id="tst-ox-t07"/>
+                            <constraint firstItem="ksR-FW-2id" firstAttribute="top" secondItem="BNA-uI-IDl" secondAttribute="bottom" constant="-22" id="p3q-d9-DrV"/>
+                            <constraint firstItem="BNA-uI-IDl" firstAttribute="top" secondItem="QZl-HC-1Fw" secondAttribute="bottom" constant="38" id="tst-ox-t07"/>
                             <constraint firstItem="ksR-FW-2id" firstAttribute="leading" secondItem="ryq-SD-3Sa" secondAttribute="leading" id="zVg-D5-y8E"/>
                         </constraints>
                     </view>
@@ -1612,7 +1612,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1802" y="1239"/>
+            <point key="canvasLocation" x="1800.8" y="1238.2308845577213"/>
         </scene>
         <!--Profile-->
         <scene sceneID="vQ0-UN-VsU">
