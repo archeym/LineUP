@@ -29,12 +29,22 @@ extension AllRequestsViewController : UITableViewDelegate, UITableViewDataSource
         return 1
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 148
+        return 110
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: RequestedTableViewCell.cellIdentifier) as? RequestedTableViewCell
             else {return UITableViewCell()}
         return cell
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if (editingStyle == .delete){
+            
+//            guard let player = filtered?[indexPath.row] else { return }
+//            PlayerManager.shared.deletePlayer(player: player)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            tableView.reloadData()
+            
+        }
     }
 }
