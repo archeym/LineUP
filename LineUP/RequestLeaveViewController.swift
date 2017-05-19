@@ -22,7 +22,7 @@ class RequestLeaveViewController: UIViewController {
    
     var user : User!
     let picker = UIImagePickerController()
-    let photoImageView = UIImageView()
+    var photoImageView = UIImageView()
     var ref: DatabaseReference!
     
     @IBOutlet weak var requestButton: UIButton!{
@@ -206,6 +206,12 @@ extension RequestLeaveViewController : LeaveTypeDelegate {
             alert.dismiss(animated: true, completion: nil)
             self.goToAllRequests()
         }
+    }
+}
+
+extension RequestLeaveViewController : PhotoDelegate {
+    func passPhoto(_ capturedPhoto: UIImageView) {
+        self.photoImageView = capturedPhoto
     }
 }
 
