@@ -7,15 +7,31 @@
 //
 
 import UIKit
+import MessageUI
 
-class ContactTableTableViewController: UITableViewController {
+class ContactTableTableViewController: UITableViewController,MFMailComposeViewControllerDelegate, UIDocumentInteractionControllerDelegate  {
     @IBAction func aboutUsTapped(_ sender: Any) {
+        let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "AboutUsViewController")
+        present(initController, animated: true, completion: nil)
+        
     }
     @IBAction func companyPolicy(_ sender: Any) {
         let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "CompanyPolicyViewController")
         present(initController, animated: true, completion: nil)
     }
 
+    @IBAction func callToManager(_ sender: Any) {
+        guard let url : NSURL = NSURL(string: "tel://+60189691864") else {return}//+60189691864
+        UIApplication.shared.open(url as URL, options: [:])
+       
+    }
+    
+ 
+    @IBAction func callToHR(_ sender: Any) {
+        guard let url : NSURL = NSURL(string: "tel://+601115984461") else {return}//+60189691864
+        UIApplication.shared.open(url as URL, options: [:])
+    }
+    
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +44,82 @@ class ContactTableTableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Selected row = \(indexPath.description)")
+        
+        
+        if indexPath.section == 0 && indexPath.row == 0 {
+            print("Send Us Suggestions")
+            let mailCompose = emailFeedback()
+            if MFMailComposeViewController.canSendMail(){
+                self.present(mailCompose, animated: true, completion: nil)
+            }else{
+                self.showMailError()
+            }
+        }
+        if indexPath.section == 1 && indexPath.row == 0 {
+            print("Report a Problem")
+            let mailCompose = emailReport()
+            if MFMailComposeViewController.canSendMail(){
+                self.present(mailCompose, animated: true, completion: nil)
+            }else{
+                self.showMailError()
+            }
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    func emailFeedback() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        //hr email
+        mailComposerVC.setToRecipients(["archeym@me.com"])
+        mailComposerVC.setSubject("Contact Manager")
+        mailComposerVC.setMessageBody("Hello, \n\n\n\n\n\n\nThanks, have a nice day ...", isHTML: false)
+        return mailComposerVC
+    }
+    func emailReport() -> MFMailComposeViewController {
+        let mailComposerVC = MFMailComposeViewController()
+        mailComposerVC.mailComposeDelegate = self
+        //hr email
+        mailComposerVC.setToRecipients(["archeym@me.com"])
+        mailComposerVC.setSubject("Contact HR")
+        mailComposerVC.setMessageBody("Hello, \n\n\n\n\n\n\nThanks, have a nice day ...", isHTML: false)
+        return mailComposerVC
+    }
+    
+    func showMailError() {
+        let mailErrorAlert = UIAlertController(title: "Failed !", message: "Your iPhone couldn't send email.  Please check iPhone's email config and try again.", preferredStyle: .alert)
+        self.present(mailErrorAlert, animated: true, completion: nil)
+        let when = DispatchTime.now() + 3
+        DispatchQueue.main.asyncAfter(deadline: when){
+            mailErrorAlert.dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        switch (result) {
+            
+        case MFMailComposeResult.cancelled:
+            print("cancel mail")
+            self.dismiss(animated: true, completion: nil)
+            
+        case MFMailComposeResult.sent:
+            self.dismiss(animated: true, completion: nil)
+            
+        case MFMailComposeResult.failed:
+            self.dismiss(animated: true, completion: {
+                let emailErrorAlert = UIAlertController.init(title: "Failed",
+                                                             message: "Unable to send email. Please check your email settings and try again.", preferredStyle: .alert)
+                emailErrorAlert.addAction(UIAlertAction.init(title: "OK",
+                                                             style: .default, handler: nil))
+                self.present(emailErrorAlert, animated: true, completion: nil)
+            })
+        default:
+            break
+        }
+    }
+    
 
 //    override func numberOfSections(in tableView: UITableView) -> Int {
 //        // #warning Incomplete implementation, return the number of sections
@@ -94,4 +186,4 @@ class ContactTableTableViewController: UITableViewController {
     }
     */
 
-}
+}//end

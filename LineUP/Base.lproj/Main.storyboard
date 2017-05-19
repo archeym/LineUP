@@ -24,7 +24,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mahmoud" translatesAutoresizingMaskIntoConstraints="NO" id="8gl-nr-PAS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8gl-nr-PAS">
                                 <rect key="frame" x="127" y="72" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="120" id="0nG-kP-LRY"/>
@@ -450,7 +450,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type of Leave:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhv-a8-0o2">
-                                <rect key="frame" x="16" y="308" width="91.5" height="35"/>
+                                <rect key="frame" x="16" y="308" width="92" height="35"/>
                                 <color key="backgroundColor" red="0.9266655445098877" green="0.9688340425491333" blue="0.94189441204071045" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="Hts-5T-Vtd"/>
@@ -481,7 +481,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDq-rn-ppB">
-                                <rect key="frame" x="128" y="308" width="231" height="35"/>
+                                <rect key="frame" x="129" y="308" width="230" height="35"/>
                                 <color key="backgroundColor" red="0.53498828409999999" green="0.78154802320000005" blue="0.68238604069999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <state key="normal" title="Choose Leave Category">
@@ -530,7 +530,7 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineup" translatesAutoresizingMaskIntoConstraints="NO" id="LXc-5c-m8I">
-                                <rect key="frame" x="127.5" y="64" width="120" height="120"/>
+                                <rect key="frame" x="128" y="64" width="120" height="120"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="PM2-Vc-nUF"/>
                                     <constraint firstAttribute="width" constant="120" id="TQ8-ky-OX9"/>
@@ -644,11 +644,11 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OUN-cX-aDf" id="ljf-sp-tEv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="H5r-LC-Deu">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="43"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -697,10 +697,10 @@
                             <tableViewSection headerTitle="Contact Manager" id="dPa-Rj-El7">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="hOf-Jx-UJd">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="hOf-Jx-UJd" id="SQj-Q0-zuH">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send an Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqg-8g-BcT">
@@ -714,12 +714,19 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="d8C-G8-JbH">
-                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="100" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d8C-G8-JbH" id="ZtN-nm-tNX">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QPJ-85-0ec">
+                                                    <rect key="frame" x="8" y="-0.5" width="359" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="callToManager:" destination="WwV-Vr-XXN" eventType="touchUpInside" id="76g-gf-R1k"/>
+                                                    </connections>
+                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make a Call " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7D-mB-etu">
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -735,10 +742,10 @@
                             <tableViewSection headerTitle="Contact HR" id="s7U-Ra-KTe">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="DAC-yK-JUi">
-                                        <rect key="frame" x="0.0" y="199.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="201" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DAC-yK-JUi" id="ycw-Kz-yxs">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Send an Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0up-0P-eyl">
@@ -752,12 +759,19 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="4SQ-Nn-GM5">
-                                        <rect key="frame" x="0.0" y="243.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="245" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4SQ-Nn-GM5" id="uSV-8g-xxz">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DeF-ef-2ew">
+                                                    <rect key="frame" x="8" y="-0.5" width="359" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <connections>
+                                                        <action selector="callToHR:" destination="WwV-Vr-XXN" eventType="touchUpInside" id="kFD-WE-Lq2"/>
+                                                    </connections>
+                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Make a Call " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxi-SW-Pju">
                                                     <rect key="frame" x="8" y="0.0" width="359" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -773,10 +787,10 @@
                             <tableViewSection headerTitle="Company" id="83Q-Lm-KNs">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Ypz-Fn-uoc">
-                                        <rect key="frame" x="0.0" y="343.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="346" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ypz-Fn-uoc" id="bMl-Pl-mQq">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8WM-Jb-DsV">
@@ -800,10 +814,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="pAT-o3-jCs">
-                                        <rect key="frame" x="0.0" y="387.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="390" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pAT-o3-jCs" id="hPT-hs-yrG">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="stF-Zd-y23">
@@ -899,7 +913,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thP-hm-0Gi">
                                 <rect key="frame" x="16" y="28" width="40" height="40"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                                 <state key="normal" title="X">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -961,7 +975,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Mr-gJ-Gak" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2887" y="596"/>
+            <point key="canvasLocation" x="2886" y="850"/>
         </scene>
         <!--About Us View Controller-->
         <scene sceneID="tRQ-Cp-7Mx">
@@ -972,14 +986,107 @@ Protime also believes in a number of core values that we wish to embody. These a
                         <viewControllerLayoutGuide type="bottom" id="MLD-EL-qal"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Z2k-mV-5lY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="850"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBA-b1-lsG">
+                                <rect key="frame" x="16" y="28" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Grd-sJ-485"/>
+                                    <constraint firstAttribute="width" constant="40" id="w9P-y4-qUh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="19"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="goBack:" destination="Djn-EN-827" eventType="touchUpInside" id="vX5-nj-eQC"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZA-YV-bUM">
+                                <rect key="frame" x="99" y="28" width="177" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="2hJ-Gf-7ID"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="LineUP Team">
+                                        <attributes>
+                                            <font key="NSFont" size="24" name="AvenirNextCondensed-BoldItalic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth ">
+                                        <real key="value" value="0.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H5E-kg-ZbD">
+                                <rect key="frame" x="16" y="76" width="343" height="750"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nlI-tV-qe9">
+                                        <rect key="frame" x="0.0" y="8" width="343" height="750"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineup" translatesAutoresizingMaskIntoConstraints="NO" id="cqh-pH-6Wx">
+                                                <rect key="frame" x="71" y="0.0" width="200" height="200"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="tdx-lN-lNs"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.92666554450000005" green="0.96883404250000005" blue="0.94189441200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="cqh-pH-6Wx" firstAttribute="top" secondItem="nlI-tV-qe9" secondAttribute="top" id="Hvm-Cn-t7F"/>
+                                            <constraint firstAttribute="height" constant="750" id="Ndi-kd-8eN"/>
+                                            <constraint firstAttribute="trailing" secondItem="cqh-pH-6Wx" secondAttribute="trailing" constant="72" id="nOI-UO-ZJE"/>
+                                            <constraint firstItem="cqh-pH-6Wx" firstAttribute="leading" secondItem="nlI-tV-qe9" secondAttribute="leading" constant="71" id="ucL-mk-ogq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nlI-tV-qe9" firstAttribute="leading" secondItem="H5E-kg-ZbD" secondAttribute="leading" id="CUh-FT-ehS"/>
+                                    <constraint firstAttribute="trailing" secondItem="nlI-tV-qe9" secondAttribute="trailing" id="H3A-Qg-XGH"/>
+                                    <constraint firstAttribute="bottom" secondItem="nlI-tV-qe9" secondAttribute="bottom" constant="-8" id="RV1-Y3-xLH"/>
+                                    <constraint firstItem="nlI-tV-qe9" firstAttribute="centerX" secondItem="H5E-kg-ZbD" secondAttribute="centerX" id="Sec-0d-VJT"/>
+                                    <constraint firstItem="nlI-tV-qe9" firstAttribute="top" secondItem="H5E-kg-ZbD" secondAttribute="topMargin" id="Ux1-CX-7aY"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" red="0.92666554450000005" green="0.96883404250000005" blue="0.94189441200000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="H5E-kg-ZbD" firstAttribute="centerX" secondItem="GZA-YV-bUM" secondAttribute="centerX" id="AXq-lL-QES"/>
+                            <constraint firstItem="H5E-kg-ZbD" firstAttribute="top" secondItem="LBA-b1-lsG" secondAttribute="bottom" constant="8" symbolic="YES" id="ByE-Dh-MqC"/>
+                            <constraint firstItem="LBA-b1-lsG" firstAttribute="top" secondItem="9ZZ-9W-I1c" secondAttribute="bottom" constant="8" id="E1e-L2-ubo"/>
+                            <constraint firstItem="GZA-YV-bUM" firstAttribute="leading" secondItem="LBA-b1-lsG" secondAttribute="trailing" constant="43" id="FbS-Hh-jcY"/>
+                            <constraint firstItem="GZA-YV-bUM" firstAttribute="top" secondItem="9ZZ-9W-I1c" secondAttribute="bottom" constant="8" id="JNA-7k-NxI"/>
+                            <constraint firstItem="GZA-YV-bUM" firstAttribute="centerX" secondItem="Z2k-mV-5lY" secondAttribute="centerX" id="SUx-tH-Afx"/>
+                            <constraint firstItem="H5E-kg-ZbD" firstAttribute="leading" secondItem="LBA-b1-lsG" secondAttribute="leading" id="iYx-Qt-KmS"/>
+                            <constraint firstItem="LBA-b1-lsG" firstAttribute="leading" secondItem="Z2k-mV-5lY" secondAttribute="leadingMargin" id="mL7-bV-8Jn"/>
+                            <constraint firstItem="MLD-EL-qal" firstAttribute="top" secondItem="H5E-kg-ZbD" secondAttribute="bottom" constant="24" id="rke-4Z-hus"/>
+                        </constraints>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="850"/>
+                    <connections>
+                        <outlet property="lineupTeamLabel" destination="GZA-YV-bUM" id="pmb-lS-YEm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="plW-l5-zb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2886" y="-220"/>
+            <point key="canvasLocation" x="2885.5999999999999" y="-220.83958020989508"/>
         </scene>
         <!--Requests-->
         <scene sceneID="HXx-cF-PuY">
@@ -1001,18 +1108,18 @@ Protime also believes in a number of core values that we wish to embody. These a
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GkB-aH-wta" id="1ho-X4-Uor">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="53O-vD-dUw">
-                                                    <rect key="frame" x="15" y="5" width="33.5" height="20.5"/>
+                                                    <rect key="frame" x="15" y="4" width="34" height="21"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9u2-eD-SoX">
-                                                    <rect key="frame" x="15" y="25.5" width="44" height="14.5"/>
+                                                    <rect key="frame" x="15" y="25" width="44" height="15"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <nil key="textColor"/>
@@ -1094,19 +1201,19 @@ Protime also believes in a number of core values that we wish to embody. These a
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CJy-C1-T3x">
-                                <rect key="frame" x="0.0" y="68" width="375" height="251.5"/>
+                                <rect key="frame" x="0.0" y="68" width="375" height="252"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fTV-zN-fH8">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="January" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNI-FW-lEE">
-                                                <rect key="frame" x="0.0" y="0.0" width="182.5" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="183" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPc-76-40A">
-                                                <rect key="frame" x="192.5" y="0.0" width="182.5" height="21"/>
+                                                <rect key="frame" x="193" y="0.0" width="182" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -1120,49 +1227,49 @@ Protime also believes in a number of core values that we wish to embody. These a
                                         <rect key="frame" x="0.0" y="21" width="375" height="21"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVe-BX-7Vu">
-                                                <rect key="frame" x="0.0" y="0.0" width="53.5" height="21"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="54" height="21"/>
                                                 <color key="backgroundColor" red="0.67547517859999995" green="0.52935033539999998" blue="0.35923733019999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UX3-Ph-eXd">
-                                                <rect key="frame" x="53.5" y="0.0" width="53.5" height="21"/>
+                                                <rect key="frame" x="54" y="0.0" width="53" height="21"/>
                                                 <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chm-Rq-kDS">
-                                                <rect key="frame" x="107" y="0.0" width="53.5" height="21"/>
+                                                <rect key="frame" x="107" y="0.0" width="54" height="21"/>
                                                 <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWX-Zs-eDf">
-                                                <rect key="frame" x="160.5" y="0.0" width="54" height="21"/>
+                                                <rect key="frame" x="161" y="0.0" width="53" height="21"/>
                                                 <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thu" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7Y-IE-xIW">
-                                                <rect key="frame" x="214.5" y="0.0" width="53.5" height="21"/>
+                                                <rect key="frame" x="214" y="0.0" width="54" height="21"/>
                                                 <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fri" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Meh-TW-Rxo">
-                                                <rect key="frame" x="268" y="0.0" width="53.5" height="21"/>
+                                                <rect key="frame" x="268" y="0.0" width="53" height="21"/>
                                                 <color key="backgroundColor" red="0.86112880706787109" green="0.75249963998794556" blue="0.25600165128707886" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAr-If-vSg">
-                                                <rect key="frame" x="321.5" y="0.0" width="53.5" height="21"/>
+                                                <rect key="frame" x="321" y="0.0" width="54" height="21"/>
                                                 <color key="backgroundColor" red="0.67641186710000001" green="0.52750706670000003" blue="0.35691332819999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1174,7 +1281,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                                         </constraints>
                                     </stackView>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1n2-3v-R9N" customClass="JTAppleCalendarView" customModule="JTAppleCalendar">
-                                        <rect key="frame" x="0.0" y="42" width="375" height="209.5"/>
+                                        <rect key="frame" x="0.0" y="42" width="375" height="210"/>
                                         <color key="backgroundColor" red="0.92564415929999999" green="0.96500706670000003" blue="0.94118189809999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="209.5" id="zdf-4y-QYf"/>
@@ -1573,7 +1680,6 @@ Protime also believes in a number of core values that we wish to embody. These a
         <image name="doc" width="24" height="24"/>
         <image name="focusIndicator" width="75" height="75"/>
         <image name="lineup" width="1000" height="1000"/>
-        <image name="mahmoud" width="160" height="160"/>
         <image name="phone" width="24" height="24"/>
         <image name="user" width="24" height="24"/>
     </resources>

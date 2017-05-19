@@ -70,9 +70,13 @@
                 <constraints>
                     <constraint firstItem="pHu-Zy-mtD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0Up-n0-oEZ"/>
                     <constraint firstItem="WBE-BM-pSa" firstAttribute="leading" secondItem="pHu-Zy-mtD" secondAttribute="trailing" constant="5" id="27W-pk-yfI"/>
+                    <constraint firstAttribute="trailing" secondItem="WBE-BM-pSa" secondAttribute="trailing" id="6yS-GJ-cI1"/>
                     <constraint firstItem="pHu-Zy-mtD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="CyN-z4-XZA"/>
+                    <constraint firstItem="WBE-BM-pSa" firstAttribute="leading" secondItem="pHu-Zy-mtD" secondAttribute="trailing" constant="5" id="HFl-Tv-j7j"/>
                     <constraint firstAttribute="bottomMargin" secondItem="pHu-Zy-mtD" secondAttribute="bottom" id="k3t-Yc-itB"/>
+                    <constraint firstAttribute="bottom" secondItem="WBE-BM-pSa" secondAttribute="bottom" constant="8.5" id="nXP-La-Kdh"/>
                     <constraint firstAttribute="trailing" secondItem="WBE-BM-pSa" secondAttribute="trailing" id="p1k-tV-7fl"/>
+                    <constraint firstItem="WBE-BM-pSa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="qxI-DJ-2OK"/>
                     <constraint firstItem="WBE-BM-pSa" firstAttribute="top" secondItem="pHu-Zy-mtD" secondAttribute="top" id="t9S-Yc-9mJ"/>
                 </constraints>
             </tableViewCellContentView>
@@ -86,6 +90,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="pending" width="306" height="152"/>
+        <image name="pending" width="320" height="240"/>
     </resources>
 </document>
