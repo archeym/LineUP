@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 protocol PhotoDelegate {
     func passPhoto (_ capturedPhoto: UIImageView)
 }
@@ -16,6 +17,8 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var cameraViewController: VNCameraScanner!
     @IBOutlet weak var focusIndicator: UIImageView!
+    var photoImageView = UIImageView()
+    var ref: DatabaseReference!
     
     var delegate : PhotoDelegate? = nil
     override func viewDidLoad() {
@@ -24,12 +27,46 @@ class CameraViewController: UIViewController {
         cameraViewController.setupCameraView()
         cameraViewController.isEnableBorderDetection = true
         updateTitleLabel()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .plain, target: self, action: #selector(handleSave))
 
     }
+    
+    func handleSave(){
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+            let imageName = NSUUID().uuidString
+            let storageRef = Storage.storage().reference().child("images").child("\(imageName).jpg")
+            
+            if let profileImage = self.photoImageView.image, let uploadData = UIImageJPEGRepresentation(profileImage, 0.1) {
+                storageRef.putData(uploadData, metadata: nil, completion: { (metadata, error) in
+                    
+                    if error != nil {
+                        print(error!)
+                        return
+                    }
+                    //                if let imageUrl = metadata?.downloadURL()?.absoluteString{
+                    //                    let update : [String : String] = ["imageUrl" : imageUrl]
+                    //                    self.ref.child("images").updateChildValues(update)
+                    //                }
+                })
+            }
+        requestSent()
+        
+    }
+
+    func backToAllRequests(){
+        navigationController?.popViewController(animated: true)
+    }
+    func requestSent(){
+        // the alert view
+        let alert = UIAlertController(title: "Saved", message: "Continue with Your Request", preferredStyle: .alert)
+        self.present(alert, animated: true, completion: nil)
+        
+        // change to desired number of seconds, code with delay
+        let when = DispatchTime.now() + 2
+        DispatchQueue.main.asyncAfter(deadline: when){
+            alert.dismiss(animated: true, completion: nil)
+            self.backToAllRequests()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -109,6 +146,7 @@ class CameraViewController: UIViewController {
             self.delegate?.passPhoto(captureImageView)
             let dismissTap = UITapGestureRecognizer(target: weakSelf, action: #selector(self.dismissPreview))
             captureImageView.addGestureRecognizer(dismissTap)
+            self.photoImageView = captureImageView
             UIView.animate(withDuration: 0.7, delay: 0.0, usingSpringWithDamping: 0.8, initialSpringVelocity: 0.7, options: .allowUserInteraction, animations: {() -> Void in
                 captureImageView.frame = (weakSelf?.view.bounds)!
             }, completion: { _ in })

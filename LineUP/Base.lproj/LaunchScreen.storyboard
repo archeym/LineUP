@@ -22,8 +22,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (c) 2017 LineUP All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TR-Ze-j7Y">
-                                <rect key="frame" x="0.0" y="644" width="375" height="15"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <rect key="frame" x="0.0" y="644" width="375" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -40,7 +40,7 @@
                             <constraint firstItem="9TR-Ze-j7Y" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="YkV-Ah-4A7"/>
                             <constraint firstAttribute="trailing" secondItem="Pms-X3-WqN" secondAttribute="trailing" constant="13" id="ZWQ-Gq-Zvt"/>
                             <constraint firstAttribute="trailing" secondItem="9TR-Ze-j7Y" secondAttribute="trailing" id="cKm-XZ-rkU"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="9TR-Ze-j7Y" secondAttribute="bottom" constant="8" id="fhU-kZ-rbO"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="9TR-Ze-j7Y" secondAttribute="bottom" constant="7" id="fhU-kZ-rbO"/>
                             <constraint firstItem="Pms-X3-WqN" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="12" id="hRD-Ks-kjX"/>
                             <constraint firstItem="9TR-Ze-j7Y" firstAttribute="top" secondItem="Pms-X3-WqN" secondAttribute="bottom" constant="207" id="iJ8-DF-ktT"/>
                         </constraints>
