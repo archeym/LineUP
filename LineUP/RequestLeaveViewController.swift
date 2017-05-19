@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RequestLeaveViewController: UIViewController {
     
@@ -20,7 +21,9 @@ class RequestLeaveViewController: UIViewController {
     @IBOutlet weak var datesFromCalendar: UILabel!
    
     var user : User!
-    
+    let picker = UIImagePickerController()
+    let photoImageView = UIImageView()
+    var ref: DatabaseReference!
     
     @IBOutlet weak var requestButton: UIButton!{
         didSet {
@@ -33,7 +36,11 @@ class RequestLeaveViewController: UIViewController {
         }
     }
     @IBOutlet weak var chooseLeaveButton: UIButton!
-    @IBOutlet weak var chooseFromLibrary: UIButton!
+    @IBOutlet weak var chooseFromLibrary: UIButton!{
+        didSet{
+            chooseFromLibrary.addTarget(self, action: #selector(handleUploadPhoto), for: .touchUpInside)
+        }
+    }
 
     
     let formatter = DateFormatter()
@@ -108,6 +115,7 @@ class RequestLeaveViewController: UIViewController {
     
     
     func requestButtonTapped(){
+        uploadPhotoToFirebase()
         
         guard let validToken = UserDefaults.standard.string(forKey: "AUTH_Token") else { return }
         
@@ -125,6 +133,7 @@ class RequestLeaveViewController: UIViewController {
             "total_days" : numberOfDays,
             "private_token" : validToken,
             "leave_type": selectedTypeIndex
+//            "image_url" : self.imageUrl
         ]
         
         var data: Data?
@@ -151,7 +160,31 @@ class RequestLeaveViewController: UIViewController {
         dataTask.resume()
         
         
+    }
+    
+    func uploadPhotoToFirebase(){
+        let imageName = NSUUID().uuidString
+        let storageRef = Storage.storage().reference().child("images").child("\(imageName).jpg")
         
+        if let profileImage = self.photoImageView.image, let uploadData = UIImageJPEGRepresentation(profileImage, 0.1) {
+            storageRef.putData(uploadData, metadata: nil, completion: { (metadata, error) in
+                
+                if error != nil {
+                    print(error!)
+                    return
+                }
+//                if let imageUrl = metadata?.downloadURL()?.absoluteString{
+//                    let update : [String : String] = ["imageUrl" : imageUrl]
+//                    self.ref.child("images").updateChildValues(update)
+//                }
+            })
+        }
+    }
+    
+    func handleUploadPhoto(){
+        picker.delegate = self
+        picker.allowsEditing = true
+        present(picker, animated: true, completion: nil)
     }
 }//end
 
@@ -173,5 +206,34 @@ extension RequestLeaveViewController : LeaveTypeDelegate {
             alert.dismiss(animated: true, completion: nil)
             self.goToAllRequests()
         }
+    }
 }
+
+extension RequestLeaveViewController : UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController)
+    {
+        print("User canceled out of picker")
+        dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any])
+    {
+        var selectedImageFromPicker: UIImage?
+        if let editedImage = info["UIImagePickerControllerEditedImage"] as? UIImage
+        {
+            selectedImageFromPicker = editedImage
+            
+        } else if let originalImage = info["UIImagePickerControllerOriginalImage"] as? UIImage
+        {
+            selectedImageFromPicker = originalImage
+        }
+        
+        if let selectedImage = selectedImageFromPicker
+        {
+            photoImageView.image = selectedImage
+        }
+        
+        dismiss(animated: true, completion: nil)
+    }
 }
