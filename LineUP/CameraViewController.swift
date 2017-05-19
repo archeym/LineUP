@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 protocol PhotoDelegate {
-    func passPhoto (_ capturedPhoto: UIImageView)
+    func passPhotoUrl (_ photoUrl: String)
 }
 
 class CameraViewController: UIViewController {
@@ -19,6 +19,7 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var focusIndicator: UIImageView!
     var photoImageView = UIImageView()
     var ref: DatabaseReference!
+    var imageURL : String = ""
     
     var delegate : PhotoDelegate? = nil
     override func viewDidLoad() {
@@ -43,10 +44,10 @@ class CameraViewController: UIViewController {
                         print(error!)
                         return
                     }
-                    //                if let imageUrl = metadata?.downloadURL()?.absoluteString{
-                    //                    let update : [String : String] = ["imageUrl" : imageUrl]
-                    //                    self.ref.child("images").updateChildValues(update)
-                    //                }
+                    if let imageUrl = metadata?.downloadURL()?.absoluteString{
+                        self.imageURL = imageUrl
+                        self.delegate?.passPhotoUrl(imageUrl)
+                    }
                 })
             }
         requestSent()
@@ -143,7 +144,6 @@ class CameraViewController: UIViewController {
             captureImageView.contentMode = .scaleAspectFit
             captureImageView.isUserInteractionEnabled = true
             weakSelf?.view.addSubview(captureImageView)
-            self.delegate?.passPhoto(captureImageView)
             let dismissTap = UITapGestureRecognizer(target: weakSelf, action: #selector(self.dismissPreview))
             captureImageView.addGestureRecognizer(dismissTap)
             self.photoImageView = captureImageView
