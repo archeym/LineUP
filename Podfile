@@ -6,6 +6,10 @@ target 'LineUP' do
   use_frameworks!
 
   pod 'JTAppleCalendar', '~> 7.0'
+  pod 'Firebase/Core'
+  pod 'Firebase/Database'
+  pod 'Firebase/Storage'
+  pod 'Firebase/Auth'
   
 
 end
