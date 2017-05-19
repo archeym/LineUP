@@ -104,6 +104,7 @@ class RequestLeaveViewController: UIViewController {
     
     func uploadButtonTapped(){
         if let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "CameraViewController") as? CameraViewController{
+            initController.delegate = self
             navigationController?.pushViewController(initController, animated: true)
             
         }
