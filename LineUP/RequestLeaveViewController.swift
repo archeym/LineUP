@@ -64,6 +64,7 @@ class RequestLeaveViewController: UIViewController {
     var currentUser : User!
     var selectedType : String?
     var selectedTypeIndex : Int = 0
+    var imageURL : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,8 +133,8 @@ class RequestLeaveViewController: UIViewController {
             "end_date": "\(self.dates.last)",
             "total_days" : numberOfDays,
             "private_token" : validToken,
-            "leave_type": selectedTypeIndex
-//            "image_url" : self.imageUrl
+            "leave_type": selectedTypeIndex,
+            "image_url" : imageURL
         ]
         
         var data: Data?
@@ -173,10 +174,9 @@ class RequestLeaveViewController: UIViewController {
                     print(error!)
                     return
                 }
-//                if let imageUrl = metadata?.downloadURL()?.absoluteString{
-//                    let update : [String : String] = ["imageUrl" : imageUrl]
-//                    self.ref.child("images").updateChildValues(update)
-//                }
+                if let imageUrl = metadata?.downloadURL()?.absoluteString{
+                    self.imageURL = imageUrl
+                }
             })
         }
     }
@@ -212,8 +212,8 @@ extension RequestLeaveViewController : LeaveTypeDelegate {
 }
 
 extension RequestLeaveViewController : PhotoDelegate {
-    func passPhoto(_ capturedPhoto: UIImageView) {
-        self.photoImageView = capturedPhoto
+    func passPhotoUrl(_ photoUrl: String) {
+        self.imageURL = photoUrl
     }
 }
 
