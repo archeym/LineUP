@@ -76,14 +76,14 @@ class FirstViewController: UIViewController {
                     do {
                         let jsonResponse = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
                         
-                        guard let validJSON = jsonResponse as? [String:Any] else { return }
-                        
-                        let dictionary = validJSON
-                        self.currentUser = User(dict: dictionary)
-                        DispatchQueue.main.async {
-                            
-                            self.currentUser = User(dict: dictionary)
-                            self.setupProfile()
+                        if let validJSON = jsonResponse as? [String:Any] {
+                            if let dictionary = validJSON["user"] as? [String:Any]{
+                                self.currentUser = User(dict: dictionary)
+                                DispatchQueue.main.async {
+                                    self.currentUser = User(dict: dictionary)
+                                    self.setupProfile()
+                                }
+                            }
                         }
                         
                     } catch let jsonError as NSError {

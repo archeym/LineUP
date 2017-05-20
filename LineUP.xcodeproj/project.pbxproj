@@ -33,6 +33,7 @@
 		CE22C1E51ECDCCF800866DF9 /* RequestedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22C1E31ECDCCF800866DF9 /* RequestedTableViewCell.swift */; };
 		CE22C1E61ECDCCF800866DF9 /* RequestedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE22C1E41ECDCCF800866DF9 /* RequestedTableViewCell.xib */; };
 		CE22C1E91ECE976200866DF9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE22C1E81ECE976200866DF9 /* GoogleService-Info.plist */; };
+		CE4196CB1ED02310007C5B15 /* Leave.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4196CA1ED02310007C5B15 /* Leave.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		CE22C1E31ECDCCF800866DF9 /* RequestedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestedTableViewCell.swift; sourceTree = "<group>"; };
 		CE22C1E41ECDCCF800866DF9 /* RequestedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RequestedTableViewCell.xib; sourceTree = "<group>"; };
 		CE22C1E81ECE976200866DF9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE4196CA1ED02310007C5B15 /* Leave.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Leave.swift; sourceTree = "<group>"; };
 		D9038DCC496ED29D2DA3FC01 /* Pods-LineUP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.debug.xcconfig"; sourceTree = "<group>"; };
 		DDC962995CB2245E97FF1C30 /* Pods-LineUP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LineUP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LineUP/Pods-LineUP.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 				CE22C1E31ECDCCF800866DF9 /* RequestedTableViewCell.swift */,
 				CE22C1E41ECDCCF800866DF9 /* RequestedTableViewCell.xib */,
 				CE1927991ECC3FD30091525B /* User.swift */,
+				CE4196CA1ED02310007C5B15 /* Leave.swift */,
 				210403E71ECAB486002F3D46 /* SecondViewController.swift */,
 				211829451ECC3D580025589F /* Calendar */,
 				2118294A1ECD7CCD0025589F /* Contact */,
@@ -314,6 +317,7 @@
 				210403E61ECAB486002F3D46 /* FirstViewController.swift in Sources */,
 				CE1927861ECB0FFA0091525B /* RequestLeaveViewController.swift in Sources */,
 				2118294C1ECD7D890025589F /* AboutUsViewController.swift in Sources */,
+				CE4196CB1ED02310007C5B15 /* Leave.swift in Sources */,
 				CE19279A1ECC3FD30091525B /* User.swift in Sources */,
 				210403FD1ECADA15002F3D46 /* InfoViewController.swift in Sources */,
 				211829441ECBEACB0025589F /* CustomeCell.swift in Sources */,

@@ -154,7 +154,7 @@ class RequestLeaveViewController: UIViewController {
             }
             
             if let httpResponse = response as? HTTPURLResponse{
-                
+                print(httpResponse)
                 
             }
         }
