@@ -95,6 +95,17 @@ extension AllRequestsViewController : UITableViewDelegate, UITableViewDataSource
         cell.datesLabel.text = "\(newLeave.startDate) to \(newLeave.endDate)"
         cell.leaveLabel.text = newLeave.leaveType
         cell.numberOfDaysLabel.text = "\(String(newLeave.totalDays)) days"
+        
+        switch newLeave.status {
+        case "Pending":
+            cell.statusImageView.image = #imageLiteral(resourceName: "pending")
+        case "Approved":
+            cell.statusImageView.image = #imageLiteral(resourceName: "approved")
+        case"Rejected":
+            cell.statusImageView.image = #imageLiteral(resourceName: "rejected")
+        default:
+            break;
+        }
         return cell
     }
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {

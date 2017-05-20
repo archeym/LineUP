@@ -13,11 +13,13 @@ class Leave{
     var startDate : String = ""
     var endDate : String = ""
     var totalDays : Int = 0
+    var status : String = ""
     
     init (dict : [String: Any]) {
         leaveType = dict["leave_type"] as? String ?? ""
         startDate = dict["start_date"] as? String ?? ""
         endDate = dict["end_date"] as? String ?? ""
         totalDays = dict["total_days"] as! Int
+        status = dict["status"] as? String ?? ""
     }
 }
