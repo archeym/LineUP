@@ -42,6 +42,7 @@ class RequestLeaveViewController: UIViewController {
             chooseFromLibrary.addTarget(self, action: #selector(handleUploadPhoto), for: .touchUpInside)
         }
     }
+    
 
     
     let formatter = DateFormatter()
@@ -85,6 +86,7 @@ class RequestLeaveViewController: UIViewController {
         datesFromCalendar.layer.cornerRadius = 5
         getName()
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         if selectedType != nil {
@@ -181,10 +183,10 @@ class RequestLeaveViewController: UIViewController {
         let params : [String:Any] = [
             "start_date": "\(self.dates.first)",
             "end_date": "\(self.dates.last)",
-            "total_days" : numberOfDays,
+            "total_days" : dates.count,
             "private_token" : validToken,
             "leave_type": selectedTypeIndex,
-            "image_url" : imageURL
+            "image" : imageURL
         ]
         
         var data: Data?

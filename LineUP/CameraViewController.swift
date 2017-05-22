@@ -17,6 +17,7 @@ class CameraViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var cameraViewController: VNCameraScanner!
     @IBOutlet weak var focusIndicator: UIImageView!
+    
     var photoImageView = UIImageView()
     var ref: DatabaseReference!
     var imageURL : String = ""
@@ -114,11 +115,10 @@ class CameraViewController: UIViewController {
         updateTitleLabel()
     }
     
-    @IBAction func torchToggle(_ sender: UIButton) {
-//        let enable: Bool = !cameraViewController.isEnableTorch
-//        change(sender, targetTitle: (enable) ? "FLASH On" : "FLASH Off", toStateEnabled: enable)
-//        cameraViewController.isEnableTorch = enable
-        navigationController?.popViewController(animated: true)
+    @IBAction func flash(_ sender: Any) {
+        let enable: Bool = !cameraViewController.isEnableTorch
+        change(sender as! UIButton, targetTitle: (enable) ? "FLASH On" : "FLASH Off", toStateEnabled: enable)
+        cameraViewController.isEnableTorch = enable
     }
     
     func updateTitleLabel() {
