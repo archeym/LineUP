@@ -41,6 +41,10 @@ class User{
         nonPaid = dict["non_paid"] as? Int ?? 0
         emergencyLeave = dict["emergency"] as? Int ?? 0
         studyLeave = dict["study"] as? Int ?? 0
-        //profilePhoto = dict["avatar"] as? String ?? ""
+        profilePhoto = ""
+        if let avatar = dict["avatar"] as? [String:Any] {
+            profilePhoto = avatar["url"] as? String ?? ""
+        }
     }
 }
+
