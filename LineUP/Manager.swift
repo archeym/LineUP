@@ -7,10 +7,11 @@
 //
 
 import Foundation
+
 class Manager{
     var supervisor : String = ""
     
     init (dictB : [String: Any] ) {
-        supervisor = dictB["manager_name"] as? String ?? ""
+        supervisor = dictB["name"] as? String ?? ""
     }
 }

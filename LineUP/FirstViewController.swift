@@ -95,12 +95,13 @@ class FirstViewController: UIViewController {
                         if let validJSON = jsonResponse as? [String:Any] {
                             if let dictionary = validJSON["user"] as? [String:Any]   {
                                     self.currentUser = User(dict: dictionary)
-                                //self.currentUserManager = Manager(dictB: dictionaryB)
                                 DispatchQueue.main.async {
                                     self.currentUser = User(dict: dictionary)
-                                    //self.currentUserManager = Manager(dictB: dictionaryB)
                                     self.setupProfile()
                                 }
+                            }
+                            if let dictionary2 = validJSON["manager_name"] as? [String: Any] {
+                                self.currentUserManager = Manager(dictB: dictionary2)
                             }
                         }
                         
@@ -118,7 +119,7 @@ class FirstViewController: UIViewController {
         self.emailLabel.text = self.currentUser.email
         self.departmentLabel.text = self.currentUser.department
         self.addressLabel.text = self.currentUser.address
-        //self.supervisorLabel.text = self.currentUserManager.supervisor
+        self.supervisorLabel.text = self.currentUserManager.supervisor
         self.phoneLabel.text = self.currentUser.phoneNumber
         self.positionLabel.text = self.currentUser.position
         
