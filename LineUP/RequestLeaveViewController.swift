@@ -87,9 +87,12 @@ class RequestLeaveViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         if selectedType != nil {
             self.chooseLeaveButton.setTitle(selectedType, for: .normal)
         }
+        
+        uploadPhotoToFirebase()
     }
     
     func handleBack(){
@@ -166,7 +169,7 @@ class RequestLeaveViewController: UIViewController {
     
     
     func requestButtonTapped(){
-        uploadPhotoToFirebase()
+        
         
         guard let validToken = UserDefaults.standard.string(forKey: "AUTH_Token") else { return }
         
@@ -184,7 +187,7 @@ class RequestLeaveViewController: UIViewController {
             "total_days" : numberOfDays,
             "private_token" : validToken,
             "leave_type": selectedTypeIndex,
-            "image_url" : imageURL
+            "image" : imageURL
         ]
         
         var data: Data?
