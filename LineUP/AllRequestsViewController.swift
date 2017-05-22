@@ -19,6 +19,7 @@ class AllRequestsViewController: UIViewController {
     
     var leaves = [Leave]()
     var userId : Int?
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -71,6 +72,25 @@ class AllRequestsViewController: UIViewController {
         dataTask.resume()
     }
     
+    func deleteARequest(leaveId : Int){
+        
+        guard let validToken = UserDefaults.standard.string(forKey: "AUTH_Token") else { return }
+        let url = URL(string: "http://192.168.1.48:9292/api/v1/leaves/\(leaveId)?private_token=\(validToken)")
+        var urlRequest = URLRequest(url: url!)
+        urlRequest.httpMethod = "DELETE"
+        urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let dataTask = session.dataTask(with: urlRequest) { (data, response, error) in
+            
+            if let err = error as NSError?{
+                print(err.localizedDescription)
+                return
+            }
+        }
+        dataTask.resume()
+    }
     
     func populateLeaves(_ array : [[String: Any]]){
         for leave in array {
@@ -119,10 +139,11 @@ extension AllRequestsViewController : UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete){
-            
-//            guard let player = filtered?[indexPath.row] else { return }
-//            PlayerManager.shared.deletePlayer(player: player)
+
+            let leaveID = leaves[indexPath.row].leaveId
+            deleteARequest(leaveId: leaveID)
             leaves.remove(at: indexPath.row)
+            
             tableView.reloadData()
             
         }
