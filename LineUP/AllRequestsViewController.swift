@@ -40,6 +40,7 @@ class AllRequestsViewController: UIViewController {
         leaves.removeAll()
         getAllLeave()
         updateBadge()
+        tableView.tableFooterView = UIView()
     }
     
     func getAllLeave(){
