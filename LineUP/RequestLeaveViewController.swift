@@ -24,6 +24,7 @@ class RequestLeaveViewController: UIViewController {
     let picker = UIImagePickerController()
     var photoImageView = UIImageView()
     var ref: DatabaseReference!
+    var userId : Int = 0
     
     @IBOutlet weak var requestButton: UIButton!{
         didSet {
@@ -82,6 +83,7 @@ class RequestLeaveViewController: UIViewController {
         typeOfLeave.layer.cornerRadius = 5
         datesLabel.layer.cornerRadius = 5
         datesFromCalendar.layer.cornerRadius = 5
+        getName()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -113,6 +115,53 @@ class RequestLeaveViewController: UIViewController {
     
     func goToAllRequests(){
         navigationController?.popViewController(animated: true)
+    }
+    
+    func getName(){
+        guard let validToken = UserDefaults.standard.string(forKey: "AUTH_Token") else { return }
+        
+        let url = URL(string: "http://192.168.1.48:9292/api/v1/users/\(userId)?private_token=\(validToken)")
+        var urlRequest = URLRequest(url: url!)
+        
+        urlRequest.httpMethod = "GET"
+        urlRequest.setValue("application/json", forHTTPHeaderField: "Content-type")
+        let session = URLSession(configuration: URLSessionConfiguration.default)
+        let dataTask = session.dataTask(with: urlRequest) { (data, response, error) in
+            
+            
+            if let validError = error {
+                print(validError.localizedDescription)
+            }
+            
+            
+            if let httpResponse = response as? HTTPURLResponse {
+                
+                if httpResponse.statusCode == 200 {
+                    
+                    do {
+                        let jsonResponse = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
+                        
+                        if let validJSON = jsonResponse as? [String:Any] {
+                            if let dictionary = validJSON["user"] as? [String:Any]   {
+                                self.currentUser = User(dict: dictionary)
+                                DispatchQueue.main.async {
+                                    self.currentUser = User(dict: dictionary)
+                                    self.setupName()
+                                }
+                            }
+                        }
+                        
+                    } catch let jsonError as NSError {
+                        print(jsonError)
+                    }
+                }
+            }
+        }
+        dataTask.resume()
+    }
+    
+    func setupName(){
+        self.nameLabel.text = currentUser.name
     }
     
     
