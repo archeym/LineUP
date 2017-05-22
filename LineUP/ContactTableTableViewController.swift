@@ -32,7 +32,11 @@ class ContactTableTableViewController: UITableViewController,MFMailComposeViewCo
     @IBAction func callToManager(_ sender: Any) {
         guard let url : NSURL = NSURL(string: "tel://+60189691864") else {return}//+60189691864
         UIApplication.shared.open(url as URL, options: [:])
+        performAddPlayer()
        
+    }
+    func performAddPlayer() {
+        self.performSegue(withIdentifier: "addPlayer", sender: self)
     }
     
  

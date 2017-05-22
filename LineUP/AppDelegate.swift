@@ -12,10 +12,11 @@ import Firebase
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var launchedShortcutItem: UIApplicationShortcutItem?
 
     enum ShortcutIdentifier: String {
         case First
-        case Second
+        
         case Third
         case Fourth
         //Initializers
@@ -25,6 +26,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.init(rawValue: shortIdentifier)
         }
     }
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        completionHandler(handleShortcut(shortcutItem))
+    }
+    
+    private func handleShortcut(_ shortcutItem: UIApplicationShortcutItem) -> Bool {
+        
+        let shortcutType = shortcutItem.type
+        guard let shortcutIdentifier = ShortcutIdentifier(fullIdentifier: shortcutType) else {
+            return false
+        }
+        
+        return selectTabBarItemForIdentifier(identifier: shortcutIdentifier)
+        
+    }
+    
+    private func selectTabBarItemForIdentifier(identifier: ShortcutIdentifier) -> Bool {
+        
+        guard let tabBarController = self.window?.rootViewController as? UITabBarController else {
+            return false
+        }
+        
+        switch (identifier) {
+        case .First:
+            tabBarController.selectedIndex = 3
+            return true
+        case .Third:
+            tabBarController.selectedIndex = 1
+            return true
+        case .Fourth:
+            tabBarController.selectedIndex = 2
+            return true
+        }
+    }
+    
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
@@ -40,6 +77,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         self.window?.makeKeyAndVisible()
         
+        if let shortcutItem = launchOptions?[UIApplicationLaunchOptionsKey.shortcutItem] as? UIApplicationShortcutItem {
+            handleShortcut(shortcutItem)
+            return false
+        }
         return true
     }
 
@@ -58,7 +99,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        guard launchedShortcutItem != nil else { return }
+        //handleShortCutItem(shortcut)
+        launchedShortcutItem = nil
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
