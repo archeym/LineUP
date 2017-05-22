@@ -119,7 +119,7 @@ class FirstViewController: UIViewController {
         self.emailLabel.text = self.currentUser.email
         self.departmentLabel.text = self.currentUser.department
         self.addressLabel.text = self.currentUser.address
-        self.supervisorLabel.text = self.currentUserManager.supervisor
+        self.supervisorLabel.text = self.currentUserManager.supervisor//guard let
         self.phoneLabel.text = self.currentUser.phoneNumber
         self.positionLabel.text = self.currentUser.position
         

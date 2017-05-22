@@ -22,11 +22,18 @@ class AllRequestsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+        
         
 
-        // Do any additional setup after loading the view.
     }
-    
+    func refreshTable(){
+        leaves.removeAll()
+        getAllLeave()
+        tableView.refreshControl?.endRefreshing()
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         leaves.removeAll()
@@ -120,8 +127,6 @@ extension AllRequestsViewController : UITableViewDelegate, UITableViewDataSource
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete){
             
-//            guard let player = filtered?[indexPath.row] else { return }
-//            PlayerManager.shared.deletePlayer(player: player)
             leaves.remove(at: indexPath.row)
             tableView.reloadData()
             
