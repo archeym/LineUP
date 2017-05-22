@@ -39,6 +39,7 @@ class AllRequestsViewController: UIViewController {
         super.viewWillAppear(animated)
         leaves.removeAll()
         getAllLeave()
+        tableView.tableFooterView = UIView()
     }
     
     func getAllLeave(){

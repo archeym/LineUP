@@ -379,7 +379,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="120-EY-YVY">
                                 <rect key="frame" x="16" y="469" width="343" height="35"/>
-                                <color key="backgroundColor" red="0.86136387419824156" green="0.75272086471581534" blue="0.25699817218052834" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.8251702326" green="0.89627239059999997" blue="0.8687812265" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="cGW-Ic-dbl"/>
                                 </constraints>
@@ -395,10 +395,10 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ism-Ci-tTi">
                                 <rect key="frame" x="16" y="538" width="343" height="34"/>
-                                <color key="backgroundColor" red="0.93239736557006836" green="0.50919264554977417" blue="0.94140529632568359" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.78852391242980957" green="0.93018609285354614" blue="0.32598793506622314" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Request">
-                                    <color key="titleColor" red="0.97387692140000004" green="0.98912915530000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
@@ -435,7 +435,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETe-yJ-5Wc">
                                 <rect key="frame" x="16" y="431" width="343" height="35"/>
-                                <color key="backgroundColor" red="0.86136387419824156" green="0.75272086471581534" blue="0.25699817218052834" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.8251702326" green="0.89627239059999997" blue="0.8687812265" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="c57-ZB-Uhn"/>
                                 </constraints>
@@ -1639,6 +1639,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                         <outlet property="imageView" destination="3a8-eB-2SG" id="gEk-XZ-1Sk"/>
                         <outlet property="label" destination="01f-u3-7Gk" id="YlN-L5-dlD"/>
                         <outlet property="monthLabel" destination="dNI-FW-lEE" id="A3M-Hv-x4S"/>
+                        <outlet property="requestNext" destination="I0x-sa-CtJ" id="a9T-8e-eu9"/>
                         <outlet property="toDateLabel" destination="oSM-gn-Pxg" id="P9A-qv-GDw"/>
                         <outlet property="yearLabel" destination="iPc-76-40A" id="YOp-B1-g5u"/>
                     </connections>
@@ -1653,7 +1654,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="do6-rd-hR7" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Calendar" image="caldate" selectedImage="caldate" id="tle-HJ-dyA"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="e3R-ka-0db">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="e3R-ka-0db">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.88407504560000005" green="0.95549356939999996" blue="0.92405778169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1683,9 +1684,10 @@ Protime also believes in a number of core values that we wish to embody. These a
                                 <rect key="frame" x="0.0" y="57" width="375" height="600"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aN-ia-yfC">
-                                        <rect key="frame" x="135" y="573" width="89" height="25"/>
+                                        <rect key="frame" x="135" y="573" width="89" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="89" id="VDc-8J-mak"/>
+                                            <constraint firstAttribute="height" constant="24" id="LCA-mr-UIz"/>
+                                            <constraint firstAttribute="width" constant="89" id="LlT-Fa-np9"/>
                                         </constraints>
                                         <state key="normal" title="Filter"/>
                                         <connections>
@@ -1693,7 +1695,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Swu-Ja-2ZS">
-                                        <rect key="frame" x="254" y="573" width="89" height="25"/>
+                                        <rect key="frame" x="254" y="573" width="89" height="24"/>
                                         <state key="normal" title="Crop On"/>
                                         <connections>
                                             <action selector="borderDetectToggle:" destination="YAl-TC-bNF" eventType="touchUpInside" id="EYU-A8-2fc"/>
@@ -1702,19 +1704,18 @@ Protime also believes in a number of core values that we wish to embody. These a
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hl-eP-Bgq">
                                         <rect key="frame" x="16" y="573" width="89" height="25"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="lXE-2f-0KP"/>
-                                            <constraint firstAttribute="width" constant="89" id="zb7-j0-mgX"/>
+                                            <constraint firstAttribute="width" constant="89" id="Tj4-BH-HqZ"/>
                                         </constraints>
-                                        <state key="normal" title="Back"/>
+                                        <state key="normal" title="Flash"/>
                                         <connections>
-                                            <action selector="torchToggle:" destination="YAl-TC-bNF" eventType="touchUpInside" id="ju0-Hd-k4q"/>
+                                            <action selector="flash:" destination="YAl-TC-bNF" eventType="touchUpInside" id="P5z-85-ZFk"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPE-Qm-ffX">
                                         <rect key="frame" x="149" y="504" width="60" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="2AK-Nz-3p2"/>
-                                            <constraint firstAttribute="width" constant="60" id="EhB-Rs-01q"/>
+                                            <constraint firstAttribute="height" constant="60" id="JgS-lJ-U6m"/>
+                                            <constraint firstAttribute="width" constant="60" id="hpm-im-SFb"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="capture_button"/>
                                         <connections>
@@ -1722,54 +1723,50 @@ Protime also believes in a number of core values that we wish to embody. These a
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="focusIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="0Fc-na-ZNp">
-                                        <rect key="frame" x="8" y="42" width="60" height="60"/>
+                                        <rect key="frame" x="16" y="71" width="60" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="60" id="FPh-mx-Bqg"/>
-                                            <constraint firstAttribute="height" constant="60" id="YdP-Un-Xem"/>
+                                            <constraint firstAttribute="height" constant="60" id="FBh-wm-g6K"/>
+                                            <constraint firstAttribute="width" constant="60" id="ZL7-qa-diG"/>
                                         </constraints>
                                     </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNA-uI-IDl">
+                                        <rect key="frame" x="16" y="8" width="343" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="6hl-eP-Bgq" firstAttribute="leading" secondItem="ksR-FW-2id" secondAttribute="leading" constant="16" id="0Jv-Pm-gbB"/>
-                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="top" secondItem="PPE-Qm-ffX" secondAttribute="bottom" constant="9" id="1yx-5Y-bde"/>
-                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="top" secondItem="Swu-Ja-2ZS" secondAttribute="top" id="3V6-Ls-tcp"/>
-                                    <constraint firstAttribute="trailing" secondItem="Swu-Ja-2ZS" secondAttribute="trailing" constant="32" id="4le-Tf-2gn"/>
-                                    <constraint firstItem="6hl-eP-Bgq" firstAttribute="top" secondItem="3aN-ia-yfC" secondAttribute="top" id="7MF-ZZ-pWo"/>
-                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="baseline" secondItem="6hl-eP-Bgq" secondAttribute="firstBaseline" id="9bF-ao-ag2"/>
-                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="baseline" secondItem="Swu-Ja-2ZS" secondAttribute="firstBaseline" id="Azs-Wd-RPa"/>
-                                    <constraint firstItem="PPE-Qm-ffX" firstAttribute="centerX" secondItem="3aN-ia-yfC" secondAttribute="centerX" id="BXL-gE-m0u"/>
-                                    <constraint firstItem="0Fc-na-ZNp" firstAttribute="top" secondItem="ksR-FW-2id" secondAttribute="topMargin" constant="34" id="IWj-rS-s2I"/>
-                                    <constraint firstItem="6hl-eP-Bgq" firstAttribute="width" secondItem="3aN-ia-yfC" secondAttribute="width" id="J97-3z-kWr"/>
-                                    <constraint firstItem="Swu-Ja-2ZS" firstAttribute="width" secondItem="3aN-ia-yfC" secondAttribute="width" id="W4Q-mz-3So"/>
-                                    <constraint firstItem="Swu-Ja-2ZS" firstAttribute="leading" secondItem="3aN-ia-yfC" secondAttribute="trailing" constant="30" id="W7Z-uY-cV3"/>
-                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="leading" secondItem="6hl-eP-Bgq" secondAttribute="trailing" constant="30" id="cak-8E-2Bq"/>
-                                    <constraint firstItem="0Fc-na-ZNp" firstAttribute="leading" secondItem="ksR-FW-2id" secondAttribute="leadingMargin" id="hUi-ob-ffX"/>
-                                    <constraint firstItem="6hl-eP-Bgq" firstAttribute="baseline" secondItem="3aN-ia-yfC" secondAttribute="firstBaseline" id="jAa-Hn-Y8Y"/>
-                                    <constraint firstItem="6hl-eP-Bgq" firstAttribute="bottom" secondItem="ksR-FW-2id" secondAttribute="bottomMargin" constant="6" id="nD5-u9-CgH"/>
-                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="baseline" secondItem="Swu-Ja-2ZS" secondAttribute="baseline" id="oSQ-hB-P0j"/>
-                                    <constraint firstItem="6hl-eP-Bgq" firstAttribute="baseline" secondItem="3aN-ia-yfC" secondAttribute="baseline" id="tNy-46-VnL"/>
+                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="top" secondItem="Swu-Ja-2ZS" secondAttribute="top" id="Ebo-Vr-1Xd"/>
+                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="top" secondItem="PPE-Qm-ffX" secondAttribute="bottom" constant="9" id="F4r-2S-2eQ"/>
+                                    <constraint firstItem="6hl-eP-Bgq" firstAttribute="centerY" secondItem="3aN-ia-yfC" secondAttribute="centerY" id="FP2-nX-qWF"/>
+                                    <constraint firstItem="BNA-uI-IDl" firstAttribute="leading" secondItem="0Fc-na-ZNp" secondAttribute="leading" id="G6h-qV-r9Q"/>
+                                    <constraint firstItem="Swu-Ja-2ZS" firstAttribute="baseline" secondItem="3aN-ia-yfC" secondAttribute="firstBaseline" id="H3V-KV-2Jv"/>
+                                    <constraint firstAttribute="trailing" secondItem="Swu-Ja-2ZS" secondAttribute="trailing" constant="32" id="IO8-je-0U2"/>
+                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="leading" secondItem="6hl-eP-Bgq" secondAttribute="trailing" constant="30" id="LJm-Cy-80y"/>
+                                    <constraint firstItem="3aN-ia-yfC" firstAttribute="baseline" secondItem="Swu-Ja-2ZS" secondAttribute="firstBaseline" id="LcZ-O3-uDi"/>
+                                    <constraint firstItem="BNA-uI-IDl" firstAttribute="leading" secondItem="ksR-FW-2id" secondAttribute="leading" constant="16" id="Lfy-b1-kmh"/>
+                                    <constraint firstItem="Swu-Ja-2ZS" firstAttribute="leading" secondItem="3aN-ia-yfC" secondAttribute="trailing" constant="30" id="O4m-9K-Zvi"/>
+                                    <constraint firstItem="6hl-eP-Bgq" firstAttribute="top" secondItem="3aN-ia-yfC" secondAttribute="top" id="Q3s-qt-yYS"/>
+                                    <constraint firstAttribute="bottom" secondItem="6hl-eP-Bgq" secondAttribute="bottom" constant="2" id="Vsu-r3-whL"/>
+                                    <constraint firstItem="BNA-uI-IDl" firstAttribute="centerX" secondItem="ksR-FW-2id" secondAttribute="centerX" id="XFO-Ix-9Tm"/>
+                                    <constraint firstItem="PPE-Qm-ffX" firstAttribute="centerX" secondItem="3aN-ia-yfC" secondAttribute="centerX" id="iBI-GH-y7J"/>
+                                    <constraint firstItem="0Fc-na-ZNp" firstAttribute="top" secondItem="BNA-uI-IDl" secondAttribute="bottom" constant="42" id="l9U-mn-PBM"/>
+                                    <constraint firstItem="0Fc-na-ZNp" firstAttribute="leading" secondItem="6hl-eP-Bgq" secondAttribute="leading" id="lIE-zY-la0"/>
+                                    <constraint firstItem="BNA-uI-IDl" firstAttribute="top" secondItem="ksR-FW-2id" secondAttribute="top" constant="8" id="q9c-5y-7Zm"/>
                                 </constraints>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="cKo-4D-d1S" appends="YES" id="Fko-Oc-RUv"/>
                                 </connections>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BNA-uI-IDl">
-                                <rect key="frame" x="16" y="78" width="343" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.92564415929999999" green="0.96500706670000003" blue="0.94118189809999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="BNA-uI-IDl" firstAttribute="centerX" secondItem="ksR-FW-2id" secondAttribute="centerX" id="BII-IR-ahI"/>
-                            <constraint firstItem="BNA-uI-IDl" firstAttribute="leading" secondItem="ryq-SD-3Sa" secondAttribute="leadingMargin" id="PZy-Zl-Hei"/>
-                            <constraint firstItem="ksR-FW-2id" firstAttribute="bottom" secondItem="OTk-BM-7dI" secondAttribute="top" constant="-10" id="hiT-JJ-Pdh"/>
-                            <constraint firstAttribute="trailing" secondItem="ksR-FW-2id" secondAttribute="trailing" id="j1t-5t-TmA"/>
-                            <constraint firstItem="ksR-FW-2id" firstAttribute="top" secondItem="BNA-uI-IDl" secondAttribute="bottom" constant="-42" id="p3q-d9-DrV"/>
-                            <constraint firstItem="BNA-uI-IDl" firstAttribute="top" secondItem="QZl-HC-1Fw" secondAttribute="bottom" constant="58" id="tst-ox-t07"/>
-                            <constraint firstItem="ksR-FW-2id" firstAttribute="leading" secondItem="ryq-SD-3Sa" secondAttribute="leading" id="zVg-D5-y8E"/>
+                            <constraint firstItem="ksR-FW-2id" firstAttribute="leading" secondItem="ryq-SD-3Sa" secondAttribute="leading" id="NRa-pt-kWB"/>
+                            <constraint firstAttribute="trailing" secondItem="ksR-FW-2id" secondAttribute="trailing" id="PAL-ek-tSb"/>
+                            <constraint firstItem="OTk-BM-7dI" firstAttribute="top" secondItem="ksR-FW-2id" secondAttribute="bottom" constant="10" id="kLq-yZ-k7T"/>
+                            <constraint firstItem="ksR-FW-2id" firstAttribute="top" secondItem="QZl-HC-1Fw" secondAttribute="bottom" constant="37" id="wK9-VQ-XRN"/>
                         </constraints>
                     </view>
                     <connections>
@@ -1793,7 +1790,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sb9-Sg-3aj" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profile" image="user" selectedImage="user" id="acW-dT-cKf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="IWJ-cp-dvE">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IWJ-cp-dvE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.88407504560000005" green="0.95549356939999996" blue="0.92405778169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1813,7 +1810,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qJN-FV-cPJ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Requests" image="request" selectedImage="request" id="b1s-uc-4Bl"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="tbU-u4-xeN">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tbU-u4-xeN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.88407504560000005" green="0.95549356939999996" blue="0.92405778169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1833,7 +1830,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7Ff-C2-qK9" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings" selectedImage="settings" id="7Wi-Gq-dJf"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="xpm-mF-RQV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xpm-mF-RQV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.88407504560000005" green="0.95549356939999996" blue="0.92405778169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
