@@ -19,7 +19,7 @@ class Leave{
         leaveType = dict["leave_type"] as? String ?? ""
         startDate = dict["start_date"] as? String ?? ""
         endDate = dict["end_date"] as? String ?? ""
-        totalDays = dict["total_days"] as! Int
+        totalDays = dict["total_days"] as? Int ?? 0
         status = dict["status"] as? String ?? ""
     }
 }

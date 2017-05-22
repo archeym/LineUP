@@ -10,6 +10,15 @@ import UIKit
 import MessageUI
 
 class ContactTableTableViewController: UITableViewController,MFMailComposeViewControllerDelegate, UIDocumentInteractionControllerDelegate  {
+    
+    @IBAction func logoutBarButton(_ sender: Any) {
+        let defaults = UserDefaults.standard
+        defaults.removeObject(forKey: "AUTH_Token")
+        defaults.synchronize()
+        let initController = UIStoryboard(name: "Auth", bundle: Bundle.main).instantiateViewController(withIdentifier: "LoginViewController")
+        present(initController, animated: true, completion: nil)
+    }
+    
     @IBAction func aboutUsTapped(_ sender: Any) {
         let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "AboutUsViewController")
         present(initController, animated: true, completion: nil)

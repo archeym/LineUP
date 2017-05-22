@@ -19,7 +19,7 @@ class TypesOfLeavesViewController: UIViewController {
         }
     }
     
-    var typesOfLeaves = ["Annual", "Maternity", "Paternity", "Study", "Sick"]
+    var typesOfLeaves = ["Annual", "Maternity", "Emergency", "Study", "Sick", "Non Paid"]
     var delegate : LeaveTypeDelegate? = nil
     var selectedLeave : String?
     var selectedLeaveIndex : Int = 0

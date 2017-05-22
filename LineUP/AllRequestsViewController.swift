@@ -22,12 +22,14 @@ class AllRequestsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        leaves.removeAll()
         getAllLeave()
     }
     
@@ -72,6 +74,7 @@ class AllRequestsViewController: UIViewController {
     
     func populateLeaves(_ array : [[String: Any]]){
         for leave in array {
+            
             leaves.append(Leave(dict: leave))
         }
         DispatchQueue.main.async {
@@ -85,7 +88,7 @@ extension AllRequestsViewController : UITableViewDelegate, UITableViewDataSource
         return self.leaves.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 90
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -95,25 +98,31 @@ extension AllRequestsViewController : UITableViewDelegate, UITableViewDataSource
         cell.datesLabel.text = "\(newLeave.startDate) to \(newLeave.endDate)"
         cell.leaveLabel.text = newLeave.leaveType
         cell.numberOfDaysLabel.text = "\(String(newLeave.totalDays)) days"
+        cell.selectionStyle = UITableViewCellSelectionStyle.none
         
         switch newLeave.status {
         case "Pending":
-            cell.statusImageView.image = #imageLiteral(resourceName: "pending")
+            cell.statusImageView.image = #imageLiteral(resourceName: "wait")
         case "Approved":
-            cell.statusImageView.image = #imageLiteral(resourceName: "approved")
+            cell.statusImageView.image = #imageLiteral(resourceName: "yes")
         case"Rejected":
-            cell.statusImageView.image = #imageLiteral(resourceName: "rejected")
+            cell.statusImageView.image = #imageLiteral(resourceName: "no")
         default:
             break;
         }
         return cell
     }
+    @objc func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool
+    {
+        return true
+    }
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete){
             
 //            guard let player = filtered?[indexPath.row] else { return }
 //            PlayerManager.shared.deletePlayer(player: player)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            leaves.remove(at: indexPath.row)
             tableView.reloadData()
             
         }

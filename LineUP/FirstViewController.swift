@@ -16,16 +16,26 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var phoneLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var supervisorLabel: UILabel!
+    
+    
+    
+    
     @IBOutlet weak var annualLeaveLabel: UILabel!
     @IBOutlet weak var maternityLeaveLabel: UILabel!
-    @IBOutlet weak var paternityLeaveLabel: UILabel!
+    
     @IBOutlet weak var emergencyLeaveLabel: UILabel!
     @IBOutlet weak var studyLeaveLabel: UILabel!
+    
+    @IBOutlet weak var sickLeaveLabel: UILabel!
+    
+    @IBOutlet weak var nonpaidLeaveLabel: UILabel!
+    
     @IBOutlet weak var addressLabel: UILabel!
     
     
     var name : String?
     var currentUser : User!
+    var currentUserManager : Manager!
     var userId : Int = 0
     
     @IBAction func logoutBarButton(_ sender: Any) {
@@ -41,6 +51,8 @@ class FirstViewController: UIViewController {
         setupAPI()
     }
     
+    @IBOutlet weak var infoView: UIView!
+    @IBOutlet weak var requestView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAPI()
@@ -49,6 +61,10 @@ class FirstViewController: UIViewController {
         profileImageView.clipsToBounds = true
         profileImageView.layer.borderWidth = 1
         profileImageView.layer.borderColor = UIColor.brown.cgColor
+        //infoView.layer.borderWidth = 0.5
+        infoView.layer.cornerRadius = 10
+        //requestView.layer.borderWidth = 0.5
+        requestView.layer.cornerRadius = 10
         
     }
 
@@ -77,10 +93,12 @@ class FirstViewController: UIViewController {
                         let jsonResponse = try JSONSerialization.jsonObject(with: data!, options: .allowFragments)
                         
                         if let validJSON = jsonResponse as? [String:Any] {
-                            if let dictionary = validJSON["user"] as? [String:Any]{
-                                self.currentUser = User(dict: dictionary)
+                            if let dictionary = validJSON["user"] as? [String:Any]   {
+                                    self.currentUser = User(dict: dictionary)
+                                //self.currentUserManager = Manager(dictB: dictionaryB)
                                 DispatchQueue.main.async {
                                     self.currentUser = User(dict: dictionary)
+                                    //self.currentUserManager = Manager(dictB: dictionaryB)
                                     self.setupProfile()
                                 }
                             }
@@ -98,25 +116,20 @@ class FirstViewController: UIViewController {
     func setupProfile(){
         self.nameLabel.text = self.currentUser.name
         self.emailLabel.text = self.currentUser.email
-//        self.annualLeaveLabel.text = String(self.currentUser.annualLeaves)
-       self.departmentLabel.text = self.currentUser.department
-//        self.addressLabel.text = self.currentUser.address
-//        self.supervisorLabel.text = self.currentUser.supervisor
+        self.departmentLabel.text = self.currentUser.department
+        self.addressLabel.text = self.currentUser.address
+        //self.supervisorLabel.text = self.currentUserManager.supervisor
         self.phoneLabel.text = self.currentUser.phoneNumber
         self.positionLabel.text = self.currentUser.position
-//        self.maternityLeaveLabel.text = String(self.currentUser.maternityLeave)
-//        self.paternityLeaveLabel.text = String(self.currentUser.paternityLeave)
-//        self.emergencyLeaveLabel.text = String(self.currentUser.emergencyLeave)
-//        self.studyLeaveLabel.text = String(self.currentUser.studyLeave)
+        
+        self.annualLeaveLabel.text = String(self.currentUser.annualLeaves)
+        self.maternityLeaveLabel.text = String(self.currentUser.maternityLeave)
+        self.sickLeaveLabel.text = String(self.currentUser.sickLeaves)
+        self.emergencyLeaveLabel.text = String(self.currentUser.emergencyLeave)
+        self.studyLeaveLabel.text = String(self.currentUser.studyLeave)
+        self.nonpaidLeaveLabel.text = String(self.currentUser.nonPaid)
         //self.profileImageView.image = UIImage(self.currentUser.profilePhoto)
         
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-
 }
 
