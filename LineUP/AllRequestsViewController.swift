@@ -19,7 +19,7 @@ class AllRequestsViewController: UIViewController {
     
     var leaves = [Leave]()
     var userId : Int?
-    
+    var notification = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +39,7 @@ class AllRequestsViewController: UIViewController {
         super.viewWillAppear(animated)
         leaves.removeAll()
         getAllLeave()
+        updateBadge()
         tableView.tableFooterView = UIView()
     }
     
@@ -107,6 +108,12 @@ class AllRequestsViewController: UIViewController {
         }
         DispatchQueue.main.async {
             self.tableView.reloadData()
+        }
+    }
+    
+    func updateBadge(){
+        if notification != 0 {
+            tabBarItem.badgeValue = "\(notification)"
         }
     }
 }
