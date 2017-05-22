@@ -2,6 +2,54 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>mail</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Your Manager</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Contact</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).First</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>AddPlayer</key>
+				<string>1</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>doc</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Request Status</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Check your</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Third</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>Draw</key>
+				<string>3</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>list</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>your Leave</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Request</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).Fourth</string>
+			<key>UIApplicationShortcutItemUserInfo</key>
+			<dict>
+				<key>Request</key>
+				<string>4</string>
+			</dict>
+		</dict>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleExecutable</key>
