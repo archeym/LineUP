@@ -23,11 +23,18 @@ class AllRequestsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refreshTable), for: .valueChanged)
+        tableView.refreshControl = refreshControl
+        
         
 
-        // Do any additional setup after loading the view.
     }
-    
+    func refreshTable(){
+        leaves.removeAll()
+        getAllLeave()
+        tableView.refreshControl?.endRefreshing()
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         leaves.removeAll()

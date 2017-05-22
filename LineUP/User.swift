@@ -35,7 +35,7 @@ class User{
         phoneNumber = dict["phone_no"] as? String ?? ""
         address = dict["address"] as? String ?? ""
         
-        annualLeaves = dict["leaves_no"] as? Int ?? 0
+        annualLeaves = dict["total_annual_leaves"] as? Int ?? 0
         sickLeaves = dict["sick"] as? Int ?? 0
         maternityLeave = dict["maternity"] as? Int ?? 0
         nonPaid = dict["non_paid"] as? Int ?? 0
