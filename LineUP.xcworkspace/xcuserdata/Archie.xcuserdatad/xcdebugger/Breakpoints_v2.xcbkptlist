@@ -58,12 +58,12 @@
                   moduleName = "LineUP"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Archie/NCI/NextAcademy/Swift@Next/LineUP/LineUP/CameraViewController.swift"
-                  timestampString = "517115818.477537"
+                  timestampString = "517119014.032268"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "47"
                   endingLineNumber = "47"
-                  offsetFromSymbolStart = "396">
+                  offsetFromSymbolStart = "476">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -73,12 +73,12 @@
                   moduleName = "LineUP"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/Archie/NCI/NextAcademy/Swift@Next/LineUP/LineUP/CameraViewController.swift"
-                  timestampString = "517115818.479196"
+                  timestampString = "517119014.035445"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "47"
                   endingLineNumber = "47"
-                  offsetFromSymbolStart = "676">
+                  offsetFromSymbolStart = "863">
                </Location>
             </Locations>
          </BreakpointContent>

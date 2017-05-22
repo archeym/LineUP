@@ -52,7 +52,7 @@ class CalendarController: UIViewController {
       var firstDate : Date?
             
       let currentDate = Date()
-      let dayColor = UIColor.orange
+      let dayColor = UIColor.gray
       let outsideMonthColor = UIColor.lightGray
       let monthColor = UIColor.black
       let selectedMonthColor = UIColor.black
