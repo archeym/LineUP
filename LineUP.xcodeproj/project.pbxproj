@@ -16,6 +16,7 @@
 		210403F81ECAB4E7002F3D46 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 210403F71ECAB4E7002F3D46 /* Auth.storyboard */; };
 		210403FB1ECAB576002F3D46 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210403FA1ECAB576002F3D46 /* LoginViewController.swift */; };
 		210403FD1ECADA15002F3D46 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210403FC1ECADA15002F3D46 /* InfoViewController.swift */; };
+		210994E11ED2882E00535360 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210994E01ED2882E00535360 /* Manager.swift */; };
 		211829431ECBEACB0025589F /* CalendarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829411ECBEACB0025589F /* CalendarController.swift */; };
 		211829441ECBEACB0025589F /* CustomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829421ECBEACB0025589F /* CustomeCell.swift */; };
 		211829471ECC620E0025589F /* AllRequestsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211829461ECC620E0025589F /* AllRequestsViewController.swift */; };
@@ -48,6 +49,7 @@
 		210403F71ECAB4E7002F3D46 /* Auth.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		210403FA1ECAB576002F3D46 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		210403FC1ECADA15002F3D46 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		210994E01ED2882E00535360 /* Manager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
 		211829411ECBEACB0025589F /* CalendarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarController.swift; sourceTree = "<group>"; };
 		211829421ECBEACB0025589F /* CustomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomeCell.swift; sourceTree = "<group>"; };
 		211829461ECC620E0025589F /* AllRequestsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllRequestsViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				CE22C1E31ECDCCF800866DF9 /* RequestedTableViewCell.swift */,
 				CE22C1E41ECDCCF800866DF9 /* RequestedTableViewCell.xib */,
 				CE1927991ECC3FD30091525B /* User.swift */,
+				210994E01ED2882E00535360 /* Manager.swift */,
 				CE4196CA1ED02310007C5B15 /* Leave.swift */,
 				210403E71ECAB486002F3D46 /* SecondViewController.swift */,
 				211829451ECC3D580025589F /* Calendar */,
@@ -309,6 +312,7 @@
 				210403FB1ECAB576002F3D46 /* LoginViewController.swift in Sources */,
 				CE1927881ECB10D50091525B /* TypesOfLeavesViewController.swift in Sources */,
 				210403E81ECAB486002F3D46 /* SecondViewController.swift in Sources */,
+				210994E11ED2882E00535360 /* Manager.swift in Sources */,
 				CE22C1E51ECDCCF800866DF9 /* RequestedTableViewCell.swift in Sources */,
 				211829491ECD3D6A0025589F /* ContactTableTableViewController.swift in Sources */,
 				2118294E1ECD7DA80025589F /* CompanyPolicyViewController.swift in Sources */,

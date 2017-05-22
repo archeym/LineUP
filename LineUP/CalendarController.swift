@@ -15,17 +15,21 @@ class CalendarController: UIViewController {
     @IBOutlet weak var calendarView: JTAppleCalendarView!
   
     @IBOutlet weak var label: UILabel!
-    @IBAction func resetButtonTapped(_ sender: Any) {
-        calendarView.deselectAllDates()
-        toDateLabel.text = ""
-    }
+   
     
+    @IBOutlet weak var imageView: UIImageView!
     @IBAction func requestButtonTapped(_ sender: Any) {
         let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "RequestLeaveViewController") as! RequestLeaveViewController
         initController.dates = selectedDates
         navigationController?.pushViewController(initController, animated: true)
         //(initController, animated: true, completion: nil)
     }
+    
+    @IBAction func resetItem(_ sender: Any) {
+        calendarView.deselectAllDates()
+        toDateLabel.text = ""
+    }
+    
     var selectedDates = [Date]()
     
     let formatter = DateFormatter()
@@ -48,7 +52,7 @@ class CalendarController: UIViewController {
       var firstDate : Date?
             
       let currentDate = Date()
-      let dayColor = UIColor.brown
+      let dayColor = UIColor.orange
       let outsideMonthColor = UIColor.lightGray
       let monthColor = UIColor.black
       let selectedMonthColor = UIColor.black
@@ -61,8 +65,9 @@ class CalendarController: UIViewController {
         toDateLabel.layer.cornerRadius = 5
         toDateLabel.layer.borderWidth = 0.5
         label.layer.cornerRadius = 5
-        
   }
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         calendarView.deselectAllDates()
         toDateLabel.text = ""
@@ -194,4 +199,17 @@ extension CalendarController: JTAppleCalendarViewDelegate{
     
     
   }
+}
+
+extension UIImage{
+    
+    func alpha(_ value:CGFloat)->UIImage
+    {
+        UIGraphicsBeginImageContextWithOptions(size, false, scale)
+        draw(at: CGPoint.zero, blendMode: .normal, alpha: value)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage!
+        
+    }
 }

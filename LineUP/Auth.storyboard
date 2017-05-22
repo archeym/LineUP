@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1mL-nO-7Yt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1mL-nO-7Yt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -113,7 +113,7 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ba6-P1-YTq">
                                 <rect key="frame" x="16" y="90" width="343" height="557"/>
-                                <color key="backgroundColor" red="0.96142077449999996" green="0.87238998440000004" blue="0.87579039120000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.96357929706573486" green="0.8704686164855957" blue="0.87513375282287598" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">LineUP is a online leave request management system for mobile iOS app.
 LineUP allows employee simplify the leave request process and helps to manage annual leaves, sick leaves, maternity leaves, study leaves, unpaid leaves and many more through the simplify user friendly platform.
 
