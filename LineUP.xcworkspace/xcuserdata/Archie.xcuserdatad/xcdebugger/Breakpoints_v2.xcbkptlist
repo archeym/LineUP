@@ -2,4 +2,54 @@
 <Bucket
    type = "0"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "LineUP/FirstViewController.swift"
+            timestampString = "517225593.761638"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "setupAPI()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LineUP.FirstViewController.(setupAPI () -&gt; ()).(closure #1)"
+                  moduleName = "LineUP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Archie/NCI/NextAcademy/Swift@Next/LineUP/LineUP/FirstViewController.swift"
+                  timestampString = "517225715.306856"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "2721">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LineUP.FirstViewController.(setupAPI () -&gt; ()).(closure #1)"
+                  moduleName = "LineUP"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Archie/NCI/NextAcademy/Swift@Next/LineUP/LineUP/FirstViewController.swift"
+                  timestampString = "517225715.309794"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "106"
+                  endingLineNumber = "106"
+                  offsetFromSymbolStart = "3014">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
