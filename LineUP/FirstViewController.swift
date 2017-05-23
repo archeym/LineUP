@@ -96,9 +96,9 @@ class FirstViewController: UIViewController {
                         if let validJSON = jsonResponse as? [String:Any] {
                             if let dictionary = validJSON["user"] as? [String:Any]   {
                                     self.currentUser = User(dict: dictionary)
-                                DispatchQueue.main.async {
-                                    self.currentUser = User(dict: dictionary)
-                                }
+//                                DispatchQueue.main.async {
+//                                    self.currentUser = User(dict: dictionary)
+//                                }
                             }
                             if let dictionary2 = validJSON["manager_name"] as? [String: Any] {
                                 self.currentUserManager = Manager(dictB: dictionary2)
@@ -108,7 +108,9 @@ class FirstViewController: UIViewController {
                                 
                             }
                         }
-                        self.setupProfile()
+                        DispatchQueue.main.async {
+                            self.setupProfile()
+                        }
                     } catch let jsonError as NSError {
                         print(jsonError)
                     }
