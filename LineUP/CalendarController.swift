@@ -66,25 +66,16 @@ class CalendarController: UIViewController {
     override func viewDidLoad() {
     super.viewDidLoad()
     requestNext.isEnabled = false
+    requestNext.setTitleColor(UIColor.white, for: UIControlState.normal)
     setupCalendarView()
     calendarView.scrollToDate(Date())
         label.layer.borderWidth = 0.5
         toDateLabel.layer.cornerRadius = 5
         toDateLabel.layer.borderWidth = 0.5
         label.layer.cornerRadius = 5
-        handleButtonState()
+        
         
   }
-    func handleButtonState(){
-        //handle done button
-        if calendarIsSelected == false {
-
-            requestNext.setTitleColor(UIColor.white, for: UIControlState.normal)
-        }else{
-
-            requestNext.setTitleColor(UIColor.black, for: UIControlState.normal)
-        }
-    }
     
     override func viewWillAppear(_ animated: Bool) {
         calendarView.deselectAllDates()
@@ -172,6 +163,7 @@ extension CalendarController: JTAppleCalendarViewDelegate{
       
       if date < firstDate! {
         requestNext.isEnabled = false
+        requestNext.setTitleColor(UIColor.white, for: UIControlState.normal)
         calendarView.deselectAllDates()
     
         calendarView.selectDates(from: date, to: date,  triggerSelectionDelegate: false, keepSelectionIfMultiSelectionAllowed: true)
@@ -189,6 +181,7 @@ extension CalendarController: JTAppleCalendarViewDelegate{
       //1
         calendarView.deselectAllDates()
         requestNext.isEnabled = true
+        requestNext.setTitleColor(UIColor.black, for: UIControlState.normal)
         calendarView.selectDates(from: date, to: date,  triggerSelectionDelegate: false, keepSelectionIfMultiSelectionAllowed: true)
       
       firstDate = date
