@@ -12,6 +12,6 @@ class Manager{
     var supervisor : String = ""
     
     init (dictB : [String: Any] ) {
-        supervisor = dictB["name"] as? String ?? ""
+        supervisor = dictB["name"] as? String ?? "Khang Hui"
     }
 }
