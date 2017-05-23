@@ -60,9 +60,9 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Encrypted User Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fk3-qL-tGk">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Encrypted User Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fk3-qL-tGk">
                                 <rect key="frame" x="57" y="399" width="261" height="35"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
@@ -70,7 +70,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.92618657561200002" green="0.96142077445983887" blue="0.94215480302484989" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -124,7 +124,7 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ba6-P1-YTq">
                                 <rect key="frame" x="16" y="90" width="343" height="557"/>
                                 <color key="backgroundColor" red="0.99350219964981079" green="0.91213148832321167" blue="0.92554390430450439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <mutableString key="text">LineUP is a online leave request management system for mobile iOS app.
+                                <string key="text">LineUP is a online leave request management system for mobile iOS app.
 
 LineUP allows employee simplify the leave request process and helps to manage annual leaves, sick leaves, maternity leaves, study leaves, unpaid leaves and many more through the simplify user friendly platform.
 
@@ -137,7 +137,7 @@ Features: 100% free and paperless app:
 - Ability to define Event days (days where employees cannot request leave)
 - Approve or reject leave request directly in email
 - Attachable supporting document on leave submission
-- Employee profile page with all configurations requests</mutableString>
+- Employee profile page with all configurations requests</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>

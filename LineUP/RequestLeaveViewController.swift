@@ -29,6 +29,7 @@ class RequestLeaveViewController: UIViewController {
     @IBOutlet weak var requestButton: UIButton!{
         didSet {
             requestButton.addTarget(self, action: #selector(requestButtonTapped), for: .touchUpInside)
+            
         }
     }
     @IBOutlet weak var uploadButton: UIButton!{
@@ -46,11 +47,11 @@ class RequestLeaveViewController: UIViewController {
     
     func handleButtonState(){
         
-        if (chooseLeave == true){
-            requestButton.isEnabled = true
+        if !chooseLeave {
+            requestButton.isEnabled = false
             requestButton.setTitleColor(UIColor.white, for: UIControlState.normal)
         }else{
-            requestButton.isEnabled = false
+            requestButton.isEnabled = true
             requestButton.setTitleColor(UIColor.black, for: UIControlState.normal)
         }
     }
@@ -80,7 +81,7 @@ class RequestLeaveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //requestButton.isEnabled = false
+        requestButton.isEnabled = false
         
         self.numberOfDaysLabel.text = "\(dates.count)"
         self.datesFromCalendar.text = "\(displayDateFormatter.string(from: dates.first!)) - \(displayDateFormatter.string(from: dates.last!))"
@@ -102,7 +103,7 @@ class RequestLeaveViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        //handleButtonState()
+        handleButtonState()
         if selectedType != nil {
             self.chooseLeaveButton.setTitle(selectedType, for: .normal)
         }
@@ -111,6 +112,8 @@ class RequestLeaveViewController: UIViewController {
     }
     
     @IBAction func chooseLeaveTypeButtonTapped(_ sender: Any) {
+        
+        chooseLeave = true
         
         if let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "TypesOfLeavesViewController") as? TypesOfLeavesViewController{
             initController.delegate = self

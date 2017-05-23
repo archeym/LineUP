@@ -40,27 +40,27 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1za-z5-APc">
-                                                <rect key="frame" x="51" y="165" width="257" height="34"/>
+                                                <rect key="frame" x="51" y="160" width="257" height="32"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="F0w-3j-CVH"/>
+                                                    <constraint firstAttribute="height" constant="32" id="F0w-3j-CVH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHB-Az-yq7">
-                                                <rect key="frame" x="51" y="198" width="257" height="34"/>
+                                                <rect key="frame" x="51" y="192" width="257" height="32"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="bF5-SM-Dgh"/>
+                                                    <constraint firstAttribute="height" constant="32" id="bF5-SM-Dgh"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNC-IA-Cz4">
-                                                <rect key="frame" x="51" y="96" width="257" height="34"/>
+                                                <rect key="frame" x="51" y="96" width="257" height="32"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="GWT-9P-lVO"/>
+                                                    <constraint firstAttribute="height" constant="32" id="GWT-9P-lVO"/>
                                                     <constraint firstAttribute="width" constant="257" id="Ryi-dx-fC1"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -68,16 +68,16 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZg-7b-wAz">
-                                                <rect key="frame" x="51" y="130" width="257" height="34"/>
+                                                <rect key="frame" x="51" y="128" width="257" height="32"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="ZQx-tC-5jT"/>
+                                                    <constraint firstAttribute="height" constant="32" id="ZQx-tC-5jT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHy-NY-XcD">
-                                                <rect key="frame" x="51" y="231" width="257" height="34"/>
+                                                <rect key="frame" x="51" y="224" width="257" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -112,7 +112,7 @@
                                                 </subviews>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b92-RF-WR6">
-                                                <rect key="frame" x="51" y="263" width="257" height="63"/>
+                                                <rect key="frame" x="51" y="254" width="257" height="63"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -139,14 +139,14 @@
                                             <constraint firstItem="ZNC-IA-Cz4" firstAttribute="top" secondItem="9F9-cj-6yB" secondAttribute="bottom" id="7nK-YC-ReA"/>
                                             <constraint firstItem="8gl-nr-PAS" firstAttribute="top" secondItem="Ddg-5f-7xB" secondAttribute="top" constant="-63" id="8n7-QE-BUe"/>
                                             <constraint firstItem="ZNC-IA-Cz4" firstAttribute="leading" secondItem="nZg-7b-wAz" secondAttribute="leading" id="9G4-U1-f8R"/>
-                                            <constraint firstItem="ZHB-Az-yq7" firstAttribute="top" secondItem="nZg-7b-wAz" secondAttribute="bottom" constant="34" id="E7r-ym-VX5"/>
-                                            <constraint firstItem="b92-RF-WR6" firstAttribute="top" secondItem="ZHB-Az-yq7" secondAttribute="bottom" constant="31" id="Fuu-O9-akN"/>
+                                            <constraint firstItem="ZHB-Az-yq7" firstAttribute="top" secondItem="nZg-7b-wAz" secondAttribute="bottom" constant="32" id="E7r-ym-VX5"/>
+                                            <constraint firstItem="b92-RF-WR6" firstAttribute="top" secondItem="ZHB-Az-yq7" secondAttribute="bottom" constant="30" id="Fuu-O9-akN"/>
                                             <constraint firstItem="ZNC-IA-Cz4" firstAttribute="leading" secondItem="GTn-ez-N6C" secondAttribute="trailing" constant="11" id="H7C-RH-KBh"/>
-                                            <constraint firstAttribute="bottom" secondItem="nHy-NY-XcD" secondAttribute="bottom" constant="75" id="Hbr-Yc-fai"/>
+                                            <constraint firstAttribute="bottom" secondItem="nHy-NY-XcD" secondAttribute="bottom" constant="86" id="Hbr-Yc-fai"/>
                                             <constraint firstItem="nHy-NY-XcD" firstAttribute="leading" secondItem="b92-RF-WR6" secondAttribute="leading" id="J4W-ce-bb9"/>
                                             <constraint firstItem="GTn-ez-N6C" firstAttribute="top" secondItem="Ddg-5f-7xB" secondAttribute="top" constant="96" id="KxR-b2-GuX"/>
-                                            <constraint firstItem="1za-z5-APc" firstAttribute="top" secondItem="nZg-7b-wAz" secondAttribute="bottom" constant="1" id="Kyq-bL-Dzv"/>
-                                            <constraint firstAttribute="bottom" secondItem="b92-RF-WR6" secondAttribute="bottom" constant="14" id="LCe-lT-w7M"/>
+                                            <constraint firstItem="1za-z5-APc" firstAttribute="top" secondItem="nZg-7b-wAz" secondAttribute="bottom" id="Kyq-bL-Dzv"/>
+                                            <constraint firstAttribute="bottom" secondItem="b92-RF-WR6" secondAttribute="bottom" constant="23" id="LCe-lT-w7M"/>
                                             <constraint firstItem="9F9-cj-6yB" firstAttribute="top" secondItem="8gl-nr-PAS" secondAttribute="bottom" constant="-1" id="Ldb-af-FXt"/>
                                             <constraint firstItem="nZg-7b-wAz" firstAttribute="leading" secondItem="1za-z5-APc" secondAttribute="leading" id="PX8-ZI-3LF"/>
                                             <constraint firstItem="nHy-NY-XcD" firstAttribute="trailing" secondItem="b92-RF-WR6" secondAttribute="trailing" id="UVu-k5-TRT"/>
@@ -1055,7 +1055,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snip3" translatesAutoresizingMaskIntoConstraints="NO" id="9aC-VN-BwA">
                                                 <rect key="frame" x="8" y="531" width="100" height="100"/>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rlk-0I-kuU">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="owl" translatesAutoresizingMaskIntoConstraints="NO" id="rlk-0I-kuU">
                                                 <rect key="frame" x="243" y="639" width="100" height="100"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Archie :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxm-jf-Nf8">
@@ -1152,7 +1152,7 @@ Protime also believes in a number of core values that we wish to embody. These a
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dof-i8-pGA">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Snip5" translatesAutoresizingMaskIntoConstraints="NO" id="dof-i8-pGA">
                                                 <rect key="frame" x="8" y="747" width="100" height="100"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web Dev" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l0b-0N-ASn">
@@ -1850,6 +1850,7 @@ Protime also believes in a number of core values that we wish to embody. These a
         <image name="Snip1" width="437" height="361"/>
         <image name="Snip2" width="470" height="494"/>
         <image name="Snip3" width="335" height="348"/>
+        <image name="Snip5" width="597" height="589"/>
         <image name="box" width="32" height="32"/>
         <image name="caldate" width="24" height="24"/>
         <image name="capture_button" width="66" height="66"/>
@@ -1859,6 +1860,7 @@ Protime also believes in a number of core values that we wish to embody. These a
         <image name="hr" width="32" height="32"/>
         <image name="lineup" width="1000" height="1000"/>
         <image name="manager" width="32" height="32"/>
+        <image name="owl" width="2656" height="2656"/>
         <image name="phone" width="32" height="32"/>
         <image name="profileImagepng" width="1800" height="1000"/>
         <image name="request" width="24" height="24"/>
