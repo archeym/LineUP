@@ -36,6 +36,7 @@ class FirstViewController: UIViewController {
     var name : String?
     var currentUser : User!
     var currentUserManager : Manager!
+    var currentUserLeave : Leave!
     var userId : Int = 0
     
     @IBAction func logoutBarButton(_ sender: Any) {
@@ -97,14 +98,17 @@ class FirstViewController: UIViewController {
                                     self.currentUser = User(dict: dictionary)
                                 DispatchQueue.main.async {
                                     self.currentUser = User(dict: dictionary)
-                                    self.setupProfile()
                                 }
                             }
                             if let dictionary2 = validJSON["manager_name"] as? [String: Any] {
                                 self.currentUserManager = Manager(dictB: dictionary2)
                             }
+                            if let dictionary3 = validJSON["remaining_leaves"] as? [String:Any] {
+                                self.currentUserLeave = Leave(leaveDict: dictionary3)
+                                
+                            }
                         }
-                        
+                        self.setupProfile()
                     } catch let jsonError as NSError {
                         print(jsonError)
                     }
@@ -123,13 +127,12 @@ class FirstViewController: UIViewController {
         self.phoneLabel.text = self.currentUser.phoneNumber
         self.positionLabel.text = self.currentUser.position
         
-        self.annualLeaveLabel.text = String(self.currentUser.annualLeaves)
-        self.maternityLeaveLabel.text = String(self.currentUser.maternityLeave)
-        self.sickLeaveLabel.text = String(self.currentUser.sickLeaves)
-        self.emergencyLeaveLabel.text = String(self.currentUser.emergencyLeave)
-        self.studyLeaveLabel.text = String(self.currentUser.studyLeave)
-        self.nonpaidLeaveLabel.text = String(self.currentUser.nonPaid)
-        //self.profileImageView.image = UIImage(self.currentUser.profilePhoto)
+        self.annualLeaveLabel.text = String(self.currentUserLeave.annualLeaves)
+        self.maternityLeaveLabel.text = String(self.currentUserLeave.maternityLeave)
+        self.sickLeaveLabel.text = String(self.currentUserLeave.sickLeaves)
+        self.emergencyLeaveLabel.text = String(self.currentUserLeave.emergencyLeave)
+        self.studyLeaveLabel.text = String(self.currentUserLeave.studyLeave)
+        self.nonpaidLeaveLabel.text = String(self.currentUserLeave.nonPaid)
         self.profileImageView.loadImageUsingCacheWithUrlString(urlString: self.currentUser.profilePhoto)
         
     }
