@@ -17,13 +17,7 @@ class User{
     var phoneNumber : String = ""
     var address : String = ""
     
-    var annualLeaves : Int = 0
-    var sickLeaves : Int = 0
-    var maternityLeave : Int = 0
-    var nonPaid : Int = 0
-    var emergencyLeave : Int = 0
-    var studyLeave : Int = 0
-    
+
     var profilePhoto : String = ""
     
     init (dict : [String: Any] ) {//, dictB: [String: Any]
@@ -35,16 +29,12 @@ class User{
         phoneNumber = dict["phone_no"] as? String ?? ""
         address = dict["address"] as? String ?? ""
         
-        annualLeaves = dict["total_annual_leaves"] as? Int ?? 0
-        sickLeaves = dict["sick"] as? Int ?? 0
-        maternityLeave = dict["maternity"] as? Int ?? 0
-        nonPaid = dict["non_paid"] as? Int ?? 0
-        emergencyLeave = dict["emergency"] as? Int ?? 0
-        studyLeave = dict["study"] as? Int ?? 0
         profilePhoto = ""
         if let avatar = dict["avatar"] as? [String:Any] {
             profilePhoto = avatar["url"] as? String ?? ""
         }
     }
+    
+    
 }
 
