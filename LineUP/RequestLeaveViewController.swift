@@ -25,7 +25,7 @@ class RequestLeaveViewController: UIViewController {
     var photoImageView = UIImageView()
     var ref: DatabaseReference!
     var userId : Int = 0
-    
+    var chooseLeave = false
     @IBOutlet weak var requestButton: UIButton!{
         didSet {
             requestButton.addTarget(self, action: #selector(requestButtonTapped), for: .touchUpInside)
@@ -37,14 +37,24 @@ class RequestLeaveViewController: UIViewController {
         }
     }
     @IBOutlet weak var chooseLeaveButton: UIButton!
+    
     @IBOutlet weak var chooseFromLibrary: UIButton!{
         didSet{
             chooseFromLibrary.addTarget(self, action: #selector(handleUploadPhoto), for: .touchUpInside)
         }
     }
     
+    func handleButtonState(){
+        
+        if (chooseLeave == true){
+            requestButton.isEnabled = true
+            requestButton.setTitleColor(UIColor.white, for: UIControlState.normal)
+        }else{
+            requestButton.isEnabled = false
+            requestButton.setTitleColor(UIColor.black, for: UIControlState.normal)
+        }
+    }
 
-    
     let formatter = DateFormatter()
     var testCalendar = Calendar.current
     let dateFormatter : DateFormatter = {
@@ -70,7 +80,8 @@ class RequestLeaveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.name.text = user.name
+        //requestButton.isEnabled = false
+        
         self.numberOfDaysLabel.text = "\(dates.count)"
         self.datesFromCalendar.text = "\(displayDateFormatter.string(from: dates.first!)) - \(displayDateFormatter.string(from: dates.last!))"
         name.layer.cornerRadius = 5
@@ -85,11 +96,13 @@ class RequestLeaveViewController: UIViewController {
         datesLabel.layer.cornerRadius = 5
         datesFromCalendar.layer.cornerRadius = 5
         getName()
+        
     }
     
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        //handleButtonState()
         if selectedType != nil {
             self.chooseLeaveButton.setTitle(selectedType, for: .normal)
         }
@@ -97,10 +110,6 @@ class RequestLeaveViewController: UIViewController {
         uploadPhotoToFirebase()
     }
     
-    func handleBack(){
-        
-    }
-
     @IBAction func chooseLeaveTypeButtonTapped(_ sender: Any) {
         
         if let initController = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "TypesOfLeavesViewController") as? TypesOfLeavesViewController{

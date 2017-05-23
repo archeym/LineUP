@@ -22,22 +22,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Encrypted User Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fk3-qL-tGk">
-                                <rect key="frame" x="13" y="394" width="349" height="35"/>
-                                <color key="backgroundColor" red="0.96142077445983887" green="0.87238998441554594" blue="0.8757903912037015" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="G5o-TN-kdD"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login" translatesAutoresizingMaskIntoConstraints="NO" id="Drs-if-W2I">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="677"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginF" translatesAutoresizingMaskIntoConstraints="NO" id="LID-Es-R92">
+                                <rect key="frame" x="16" y="150" width="343" height="435"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tnT-MP-msL">
-                                <rect key="frame" x="13" y="454" width="349" height="35"/>
-                                <color key="backgroundColor" red="0.66868317127227783" green="0.97791337966918945" blue="0.85098755359649658" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="B9q-a0-Bq2"/>
-                                </constraints>
+                                <rect key="frame" x="57" y="488" width="261" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.91601814849999996" blue="0.92599101620000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Login">
@@ -54,38 +47,55 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineup" translatesAutoresizingMaskIntoConstraints="NO" id="JZB-Ef-Xve">
-                                <rect key="frame" x="40.5" y="20" width="294" height="294"/>
+                                <rect key="frame" x="142" y="218" width="90" height="90"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="294" id="179-8y-BaK"/>
-                                    <constraint firstAttribute="height" constant="294" id="KL6-Ea-VYx"/>
+                                    <constraint firstAttribute="width" constant="90" id="fbR-B8-GbE"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9c2-eq-tIt">
-                                <rect key="frame" x="13" y="346" width="349" height="35"/>
-                                <color key="backgroundColor" red="0.96142077445983887" green="0.87238998441554594" blue="0.8757903912037015" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <rect key="frame" x="57" y="350" width="261" height="35"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="nnl-WV-jnL"/>
+                                    <constraint firstAttribute="height" constant="35" id="KBH-Sl-Gp4"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Encrypted User Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fk3-qL-tGk">
+                                <rect key="frame" x="57" y="399" width="261" height="35"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="NG0-ux-RgU"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.92618657561200002" green="0.96142077445983887" blue="0.94215480302484989" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="tnT-MP-msL" secondAttribute="trailing" constant="13" id="3aU-n0-uIB"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JZB-Ef-Xve" secondAttribute="trailing" constant="13" id="6iZ-M0-A6t"/>
-                            <constraint firstItem="9c2-eq-tIt" firstAttribute="leading" secondItem="Ts2-kQ-9x3" secondAttribute="leading" constant="13" id="Lsx-gd-e9R"/>
-                            <constraint firstItem="Fk3-qL-tGk" firstAttribute="top" secondItem="9c2-eq-tIt" secondAttribute="bottom" constant="13" id="NFC-eg-oZx"/>
-                            <constraint firstItem="Fk3-qL-tGk" firstAttribute="leading" secondItem="Ts2-kQ-9x3" secondAttribute="leading" constant="13" id="TpN-j7-fhF"/>
-                            <constraint firstItem="JZB-Ef-Xve" firstAttribute="centerX" secondItem="Ts2-kQ-9x3" secondAttribute="centerX" id="hwE-3z-9OQ"/>
-                            <constraint firstItem="JZB-Ef-Xve" firstAttribute="top" secondItem="VEI-0j-x88" secondAttribute="bottom" id="m4K-l3-dAn"/>
-                            <constraint firstItem="tnT-MP-msL" firstAttribute="top" secondItem="Fk3-qL-tGk" secondAttribute="bottom" constant="25" id="mgd-d3-d8H"/>
-                            <constraint firstItem="tnT-MP-msL" firstAttribute="leading" secondItem="Ts2-kQ-9x3" secondAttribute="leading" constant="13" id="ph7-Cg-oZo"/>
-                            <constraint firstAttribute="trailing" secondItem="Fk3-qL-tGk" secondAttribute="trailing" constant="13" id="twI-hM-YOe"/>
-                            <constraint firstItem="9c2-eq-tIt" firstAttribute="top" secondItem="JZB-Ef-Xve" secondAttribute="bottom" constant="32" id="wWq-jg-pTw"/>
-                            <constraint firstAttribute="trailing" secondItem="9c2-eq-tIt" secondAttribute="trailing" constant="13" id="xD1-RF-A5G"/>
-                            <constraint firstItem="JZB-Ef-Xve" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ts2-kQ-9x3" secondAttribute="leading" constant="13" id="zLl-P2-FcP"/>
+                            <constraint firstItem="9c2-eq-tIt" firstAttribute="leading" secondItem="Fk3-qL-tGk" secondAttribute="leading" id="25z-YC-kN1"/>
+                            <constraint firstItem="Fk3-qL-tGk" firstAttribute="top" secondItem="9c2-eq-tIt" secondAttribute="bottom" constant="14" id="551-QT-Vxm"/>
+                            <constraint firstItem="Drs-if-W2I" firstAttribute="top" secondItem="Ts2-kQ-9x3" secondAttribute="top" id="6cW-ZX-xZP"/>
+                            <constraint firstItem="9c2-eq-tIt" firstAttribute="trailing" secondItem="Fk3-qL-tGk" secondAttribute="trailing" id="A9l-6V-sgp"/>
+                            <constraint firstItem="9c2-eq-tIt" firstAttribute="top" secondItem="JZB-Ef-Xve" secondAttribute="bottom" constant="42" id="Ki9-vX-fwE"/>
+                            <constraint firstItem="Drs-if-W2I" firstAttribute="leading" secondItem="Ts2-kQ-9x3" secondAttribute="leading" id="Kxw-hF-oDN"/>
+                            <constraint firstItem="Fk3-qL-tGk" firstAttribute="trailing" secondItem="tnT-MP-msL" secondAttribute="trailing" id="LSC-Xg-LuT"/>
+                            <constraint firstItem="JZB-Ef-Xve" firstAttribute="top" secondItem="VEI-0j-x88" secondAttribute="bottom" constant="198" id="MLh-bx-yzU"/>
+                            <constraint firstItem="LID-Es-R92" firstAttribute="centerX" secondItem="JZB-Ef-Xve" secondAttribute="centerX" id="Rlb-3X-FeJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Drs-if-W2I" secondAttribute="trailing" id="TtC-hh-0Iw"/>
+                            <constraint firstItem="Drs-if-W2I" firstAttribute="centerX" secondItem="JZB-Ef-Xve" secondAttribute="centerX" id="dKf-gw-opJ"/>
+                            <constraint firstItem="KXb-lT-dsh" firstAttribute="top" secondItem="LID-Es-R92" secondAttribute="bottom" constant="82" id="dXC-Wj-yeB"/>
+                            <constraint firstItem="Fk3-qL-tGk" firstAttribute="leading" secondItem="tnT-MP-msL" secondAttribute="leading" id="f0t-tN-BZX"/>
+                            <constraint firstItem="JZB-Ef-Xve" firstAttribute="centerX" secondItem="9c2-eq-tIt" secondAttribute="centerX" id="fbG-of-oqn"/>
+                            <constraint firstItem="LID-Es-R92" firstAttribute="centerY" secondItem="9c2-eq-tIt" secondAttribute="centerY" id="gcd-k6-fUV"/>
+                            <constraint firstItem="LID-Es-R92" firstAttribute="leading" secondItem="Ts2-kQ-9x3" secondAttribute="leadingMargin" id="iDn-Jo-Tta"/>
+                            <constraint firstItem="LID-Es-R92" firstAttribute="top" secondItem="VEI-0j-x88" secondAttribute="bottom" constant="130" id="jeh-4L-cEu"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="Drs-if-W2I" secondAttribute="bottom" constant="-10" id="p5J-wo-5ci"/>
+                            <constraint firstItem="9c2-eq-tIt" firstAttribute="leading" secondItem="Ts2-kQ-9x3" secondAttribute="leadingMargin" constant="41" id="uMr-li-mLU"/>
+                            <constraint firstItem="KXb-lT-dsh" firstAttribute="top" secondItem="tnT-MP-msL" secondAttribute="bottom" constant="149" id="xVp-Af-OVD"/>
+                            <constraint firstItem="tnT-MP-msL" firstAttribute="top" secondItem="Fk3-qL-tGk" secondAttribute="bottom" constant="54" id="xgb-45-hSd"/>
                         </constraints>
                     </view>
                     <connections>
@@ -97,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="msf-YI-PB0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="71.25" y="196.47887323943661"/>
+            <point key="canvasLocation" x="71.200000000000003" y="195.6521739130435"/>
         </scene>
         <!--Info View Controller-->
         <scene sceneID="pMG-tN-DJr">
@@ -113,11 +123,13 @@
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ba6-P1-YTq">
                                 <rect key="frame" x="16" y="90" width="343" height="557"/>
-                                <color key="backgroundColor" red="0.96357929706573486" green="0.8704686164855957" blue="0.87513375282287598" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <string key="text">LineUP is a online leave request management system for mobile iOS app.
+                                <color key="backgroundColor" red="0.99350219964981079" green="0.91213148832321167" blue="0.92554390430450439" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <mutableString key="text">LineUP is a online leave request management system for mobile iOS app.
+
 LineUP allows employee simplify the leave request process and helps to manage annual leaves, sick leaves, maternity leaves, study leaves, unpaid leaves and many more through the simplify user friendly platform.
 
-Features: 100% free and paperless app
+Features: 100% free and paperless app:
+
 - After the registration, employee will be able to request, edit leaves through the mobile app
 - Company calendar allows employees to know who is on leave
 - Email Notification for leave application and approved or rejected status
@@ -125,7 +137,7 @@ Features: 100% free and paperless app
 - Ability to define Event days (days where employees cannot request leave)
 - Approve or reject leave request directly in email
 - Attachable supporting document on leave submission
-- Employee profile page with all configurations requests</string>
+- Employee profile page with all configurations requests</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -206,5 +218,7 @@ Features: 100% free and paperless app
     </scenes>
     <resources>
         <image name="lineup" width="1000" height="1000"/>
+        <image name="login" width="734" height="1003"/>
+        <image name="loginF" width="550" height="715"/>
     </resources>
 </document>

@@ -121,7 +121,23 @@ class AllRequestsViewController: UIViewController {
 
 extension AllRequestsViewController : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if leaves.count != 0{
+            tableView.separatorStyle = .singleLine
+            tableView.backgroundView = nil
+            return leaves.count
+        }else{
+            let messageLabel = UILabel.init()
+            
+            messageLabel.text = "NO AVAILIBLE REQUESTS \n\n To Request Leaves go to Calendar Tab Bar"
+            messageLabel.textColor = UIColor.black
+            messageLabel.numberOfLines = 0
+            messageLabel.textAlignment = .center
+            tableView.backgroundView = messageLabel;
+            tableView.separatorStyle = .none
+        }
+        
         return self.leaves.count
+        
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70
