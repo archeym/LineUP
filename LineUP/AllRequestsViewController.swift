@@ -41,6 +41,7 @@ class AllRequestsViewController: UIViewController {
         getAllLeave()
         updateBadge()
         tableView.tableFooterView = UIView()
+        //leaves.sort(by: { $1.leaveId > $0.leaveId })
     }
     
     func getAllLeave(){
@@ -123,8 +124,9 @@ extension AllRequestsViewController : UITableViewDelegate, UITableViewDataSource
         return self.leaves.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 90
+        return 70
     }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: RequestedTableViewCell.cellIdentifier) as? RequestedTableViewCell
@@ -140,8 +142,10 @@ extension AllRequestsViewController : UITableViewDelegate, UITableViewDataSource
             cell.statusImageView.image = #imageLiteral(resourceName: "wait")
         case "Approved":
             cell.statusImageView.image = #imageLiteral(resourceName: "yes")
+            cell.isUserInteractionEnabled = false
         case"Rejected":
             cell.statusImageView.image = #imageLiteral(resourceName: "no")
+            cell.isUserInteractionEnabled = false
         default:
             break;
         }
@@ -151,14 +155,38 @@ extension AllRequestsViewController : UITableViewDelegate, UITableViewDataSource
     {
         return true
     }
+    func displayAlert(){
+        let alert: UIAlertController = UIAlertController(title: "Delete Request", message: "Are You Sure?", preferredStyle: .alert)
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel)
+        //        let resetAction: UIAlertAction = UIAlertAction(title: "Reset", style: .destructive)
+        let resetAction = UIAlertAction(title: "Delete", style: .destructive, handler: {(alert: UIAlertAction) in
+
+        })
+        
+        alert.addAction(cancelAction)
+        alert.addAction(resetAction)
+        self.present(alert, animated: true, completion: nil)
+    }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if (editingStyle == .delete){
-
-            let leaveID = leaves[indexPath.row].leaveId
-            deleteARequest(leaveId: leaveID)
-            leaves.remove(at: indexPath.row)
             
+            let alert: UIAlertController = UIAlertController(title: "Delete Request", message: "Are You Sure?", preferredStyle: .alert)
+            
+            
+            let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel)
+
+        
+            let resetAction = UIAlertAction(title: "Delete", style: .destructive, handler: {(alert: UIAlertAction) in
+                let leaveID = self.leaves[indexPath.row].leaveId
+                self.deleteARequest(leaveId: leaveID)
+                self.leaves.remove(at: indexPath.row)
+                tableView.reloadData()
+            })
+            
+            alert.addAction(cancelAction)
+            alert.addAction(resetAction)
+            self.present(alert, animated: true, completion: nil)
             tableView.reloadData()
             
         }
